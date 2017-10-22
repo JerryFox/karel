@@ -28,7 +28,7 @@ margin: 0;
 
 #left-div {
 width:50%;
-#position:relative;
+position:relative;
 margin: auto;
 float:left;
 }
