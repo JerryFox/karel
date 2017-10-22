@@ -1,0 +1,99 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení editoru příkazů */
+
+.editor {
+	display: block;
+	border: 1px solid;
+	border-top-color: rgb(90%, 90%, 90%);
+	border-left-color: rgb(90%, 90%, 90%);
+	border-right-color: rgb(40%, 40%, 40%);
+	border-bottom-color: rgb(40%, 40%, 40%);
+}
+
+.editor .nadpis {
+	background-color: rgb(50%, 0%, 0%);
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 69%;
+}
+
+.zobrazeny {
+	min-height: 24px;
+	line-height: 24px;
+	margin-left: 0.25em;
+	font-style: italic;
+}
+
+#zobrazeny-prikaz {
+	white-space: nowrap;
+	margin-left: 0.25em;
+	min-height: 24px;
+	line-height: 24px;
+	text-align: left;
+}
+
+#zmeneny-prikaz {
+	font-size: 83%;
+	padding-left: 0.25em;
+	line-height: 0;
+	vertical-align: super;
+}
+
+.editor .ramecek {
+	background-color: rgb(90%, 90%, 0%);
+	border: 1px solid;
+	border-top-color: rgb(40%, 40%, 40%);
+	border-left-color: rgb(40%, 40%, 40%);
+	border-bottom-color: rgb(90%, 90%, 90%);
+	border-right-color: rgb(90%, 90%, 90%);
+}
+
+.editor .ramecek div.textarea {
+	width: 100%;
+}
+
+.editor #editace {
+	border: none;
+	width: 100%;
+	background-color: rgb(90%, 90%, 0%);
+}
+
+/* Nástroje editoru */
+
+.editor .nastroje {
+	float: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	min-height: 20px;
+}
+
+.editor .nastroje .tlacitko {
+	width: 22px;
+}
+
+.editor .nastroje-mezera {
+	left: 1px;
+}
+
+#editor-novy {
+	background-image: url("../images/16x16/prikaz-novy-prikaz.png");
+}
+
+#editor-ulozit {
+	background-image: url("../images/16x16/prikaz-uloz-prikaz.png");
+}
+
+#editor-ulozit-jako {
+	background-image: url("../images/16x16/prikaz-uloz-prikaz-nove.png");
+}

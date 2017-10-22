@@ -1,0 +1,1762 @@
+2013-01-10  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* src/scripts/nacitaci-ukladaci-funkce.js:
+
+	Upraveny počty viditelných řádek při ukládání.
+
+	* COPYING, KOPIROVANI, src/index.html.in, src/napoveda.html.in,
+	  src/priklady.html.in:
+
+	Doplněný Copyright.
+
+	* NOVINKY:
+
+	Doplněny novinky.
+
+	* configure.ac:
+
+	Příprava na novou verzi.
+
+	* src/scripts/okno-ulozeni-a-exportu.js:
+
+	Kvůli iPadu změněna <textarea> na <pre> uvnitř <iframe>.
+	
+	Původní <textarea> byla pouze pro čtení a iPad nezvládá vybrat text.
+	Nyní se
+	text dá stále vybrat celý, aniž by se vybral zbytek stránky.
+
+2012-12-09  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* COPYING, KOPIROVANI, NOVINKY, configure.ac, src/index.html.in:
+
+	Verze 2.0.4.1.
+
+	* src/napoveda.html.in:
+
+	Opraven text nápovědy.
+
+	* src/images/Makefile.am:
+
+	Přegenerování obrázků, když se změní COPYING.
+
+	* .gitignore, src/.htaccess.in, src/Makefile.am, %src/napoveda.html.in,
+	  %src/priklady.html.in:
+
+	Úprava pro statistiky návštěvnosti.
+
+2012-01-22  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* .gitignore, -src/.htaccess, +src/.htaccess.in, src/Makefile.am,
+	  src/index.html.in:
+
+	Změna na serveru - statistiky přístupu musí být přes PHP.
+
+2010-10-19  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* NOVINKY, configure.ac:
+
+	Verze 2.0.4.
+
+	* src/scripts/styly-tvar.js, src/style/styly.css:
+
+	Zrušení výběru velikost Karla, ještě to není dokončené.
+
+	* COPYING, KOPIROVANI, src/index.html.in:
+
+	Upravený Copyright.
+
+	* Makefile.am:
+
+	Přidej .htaccess do balíku a COPYING do instalace.
+
+	* Makefile.am:
+
+	Nedávej install-sh a missing do balíku.
+
+	* src/style/format-prikladu.css:
+
+	Lepší barvy v příkladech a nápovědě - nový příkaz a cykly.
+
+2010-09-07  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* Makefile.am:
+
+	Instaluj také soubor KOPIROVANI - odkazuje se na něj index.html.
+
+	* src/index.html.in:
+
+	Opraven odkaz na stažení zdrojové verze Karla.
+
+2010-04-23  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO:
+
+	Splněný úkol (souřadnickový systém od [0,0] vlevo dole)
+
+	* TODO:
+
+	Nové úkoly (ukládání na serveru).
+
+2009-12-28  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* src/.htaccess:
+
+	Nastav prázdný handler (apache2) v adresáři src.
+
+2009-04-16  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* .gitignore, configure.ac:
+
+	Zrušen nepotřebný adresář config
+
+2009-03-12  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* src/style/format-prikladu.css:
+
+	Opravena chyba v odsazení hlavičky.
+
+2009-03-11  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* configure.ac, scripts/Makefile.am, +scripts/yuicompressor-2.4.2.jar,
+	  src/scripts/Makefile.am, src/style/Makefile.am:
+
+	Přidána komprese skriptů a stylů.
+
+	* .gitignore, Makefile.am, configure.ac, scripts/Makefile.am,
+	  %scripts/git2cl.py, %src/.htaccess, +src/Makefile.am,
+	  %src/favicon.ico, %src/images/.gitignore, %src/images/.htaccess,
+	  %src/images/Makefile.am, %src/images/src/konzola-rozbalit.svg,
+	  %src/images/src/konzola-sbalit.svg,
+	  %src/images/src/kulicky/prikaz-smaz.svg,
+	  %src/images/src/kulicky/prikaz-znacka-minus.svg,
+	  %src/images/src/kulicky/prikaz-znacka-plus.svg,
+	  %src/images/src/kulicky/znacka-1.svg,
+	  %src/images/src/kulicky/znacka-2.svg,
+	  %src/images/src/kulicky/znacka-3.svg,
+	  %src/images/src/kulicky/znacka-4.svg,
+	  %src/images/src/kulicky/znacka-5.svg,
+	  %src/images/src/kulicky/znacka-6.svg,
+	  %src/images/src/kulicky/znacka-7.svg,
+	  %src/images/src/kulicky/znacka-8.svg,
+	  %src/images/src/normalni/domov.svg,
+	  %src/images/src/normalni/karel-jih.svg,
+	  %src/images/src/normalni/karel-sever.svg,
+	  %src/images/src/normalni/karel-vychod.svg,
+	  %src/images/src/normalni/karel-zapad.svg,
+	  %src/images/src/normalni/prikaz-smaz.svg,
+	  %src/images/src/normalni/prikaz-znacka-minus.svg,
+	  %src/images/src/normalni/prikaz-znacka-plus.svg,
+	  %src/images/src/normalni/vyber.svg, %src/images/src/normalni/zed.svg,
+	  %src/images/src/normalni/znacka-1.svg,
+	  %src/images/src/normalni/znacka-2.svg,
+	  %src/images/src/normalni/znacka-3.svg,
+	  %src/images/src/normalni/znacka-4.svg,
+	  %src/images/src/normalni/znacka-5.svg,
+	  %src/images/src/normalni/znacka-6.svg,
+	  %src/images/src/normalni/znacka-7.svg,
+	  %src/images/src/normalni/znacka-8.svg,
+	  %src/images/src/prikaz-domov.svg,
+	  %src/images/src/prikaz-export-1.2.svg,
+	  %src/images/src/prikaz-export-k99.svg,
+	  %src/images/src/prikaz-mezera.svg, %src/images/src/prikaz-nacist.svg,
+	  %src/images/src/prikaz-novy-prikaz.svg,
+	  %src/images/src/prikaz-smaz-prikaz.svg,
+	  %src/images/src/prikaz-smaz-vse.svg,
+	  %src/images/src/prikaz-spustit.svg,
+	  %src/images/src/prikaz-uloz-prikaz-nove.svg,
+	  %src/images/src/prikaz-uloz-prikaz.svg,
+	  %src/images/src/prikaz-uloz.svg, %src/images/src/prikaz-zastavit.svg,
+	  %src/images/src/prikaz-zed.svg, %src/images/src/prikaz-zobrazit.svg,
+	  %src/images/src/stupnice-rychlost.svg,
+	  %src/images/src/stupnice-ukazatel-zvyrazneny.svg,
+	  %src/images/src/stupnice-ukazatel.svg,
+	  %src/images/src/styl-klasika.svg, %src/images/src/styl-kulicky.svg,
+	  %src/images/src/tlacitko-dole.svg,
+	  %src/images/src/tlacitko-nahore.svg, %src/images/src/uroven-1.svg,
+	  %src/images/src/uroven-2.svg, %src/images/src/uroven-3.svg,
+	  %src/images/src/uroven-4.svg, %src/images/src/uroven-5.svg,
+	  %src/images/src/velikost-maly.svg,
+	  %src/images/src/velikost-normalni.svg, %src/index.html.in,
+	  %src/napoveda.html, %src/priklady.html, +src/scripts/Makefile.am,
+	  %src/scripts/ajax.js, %src/scripts/kodovani-odkazu.js,
+	  %src/scripts/ladici-konzola-funkce.js,
+	  %src/scripts/ladici-konzola-tvar.js, %src/scripts/mesto-funkce.js,
+	  %src/scripts/mesto-tvar.js, %src/scripts/mys.js,
+	  %src/scripts/nacitaci-ukladaci-funkce.js,
+	  %src/scripts/nastaveni-funkce.js, %src/scripts/nastaveni-tvar.js,
+	  %src/scripts/nastroje-funkce.js, %src/scripts/nastroje-tvar.js,
+	  %src/scripts/obecne-funkce.js,
+	  %src/scripts/okno-ulozeni-a-exportu.js,
+	  %src/scripts/prikazy-funkce-editor.js,
+	  %src/scripts/prikazy-funkce-slovnik.js,
+	  %src/scripts/prikazy-jadro.js, %src/scripts/prikazy-rozpoznavani.js,
+	  %src/scripts/prikazy-tvar-editor.js,
+	  %src/scripts/prikazy-tvar-slovnik.js, %src/scripts/slovnik.js,
+	  %src/scripts/styly-funkce.js, %src/scripts/styly-tvar.js,
+	  %src/scripts/tooltip.js, %src/scripts/tvorici-funkce.js,
+	  %src/scripts/velikosti-funkce.js, %src/style/Makefile.am,
+	  %src/style/format-prikladu.css, %src/style/ladici-konzola-ie.css,
+	  %src/style/ladici-konzola.css, %src/style/mesto-kulicky-ie.css,
+	  %src/style/mesto-kulicky.css, %src/style/mesto-normalni-ie.css,
+	  %src/style/mesto-normalni.css, %src/style/mesto-obecne.css,
+	  %src/style/napoveda-ie.css, %src/style/napoveda.css,
+	  %src/style/nastaveni-ie.css, %src/style/nastaveni.css,
+	  %src/style/nastroje-kulicky-ie.css, %src/style/nastroje-kulicky.css,
+	  %src/style/nastroje-mesto.css, %src/style/nastroje-normalni-ie.css,
+	  %src/style/nastroje-normalni.css, %src/style/nastroje-obecne-ie.css,
+	  %src/style/nastroje-obecne.css, %src/style/obecny-styl.css,
+	  %src/style/prikazy-editor-ie.css, %src/style/prikazy-editor.css,
+	  %src/style/prikazy-slovnik-ie.css, %src/style/prikazy-slovnik.css,
+	  %src/style/styly-ie.css, %src/style/styly.css,
+	  %src/style/tipy-ie.css, %src/style/tipy-kulicky-ie.css,
+	  %src/style/tipy-kulicky.css, %src/style/tipy-normalni-ie.css,
+	  %src/style/tipy-normalni.css, %src/style/tipy.css,
+	  %src/style/tooltip.css, %src/style/uprav-ie.sed:
+
+	Lepší adresářová struktura.
+
+	* git2cl.py:
+
+	Lepší generování data v ChangeLogu.
+
+2008-05-20  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* NOVINKY, configure.ac, index.html:
+
+	Verze 2.0.3.
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Oprava rozpoznání cyklu bez počtu opakování pro IE7.
+
+	* +.gitignore, +images/.gitignore:
+
+	Ignorování vygenerovaných souborů.
+
+	* images/Makefile.am:
+
+	Opraveno vytváření adresářů pro obrázky.
+
+	* Makefile.am, configure.ac, +git2cl.py, -xml/config.dtd,
+	  -xml/config.xml, -xml/log2cl.xsl:
+
+	Přechod na Git, přidána podpora vytváření souboru ChangeLog.
+
+2007-12-19  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* Makefile.am, configure.ac, images/Makefile.am,
+	  images/src/prikaz-nacist.svg, images/src/prikaz-zobrazit.svg:
+
+	Vylepšeny skripty pro vytváření obrázků, přidána podpora pro
+	rsvg-convert, využití pngcrush.
+
+2007-11-30  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mys.js:
+
+	Přejmenování proměnných, aby lépe odpovídaly účelu; doplnění komentářů.
+
+2007-10-08  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/Makefile.am:
+
+	Přidej funkce pro změnu velikosti do balíku.
+
+2007-10-02  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/src/velikost-normalni.svg:
+
+	Ještě jedna varianta obrázku 14×14 normální velikosti Karla.
+
+	* images/src/velikost-normalni.svg:
+
+	Lepší obrázek 14×14 normální velikosti Karla.
+
+	* images/Makefile.am, +images/src/velikost-maly.svg,
+	  +images/src/velikost-normalni.svg, index.html, scripts/styly-tvar.js,
+	  +scripts/velikosti-funkce.js, style/styly-ie.css, style/styly.css:
+
+	Příprava pro různé velikosti Karla.
+
+2007-10-01  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mesto-funkce.js, scripts/nacitaci-ukladaci-funkce.js:
+
+	Lepší využití aktuální velikosti města při načítání a ukládání.
+
+2007-09-30  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mesto-funkce.js, scripts/mesto-tvar.js,
+	  scripts/nacitaci-ukladaci-funkce.js, scripts/nastroje-funkce.js,
+	  scripts/obecne-funkce.js:
+
+	Změna souřadnicového systému Karla, aby lépe souhlasil se zobrazenou
+	pozicí. Nyní je vnitřní pozice [0,0] zobrazena jako 1×1 (bývala to
+	pozice 1×10).
+
+	* scripts/mesto-tvar.js:
+
+	Sjednocení vytváření struktury města.
+
+	* images/src/kulicky/prikaz-znacka-minus.svg,
+	  images/src/kulicky/prikaz-znacka-plus.svg:
+
+	Posunutí symbolů pro přidání a odebrání značky ve stylu Kuličky o jeden
+	pixel doleva.
+
+2007-09-28  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO:
+
+	Další úkol: souřadnice města.
+
+	* TODO:
+
+	Nové úkoly.
+
+2007-09-24  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* NOVINKY, napoveda.html, scripts/ladici-konzola-funkce.js,
+	  scripts/nacitaci-ukladaci-funkce.js,
+	  scripts/okno-ulozeni-a-exportu.js, scripts/prikazy-rozpoznavani.js,
+	  scripts/slovnik.js:
+
+	Oprava pravopisu psaní slova řádka, aby bylo použito pouze v ženském
+	rodě.
+
+2007-09-18  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/Makefile.am:
+
+	Vylepšení vytváření obrázků.
+
+	* images/Makefile.am, style/mesto-kulicky-ie.css,
+	  style/mesto-kulicky.css, style/mesto-normalni-ie.css,
+	  style/mesto-normalni.css, style/napoveda-ie.css, style/napoveda.css,
+	  style/nastroje-kulicky-ie.css, style/nastroje-kulicky.css,
+	  style/nastroje-normalni-ie.css, style/nastroje-normalni.css,
+	  style/prikazy-editor-ie.css, style/prikazy-editor.css,
+	  style/prikazy-slovnik-ie.css, style/prikazy-slovnik.css,
+	  style/tipy-ie.css, style/tipy-kulicky-ie.css, style/tipy-kulicky.css,
+	  style/tipy-normalni-ie.css, style/tipy-normalni.css, style/tipy.css:
+
+	Příprava vytváření obrázků ve více velikostech.
+
+2007-09-16  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO:
+
+	Přidány další úkoly.
+
+	* configure.ac:
+
+	Upraven konfigurační skript.
+
+	* images/Makefile.am, %images/src/konzola-rozbalit.svg,
+	  %images/src/konzola-sbalit.svg, %images/src/kulicky/prikaz-smaz.svg,
+	  %images/src/kulicky/prikaz-znacka-minus.svg,
+	  %images/src/kulicky/prikaz-znacka-plus.svg,
+	  %images/src/kulicky/znacka-1.svg, %images/src/kulicky/znacka-2.svg,
+	  %images/src/kulicky/znacka-3.svg, %images/src/kulicky/znacka-4.svg,
+	  %images/src/kulicky/znacka-5.svg, %images/src/kulicky/znacka-6.svg,
+	  %images/src/kulicky/znacka-7.svg, %images/src/kulicky/znacka-8.svg,
+	  %images/src/normalni/domov.svg, %images/src/normalni/karel-jih.svg,
+	  %images/src/normalni/karel-sever.svg,
+	  %images/src/normalni/karel-vychod.svg,
+	  %images/src/normalni/karel-zapad.svg,
+	  %images/src/normalni/prikaz-smaz.svg,
+	  %images/src/normalni/prikaz-znacka-minus.svg,
+	  %images/src/normalni/prikaz-znacka-plus.svg,
+	  %images/src/normalni/vyber.svg, %images/src/normalni/zed.svg,
+	  %images/src/normalni/znacka-1.svg, %images/src/normalni/znacka-2.svg,
+	  %images/src/normalni/znacka-3.svg, %images/src/normalni/znacka-4.svg,
+	  %images/src/normalni/znacka-5.svg, %images/src/normalni/znacka-6.svg,
+	  %images/src/normalni/znacka-7.svg, %images/src/normalni/znacka-8.svg,
+	  %images/src/prikaz-domov.svg, %images/src/prikaz-export-1.2.svg,
+	  %images/src/prikaz-export-k99.svg, %images/src/prikaz-mezera.svg,
+	  %images/src/prikaz-nacist.svg, %images/src/prikaz-novy-prikaz.svg,
+	  %images/src/prikaz-smaz-prikaz.svg, %images/src/prikaz-smaz-vse.svg,
+	  %images/src/prikaz-spustit.svg,
+	  %images/src/prikaz-uloz-prikaz-nove.svg,
+	  %images/src/prikaz-uloz-prikaz.svg, %images/src/prikaz-uloz.svg,
+	  %images/src/prikaz-zastavit.svg, %images/src/prikaz-zed.svg,
+	  %images/src/prikaz-zobrazit.svg, %images/src/stupnice-rychlost.svg,
+	  %images/src/stupnice-ukazatel-zvyrazneny.svg,
+	  %images/src/stupnice-ukazatel.svg, %images/src/styl-klasika.svg,
+	  %images/src/styl-kulicky.svg, %images/src/tlacitko-dole.svg,
+	  %images/src/tlacitko-nahore.svg, %images/src/uroven-1.svg,
+	  %images/src/uroven-2.svg, %images/src/uroven-3.svg,
+	  %images/src/uroven-4.svg, %images/src/uroven-5.svg:
+
+	Zdroje obrázků přesunuty do nového adresáře images/src.
+
+2007-09-05  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nacitaci-ukladaci-funkce.js:
+
+	Oprava tabulátorů.
+
+2007-08-28  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nacitaci-ukladaci-funkce.js:
+
+	Upřesnění formátu ukládání v programu Visual Karel 99.
+
+2007-08-25  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nacitaci-ukladaci-funkce.js:
+
+	Opraven seznam příkazů ve varování/chybě při ukládání - přidaný příkaz
+	se nepamatoval, takže mohl být v seznamu několikrát.
+
+2007-05-13  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO:
+
+	Upraveny priority úkolů.
+
+	* images/konzola-rozbalit.svg, images/konzola-sbalit.svg,
+	  images/kulicky/prikaz-smaz.svg,
+	  images/kulicky/prikaz-znacka-minus.svg,
+	  images/kulicky/prikaz-znacka-plus.svg, images/kulicky/znacka-1.svg,
+	  images/kulicky/znacka-2.svg, images/kulicky/znacka-3.svg,
+	  images/kulicky/znacka-4.svg, images/kulicky/znacka-5.svg,
+	  images/kulicky/znacka-6.svg, images/kulicky/znacka-7.svg,
+	  images/kulicky/znacka-8.svg, images/normalni/domov.svg,
+	  images/normalni/karel-jih.svg, images/normalni/karel-sever.svg,
+	  images/normalni/karel-vychod.svg, images/normalni/karel-zapad.svg,
+	  images/normalni/prikaz-smaz.svg,
+	  images/normalni/prikaz-znacka-minus.svg,
+	  images/normalni/prikaz-znacka-plus.svg, images/normalni/vyber.svg,
+	  images/normalni/zed.svg, images/normalni/znacka-1.svg,
+	  images/normalni/znacka-2.svg, images/normalni/znacka-3.svg,
+	  images/normalni/znacka-4.svg, images/normalni/znacka-5.svg,
+	  images/normalni/znacka-6.svg, images/normalni/znacka-7.svg,
+	  images/normalni/znacka-8.svg, images/prikaz-domov.svg,
+	  images/prikaz-export-1.2.svg, images/prikaz-export-k99.svg,
+	  images/prikaz-mezera.svg, images/prikaz-nacist.svg,
+	  images/prikaz-novy-prikaz.svg, images/prikaz-smaz-prikaz.svg,
+	  images/prikaz-smaz-vse.svg, images/prikaz-spustit.svg,
+	  images/prikaz-uloz-prikaz-nove.svg, images/prikaz-uloz-prikaz.svg,
+	  images/prikaz-uloz.svg, images/prikaz-zastavit.svg,
+	  images/prikaz-zed.svg, images/prikaz-zobrazit.svg,
+	  images/stupnice-rychlost.svg,
+	  images/stupnice-ukazatel-zvyrazneny.svg,
+	  images/stupnice-ukazatel.svg, images/styl-klasika.svg,
+	  images/styl-kulicky.svg, images/tlacitko-dole.svg,
+	  images/tlacitko-nahore.svg, images/uroven-1.svg, images/uroven-2.svg,
+	  images/uroven-3.svg, images/uroven-4.svg, images/uroven-5.svg:
+
+	K obrázkům byly doplněny informace o účelu a o autorských právech.
+
+2007-03-13  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* Makefile.am, xml/config.xml, xml/log2cl.xsl:
+
+	Vylepšení vytváření seznamu změn.
+
+	* NOVINKY, configure.ac, index.html:
+
+	Verze 2.0.2.
+
+	* scripts/kodovani-odkazu.js:
+
+	Opravena změna odkazů, když není nadefinována verze Karla.
+
+	* scripts/obecne-funkce.js:
+
+	Lepší kontrola otevřeného okna (nápověda, příklady).
+
+2007-03-12  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/kodovani-odkazu.js:
+
+	Oprava verzování.
+
+	* NOVINKY:
+
+	Verze 2.0.1.
+
+	* Makefile.am, index.html, scripts/kodovani-odkazu.js,
+	  scripts/prikazy-tvar-slovnik.js:
+
+	Přesun verze Karla do proměnné v souboru index.html, kontrola přes
+	Makefile.
+
+2007-03-11  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* NOVINKY, configure.ac, scripts/prikazy-tvar-slovnik.js:
+
+	Příprava na verzi 2.0.1.
+
+	* AUTHORS, Makefile.am, +xml/config.dtd, +xml/config.xml,
+	  +xml/log2cl.xsl:
+
+	Nový proces vytváření souboru ChangeLog. Nyní používá vlastní
+	transormační soubor log2cl.xsl, který z SVN XML log formátu udělá
+	textový ChangeLog.
+
+2007-02-25  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/prikazy-tvar-editor.js, style/obecny-styl.css,
+	  style/prikazy-editor.css:
+
+	Doladění stylů pro ostatní prohlížeče.
+
+2007-02-24  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/prikazy-tvar-editor.js, scripts/prikazy-tvar-slovnik.js,
+	  style/obecny-styl.css, style/prikazy-editor.css,
+	  style/prikazy-slovnik.css:
+
+	Úprava stylů pro IE7.
+
+2007-02-10  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* AUTHORS, Makefile.am:
+
+	Úprava pro práci s SVN.
+
+2006-11-07  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO:
+
+	Doplnění úkolů.
+
+	* napoveda.html, style/napoveda-ie.css, style/napoveda.css:
+
+	Nápověda se nyní správně zobrazuje i v IE.
+
+	* style/tooltip.css:
+
+	Oprava pro IE, který bez position: relative nechtěl zobrazit nadpis a
+	popis některých nástrojových tipů.
+
+	* scripts/tooltip.js:
+
+	Oprava zjištění velikosti nástrojového tipu, kvůli tomu se špatně
+	pozicoval pod objekt (jeho výška byla jakoby nulová).
+
+2006-07-31  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Oprava čísla řádky v ladicím výstupu.
+
+	* scripts/prikazy-funkce-editor.js:
+
+	Lepší dotaz na pokračování při neuložení příkazu.
+
+	* scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js:
+
+	Oprava chyby zobrazení vybraného příkazu, pokud se výběr uložením
+	změnil.
+
+	* TODO, scripts/prikazy-jadro.js:
+
+	Úplné zakázání čehokoliv (i komentáře) po posledním příkazu KONEC.
+
+	* NOVINKY:
+
+	Doplněny novinky o nové funkce.
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Oprava zobrazení řádky při chybě. Vnitřní formát je nyní správně
+	převáděn pro zobrazení ještě ve funkci formatuj_jednu_radku.
+
+	* scripts/prikazy-jadro.js:
+
+	Sjednocení názvu proměnné cislo_radky.
+
+2006-07-28  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* NOVINKY, TODO, scripts/prikazy-funkce-slovnik.js, scripts/slovnik.js:
+
+	První komentář uvedený před názvem samotného příkazu se nyní zobrazuje v
+	nástrojovém tipu, stejně jako popis u systémových příkazů.
+
+	* TODO, scripts/prikazy-funkce-slovnik.js:
+
+	Opraveno pozicování nástrojových tipů pro příkazy ve slovníku.
+
+	* scripts/tooltip.js:
+
+	Přidání možnosti úpravy zjišťování pozice pro nástrojové tipy.
+
+	* scripts/obecne-funkce.js:
+
+	Lepší formátování ladicích výstupů.
+
+	* Makefile.am, TODO:
+
+	TODO (seznam úkolů) je nyní součástí balíku.
+	
+	Upraven seznam úkolů.
+
+	* images/Makefile.am, style/tipy.css:
+
+	Nápověda s obrázky velikosti 48×48 pixelů (namísto 32×32 pixelů).
+
+2006-07-27  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO:
+
+	Nové úkoly.
+
+	* scripts/prikazy-funkce-editor.js:
+
+	Odstranění ladicího výpisu.
+
+2006-07-17  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* TODO, scripts/prikazy-funkce-editor.js,
+	  scripts/prikazy-rozpoznavani.js:
+
+	Kontrola rekurze se starým názvem je provedena pouze při normálním
+	ukládání (existujícího) zobrazeného příkazu, takže pokud se ukládá nově,
+	projde volání pod starým názvem bez povšimnutí (protože takový příkaz
+	bude existovat i po uložení). Každé ukládání nově nemusí být
+	kontrolováno, protože běžná kontrola na existenci použitého příkazu
+	postačuje.
+
+2006-07-14  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* +TODO:
+
+	Co se má ještě udělat.
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Oprava rekurze, pokud se při ukládání měnilo jméno příkazu, který volal
+	sám sebe starým jménem.
+	
+	Oprava číslování řádek chyby.
+	
+	Zpřehlednění čtení jednotlivých řádek těla příkazu.
+
+	* scripts/prikazy-jadro.js:
+
+	Čitelnější podmínky s window.confirm. Opraveno automatické doplňování
+	příkazů.
+
+	* scripts/prikazy-funkce-editor.js:
+
+	Čitelnější podmínky s window.confirm. Kontrola čísla řádky při
+	vypisování chyby, jestli není záporná. Není nutné, ale co kdyby...
+
+	* scripts/mesto-funkce.js, scripts/prikazy-funkce-slovnik.js:
+
+	Čitelnější podmínky s window.confirm.
+
+	* Makefile.am:
+
+	Vždy vytvářej ChangeLog.
+
+	* images/normalni/domov.svg, images/normalni/karel-jih.svg,
+	  images/normalni/karel-sever.svg, images/normalni/karel-vychod.svg,
+	  images/normalni/karel-zapad.svg, images/prikaz-domov.svg,
+	  images/prikaz-export-1.2.svg, images/prikaz-export-k99.svg,
+	  -images/prikaz-karel.svg, images/prikaz-nacist.svg,
+	  images/prikaz-novy-prikaz.svg, images/prikaz-smaz-prikaz.svg,
+	  images/prikaz-spustit.svg, images/prikaz-uloz.svg,
+	  images/prikaz-zed.svg:
+
+	Lepší obrázky pro nástroje a Karla.
+
+	* images/Makefile.am:
+
+	Makefile.am nyní vytváří správně png obrázky 16x16 a 32x32 nezávisle na
+	rozlišení vstupního svg.
+
+	* scripts/prikazy-funkce-slovnik.js:
+
+	Nástrojový tip k naučeným příkazům je nyní tučně.
+
+	* napoveda.html, style/napoveda.css:
+
+	Opravy v zobrazení nápovědy s novými obrázky.
+
+2006-07-09  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* style/mesto-obecne.css, style/obecny-styl.css:
+
+	Návrat základů stylu k betě 3, protože Firefoxu 1.0.7 dělalo overflow:
+	hidden základní stránky problémy a po přezkoušení Opera zobrazuje vše
+	správně.
+
+	* style/ladici-konzola-ie.css, style/mesto-kulicky-ie.css,
+	  style/mesto-normalni-ie.css, style/napoveda-ie.css,
+	  style/nastaveni-ie.css, style/nastroje-kulicky-ie.css,
+	  style/nastroje-normalni-ie.css, style/nastroje-obecne-ie.css,
+	  style/prikazy-editor-ie.css, style/prikazy-slovnik-ie.css,
+	  style/styly-ie.css, style/tipy-ie.css, style/tipy-kulicky-ie.css,
+	  style/tipy-normalni-ie.css, style/uprav-ie.sed:
+
+	Upraveny filtry pro IE. Vypadá to, že cesta k obrázku musí být relativní
+	ke kořenovému adresáři, ne k CSS.
+
+	* Makefile.am:
+
+	Korekce vytváření balíku.
+
+	* images/normalni/karel-jih.svg, images/prikaz-novy-prikaz.svg:
+
+	Drobné úpravy ikon.
+
+	* scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js,
+	  scripts/prikazy-tvar-editor.js, scripts/prikazy-tvar-slovnik.js,
+	  scripts/tooltip.js:
+
+	Další ikony pro nástrojové tipy.
+
+	* scripts/nastroje-funkce.js, scripts/nastroje-tvar.js,
+	  scripts/tooltip.js, style/tooltip.css:
+
+	První test se zobrazením ikon v nástrojových tipech - nástroje pod
+	městem.
+
+2006-07-08  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/Makefile.am, index.html, +style/tipy-ie.css,
+	  +style/tipy-kulicky-ie.css, +style/tipy-kulicky.css,
+	  +style/tipy-normalni-ie.css, +style/tipy-normalni.css,
+	  +style/tipy.css:
+
+	Příprava stylových souborů pro nástrojové tipy.
+
+	* Makefile.am, configure.ac, +scripts/.cvsignore, +scripts/Makefile.am,
+	  +style/.cvsignore, +style/Makefile.am:
+
+	Doplněny soubory Makefile.am pro styly a skripty.
+
+	* scripts/styly-funkce.js:
+
+	Vylepšená logika načítání stylů. Ty stylové soubory, které jsou v
+	prohlížeči skryté, nebo se u nich nepodařilo zjistit ani jeden soubor,
+	jsou načteny přes XmlHttpRequest a prohlédnuty.
+
+	* .cvsignore, -VERZE, configure.ac, images/Makefile.am,
+	  -images/kulicky/Makefile.am, -images/normalni/Makefile.am:
+
+	Využití GNU autotools.
+
+2006-07-07  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* .cvsignore, -Makefile, +Makefile.am, +configure.ac,
+	  +images/.cvsignore, images/.htaccess, +images/Makefile.am,
+	  +images/konzola-rozbalit.svg, +images/konzola-sbalit.svg,
+	  images/kulicky/.cvsignore, +images/kulicky/Makefile.am,
+	  +images/kulicky/prikaz-smaz.svg,
+	  +images/kulicky/prikaz-znacka-minus.svg,
+	  +images/kulicky/prikaz-znacka-plus.svg, +images/kulicky/znacka-1.svg,
+	  +images/kulicky/znacka-2.svg, +images/kulicky/znacka-3.svg,
+	  +images/kulicky/znacka-4.svg, +images/kulicky/znacka-5.svg,
+	  +images/kulicky/znacka-6.svg, +images/kulicky/znacka-7.svg,
+	  +images/kulicky/znacka-8.svg, +images/normalni/.cvsignore,
+	  +images/normalni/Makefile.am, +images/normalni/domov.svg,
+	  +images/normalni/karel-jih.svg, +images/normalni/karel-sever.svg,
+	  +images/normalni/karel-vychod.svg, +images/normalni/karel-zapad.svg,
+	  +images/normalni/prikaz-smaz.svg,
+	  +images/normalni/prikaz-znacka-minus.svg,
+	  +images/normalni/prikaz-znacka-plus.svg, +images/normalni/vyber.svg,
+	  +images/normalni/zed.svg, +images/normalni/znacka-1.svg,
+	  +images/normalni/znacka-2.svg, +images/normalni/znacka-3.svg,
+	  +images/normalni/znacka-4.svg, +images/normalni/znacka-5.svg,
+	  +images/normalni/znacka-6.svg, +images/normalni/znacka-7.svg,
+	  +images/normalni/znacka-8.svg, +images/prikaz-domov.svg,
+	  +images/prikaz-export-1.2.svg, +images/prikaz-export-k99.svg,
+	  +images/prikaz-karel.svg, +images/prikaz-mezera.svg,
+	  +images/prikaz-nacist.svg, +images/prikaz-novy-prikaz.svg,
+	  +images/prikaz-smaz-prikaz.svg, +images/prikaz-smaz-vse.svg,
+	  +images/prikaz-spustit.svg, +images/prikaz-uloz-prikaz-nove.svg,
+	  +images/prikaz-uloz-prikaz.svg, +images/prikaz-uloz.svg,
+	  +images/prikaz-zastavit.svg, +images/prikaz-zed.svg,
+	  +images/prikaz-zobrazit.svg, +images/stupnice-rychlost.svg,
+	  +images/stupnice-ukazatel-zvyrazneny.svg,
+	  +images/stupnice-ukazatel.svg, +images/styl-klasika.svg,
+	  +images/styl-kulicky.svg, +images/tlacitko-dole.svg,
+	  +images/tlacitko-nahore.svg, +images/uroven-1.svg,
+	  +images/uroven-2.svg, +images/uroven-3.svg, +images/uroven-4.svg,
+	  +images/uroven-5.svg, style/ladici-konzola-ie.css,
+	  style/ladici-konzola.css, style/mesto-kulicky-ie.css,
+	  style/mesto-kulicky.css, style/mesto-normalni-ie.css,
+	  style/mesto-normalni.css, style/napoveda-ie.css, style/napoveda.css,
+	  style/nastaveni-ie.css, style/nastaveni.css,
+	  style/nastroje-kulicky-ie.css, style/nastroje-kulicky.css,
+	  style/nastroje-normalni-ie.css, style/nastroje-normalni.css,
+	  style/nastroje-obecne-ie.css, style/nastroje-obecne.css,
+	  style/prikazy-editor-ie.css, style/prikazy-editor.css,
+	  style/prikazy-slovnik-ie.css, style/prikazy-slovnik.css,
+	  style/styly-ie.css, style/styly.css:
+
+	Přechod z obrázků gif na png. Nyní jsou png obrázky vytvářeny ze svg.
+
+2006-07-06  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/styly-tvar.js, style/styly-ie.css, style/styly.css:
+
+	Konečná úprava nastavení stylů speciálně pro IE.
+
+	* style/mesto-obecne.css, style/obecny-styl.css, style/tooltip.css:
+
+	Drobné úpravy stylu kvůli Opeře. Nyní už se nezobrazuje zbytečně
+	posuvník.
+
+	* images/stupnice-ukazatel-zvyrazneny.gif,
+	  images/stupnice-ukazatel.gif:
+
+	Nové ukazatele.
+
+	* index.html, napoveda.html, -style/.cvsignore, style/Makefile,
+	  +style/ladici-konzola-ie.css, +style/mesto-kulicky-ie.css,
+	  +style/mesto-normalni-ie.css, +style/napoveda-ie.css,
+	  +style/nastaveni-ie.css, +style/nastroje-kulicky-ie.css,
+	  +style/nastroje-normalni-ie.css, +style/nastroje-obecne-ie.css,
+	  +style/prikazy-editor-ie.css, +style/prikazy-slovnik-ie.css,
+	  +style/styly-ie.css, +style/uprav-ie.sed:
+
+	Trochu jiný přístup k zobrazování obrázků v IE. Nyní se styly pro IE
+	nahrají navíc se stejnými pravidly, takže překryjí původní deklarace.
+
+2006-07-05  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* napoveda.html, style/napoveda.css:
+
+	Drobné opravy textu nápovědy.
+
+	* napoveda.html:
+
+	Oddělení nastavení pro IE 5.5/6 a ostatní prohlížeče.
+
+	* scripts/kodovani-odkazu.js:
+
+	Drobná změna kontroly nedefinované hodnoty.
+
+	* scripts/styly-tvar.js, style/Makefile:
+
+	Úprava výběru stylů pro nové zobrazení obrázků (pro Konqueror).
+
+	* index.html, scripts/styly-funkce.js, scripts/styly-tvar.js,
+	  style/styly.css:
+
+	Úprava výběru stylů pro nové zobrazení obrázků (pro IE).
+
+	* index.html, scripts/ladici-konzola-funkce.js,
+	  scripts/styly-funkce.js, style/Makefile:
+
+	Využití podmíněných komentářů (IE) pro rychlejší nahrávání CSS.
+
+	* .cvsignore, Makefile, +style/.cvsignore, +style/Makefile,
+	  style/ladici-konzola.css, style/mesto-kulicky.css,
+	  style/mesto-normalni.css, style/napoveda.css,
+	  style/nastroje-kulicky.css, style/nastroje-normalni.css,
+	  style/nastroje-obecne.css, style/prikazy-editor.css,
+	  style/prikazy-slovnik.css:
+
+	Oddělení nastavení pro IE 5.5/6 a ostatní prohlížeče.
+	
+	Upraven Makefile pro automatické vytváření stylových souborů.
+
+	* scripts/nastaveni-tvar.js, style/nastaveni.css:
+
+	Další pokus o vyřešení zobrazení nastavení rychlosti v IE. Nyní je
+	zvlášť ve své vrstvě ukazatel a maska.
+
+2006-07-04  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* style/nastaveni.css:
+
+	Oprava zobrazení nastavení pro Konqueror.
+
+	* scripts/nastaveni-tvar.js, style/nastaveni.css:
+
+	Předělání nastavení, aby jak stupnice, tak maska byli absolutně
+	pozicované přesně tam, kde mají být. Je to zároveň oprava pro zobrazení
+	v IE.
+
+	* scripts/ladici-konzola-tvar.js, style/ladici-konzola.css:
+
+	Změna ovládání ladicí konzole na stejný princip masky, jako je u města.
+
+	* scripts/styly-funkce.js, style/ladici-konzola.css,
+	  style/mesto-kulicky.css, style/mesto-normalni.css,
+	  style/napoveda.css, style/nastroje-kulicky.css,
+	  style/nastroje-normalni.css, style/nastroje-obecne.css,
+	  style/prikazy-editor.css, style/prikazy-slovnik.css:
+
+	Filtr je pro IE automaticky uložen v CSS a background-image je vypnut,
+	když je potřeba.
+
+	* scripts/ladici-konzola-tvar.js, style/ladici-konzola.css:
+
+	Všechno je nyní absolutně, včetně ikony pro zobrazení a skrytí ladicí
+	konzole.
+	
+	Odstraněny výplně padding a zrušeny #id.třída, protože je IE 6
+	nezpracovává správně.
+
+	* scripts/styly-funkce.js:
+
+	U IE 6 záleží, jestli se nejdříve kontroluje cssRules před rules. V
+	prvním případě nefunguje správně backgroundImage. Opraveno.
+
+	* scripts/ladici-konzola-tvar.js, style/ladici-konzola.css:
+
+	Úprava zobrazení ladicí konzoly, nyní používá absolutní pozicování.
+	Ještě zbývá upravit pro IE.
+
+	* style/tooltip.css:
+
+	Upravena velikost písma pro nástrojové tipy.
+
+2006-07-03  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* -images/stupnice-ukazatel-zvyrazneny-vybrany.gif,
+	  images/stupnice-ukazatel-zvyrazneny.gif,
+	  images/stupnice-ukazatel.gif, scripts/nastaveni-funkce.js,
+	  scripts/nastaveni-tvar.js, style/nastaveni.css:
+
+	Zrušení background-position z nastavení. Vymazání nepoužívaného
+	ukazatele (vybraný zvýrazněný).
+
+	* style/prikazy-slovnik.css:
+
+	Opravena kolize ve jmenném prostoru CSS. Třída .vybrany je nyní závislá
+	na .slovnik.
+
+	* index.html, scripts/styly-funkce.js:
+
+	Příprava pro PNG obrázky v IE 5.5 a 6. Všechny obrázky ve stylech se
+	zamění za DirectX filtr.
+
+	* scripts/kodovani-odkazu.js, scripts/obecne-funkce.js,
+	  scripts/styly-funkce.js:
+
+	Podpora pro https.
+
+2006-06-28  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* Makefile:
+
+	Přidání .htaccess do balíku.
+
+	* priklady.html, style/format-prikladu.css:
+
+	Odstraněné prázdné bloky z příkladů.
+
+2006-06-27  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* priklady.html, style/format-prikladu.css, style/napoveda.css:
+
+	Přehlednější úprava příkladů.
+
+	* scripts/okno-ulozeni-a-exportu.js:
+
+	Opraveno okno exportu, které chybně nezahrnulo tlačítko pro skrytí
+	komentářů a prázdných řádek do skupiny tlačítek.
+
+	* +images/.htaccess:
+
+	Nastavení času vypršení platnosti vyrovnávací paměti pro obrázky.
+	Opravuje chybu v IE, které při změně kaskádového stylu vždy načte
+	background-image.
+
+2006-05-04  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* style/obecny-styl.css:
+
+	Základní velikost písma je 11 typografických bodů, ne neurčitě small.
+
+	* index.html, +scripts/ajax.js, scripts/styly-funkce.js:
+
+	Oddělení funkčnosti spojené s objektem XMLHttpRequest.
+
+2006-05-03  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* style/mesto-obecne.css, style/obecny-styl.css,
+	  style/prikazy-editor.css, style/prikazy-slovnik.css,
+	  style/tooltip.css:
+
+	Všechny velikosti písma změněny na relativní (procentuálně) k velikosti
+	základního písma (značka <body>).
+
+	* scripts/obecne-funkce.js:
+
+	Odstraněna změna historie vytvářeného okna pro nápovědu a příklady.
+
+2006-05-02  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* Makefile:
+
+	Kopírování balíku do adresáře pro stažení.
+
+	* index.html, napoveda.html, %scripts/kodovani-odkazu.js,
+	  scripts/ladici-konzola-funkce.js, scripts/obecne-funkce.js:
+
+	Interní změna odkazů z oldium.net na oldium.home, pokud program běží na
+	testovacím stroji.
+
+	* priklady.html:
+
+	Nově formátované příklady. Je potřeba je lépe přeskupit, aby netvořily
+	tak dlouhý štrůdl.
+
+	* Makefile:
+
+	Příklady jsou součástí balíku.
+
+	* index.html, scripts/obecne-funkce.js, style/obecny-styl.css:
+
+	Přidána hlavička s odkazy na nápovědu a příklady. Zobrazuje také
+	základní informace o autorských právech, pravidlech kopírování s odkazem
+	na zdrojový kód.
+
+	* napoveda.html, +style/format-prikladu.css, style/napoveda.css:
+
+	Oddělení formátování příkladů v nápovědě pro sloučení s příklady
+	příkazů.
+
+	* KOPIROVANI:
+
+	Oprava překladu pravidel kopírování.
+
+2006-04-29  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* karel.webprj, napoveda.html, +style/napoveda.css:
+
+	Dopsání nápovědy a zpřehlednění použité struktury.
+
+	* index.html, scripts/mesto-tvar.js, scripts/prikazy-tvar-editor.js,
+	  style/mesto-obecne.css:
+
+	Přidání nadpisu pro město.
+	
+	Změna editoru na příkazové pole - souhlasí s termínem v nápovědě.
+
+2006-04-27  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* napoveda.html:
+
+	Téměř dokončená nápověda, chybí poslední část - ovládání rychlosti
+	pohybu.
+
+	* napoveda.html, +scripts/kodovani-mailu.js:
+
+	Nová nápověda (zatím jen část). Platné XHTML 1.1.
+
+	* Makefile:
+
+	Nápověda je součástí balíku.
+
+	* index.html, scripts/mesto-tvar.js, scripts/nastaveni-tvar.js,
+	  scripts/nastroje-tvar.js, scripts/okno-ulozeni-a-exportu.js,
+	  scripts/prikazy-tvar-editor.js, scripts/prikazy-tvar-slovnik.js,
+	  scripts/styly-funkce.js, scripts/styly-tvar.js,
+	  scripts/tvorici-funkce.js:
+
+	Nyní tvoří platné XHTML 1.1.
+
+2006-04-24  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* +images/stupnice-ukazatel-zvyrazneny-vybrany.gif,
+	  scripts/nastaveni-funkce.js, style/nastaveni.css:
+
+	Přidán jeden stav pro výběr rychlosti - zvýrazněný a vybraný.
+
+2006-04-21  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* .cvsignore, +AUTHORS, +COPYING, +KOPIROVANI, +Makefile, +NOVINKY,
+	  +VERZE, images/konzola-rozbalit.gif, images/konzola-sbalit.gif,
+	  images/kulicky/prikaz-smaz.gif,
+	  images/kulicky/prikaz-znacka-minus.gif,
+	  images/kulicky/prikaz-znacka-plus.gif, images/kulicky/znacka-1.gif,
+	  images/kulicky/znacka-2.gif, images/kulicky/znacka-3.gif,
+	  images/kulicky/znacka-4.gif, images/kulicky/znacka-5.gif,
+	  images/kulicky/znacka-6.gif, images/kulicky/znacka-7.gif,
+	  images/kulicky/znacka-8.gif, images/normalni/domov.gif,
+	  images/normalni/karel-jih.gif, images/normalni/karel-sever.gif,
+	  images/normalni/karel-vychod.gif, images/normalni/karel-zapad.gif,
+	  images/normalni/prikaz-smaz.gif,
+	  images/normalni/prikaz-znacka-minus.gif,
+	  images/normalni/prikaz-znacka-plus.gif, images/normalni/vyber.gif,
+	  images/normalni/zed.gif, images/normalni/znacka-1.gif,
+	  images/normalni/znacka-2.gif, images/normalni/znacka-3.gif,
+	  images/normalni/znacka-4.gif, images/normalni/znacka-5.gif,
+	  images/normalni/znacka-6.gif, images/normalni/znacka-7.gif,
+	  images/normalni/znacka-8.gif, images/prikaz-domov.gif,
+	  images/prikaz-export-1.2.gif, images/prikaz-export-k99.gif,
+	  images/prikaz-karel.gif, images/prikaz-mezera.gif,
+	  images/prikaz-nacist.gif, images/prikaz-novy-prikaz.gif,
+	  images/prikaz-smaz-prikaz-2.gif, images/prikaz-smaz-prikaz.gif,
+	  images/prikaz-smaz-vse.gif, images/prikaz-spustit.gif,
+	  images/prikaz-uloz-prikaz-nove.gif, images/prikaz-uloz-prikaz.gif,
+	  images/prikaz-uloz.gif, images/prikaz-zastavit.gif,
+	  images/prikaz-zed.gif, images/prikaz-zobrazit.gif,
+	  images/stupnice-rychlost.gif,
+	  images/stupnice-ukazatel-zvyrazneny.gif,
+	  images/stupnice-ukazatel.gif, images/styl-klasika.gif,
+	  images/styl-kulicky.gif, images/tlacitko-dole.gif,
+	  images/tlacitko-nahore.gif, images/uroven-1.gif, images/uroven-2.gif,
+	  images/uroven-3.gif, images/uroven-4.gif, images/uroven-5.gif,
+	  index.html, karel.session, karel.webprj, +napoveda.html,
+	  +priklady.html, scripts/ladici-konzola-funkce.js,
+	  scripts/ladici-konzola-tvar.js, scripts/mesto-funkce.js,
+	  scripts/mesto-tvar.js, scripts/mys.js,
+	  scripts/nacitaci-ukladaci-funkce.js, scripts/nastaveni-funkce.js,
+	  scripts/nastaveni-tvar.js, scripts/nastroje-funkce.js,
+	  scripts/nastroje-tvar.js, scripts/obecne-funkce.js,
+	  scripts/okno-ulozeni-a-exportu.js, scripts/prikazy-funkce-editor.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/prikazy-jadro.js,
+	  scripts/prikazy-rozpoznavani.js, scripts/prikazy-tvar-editor.js,
+	  scripts/prikazy-tvar-slovnik.js, scripts/slovnik.js,
+	  scripts/styly-funkce.js, scripts/styly-tvar.js, scripts/tooltip.js,
+	  scripts/tvorici-funkce.js, style/ladici-konzola.css,
+	  style/mesto-kulicky.css, style/mesto-normalni.css,
+	  style/mesto-obecne.css, style/nastaveni.css,
+	  style/nastroje-kulicky.css, style/nastroje-mesto.css,
+	  style/nastroje-normalni.css, style/nastroje-obecne.css,
+	  style/obecny-styl.css, style/prikazy-editor.css,
+	  style/prikazy-slovnik.css, style/styly.css, style/tooltip.css:
+
+	Nový copyright a novinky.
+
+2006-04-18  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nastaveni-funkce.js, scripts/prikazy-jadro.js:
+
+	Umožnění změny časovače uprostřed chodu. Při každé změně rychlosti se
+	přepočítá, jestli už měl být časovač spuštěn, nebo kdy má být spuštěn.
+	Změna rychlosti tak reaguje okamžitě.
+
+	* scripts/styly-funkce.js:
+
+	Skutečné asynchronní nahrání obrázků do vyrovnávací paměti. Nyní funguje
+	i v IE.
+
+	* +images/stupnice-rychlost.gif,
+	  +images/stupnice-ukazatel-zvyrazneny.gif,
+	  +images/stupnice-ukazatel.gif, index.html, karel.session,
+	  karel.webprj, +scripts/nastaveni-funkce.js,
+	  +scripts/nastaveni-tvar.js, scripts/prikazy-jadro.js,
+	  +style/nastaveni.css:
+
+	Naprogramováno nastavování rychlosti pohybu karla.
+	
+	Změněna logika rychlosti vykonávání příkazů. Nyní se smyčka vykonávání
+	příkazů ukončí nejdéle po 25 milisekundách, po 15 příkazech, nebo po
+	akci, či chybě - podle toho, co přijde dřív.
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Oprava chyby při nahrazování mezer a při dělení textového řetězce podle
+	mezer.
+
+	* scripts/ladici-konzola-funkce.js:
+
+	Používání cookie pro uložení úrovně ladění.
+
+2006-04-16  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* karel.session, karel.webprj:
+
+	Nové řídicí soubory pro program Quanta Plus.
+
+	* index.html:
+
+	Odstranění testovacích příkazů.
+
+	* scripts/slovnik.js:
+
+	Výstižnější popis atributů kompatibilita a verze_ulozeni.
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Zrušení kontroly \s v regulárním výrazu (kvůli Konqueroru).
+
+	* scripts/prikazy-jadro.js:
+
+	Nevypisovat informace o příkazech při kontrole syntaxe.
+
+2006-04-15  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/prikazy-jadro.js:
+
+	Prodleva 500ms.
+
+	* scripts/prikazy-funkce-slovnik.js:
+
+	Přidáno testování spuštěného příkazu, když se má ukládat a načítat.
+
+	* scripts/nacitaci-ukladaci-funkce.js:
+
+	Oprava chyby s nedefinovaným indexem.
+
+	* scripts/prikazy-funkce-slovnik.js, scripts/prikazy-rozpoznavani.js:
+
+	Pár změn textů.
+
+	* scripts/mesto-funkce.js, scripts/nacitaci-ukladaci-funkce.js,
+	  scripts/prikazy-funkce-slovnik.js:
+
+	Dokončené nahrávání slovníku.
+
+2006-04-14  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nacitaci-ukladaci-funkce.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/prikazy-rozpoznavani.js,
+	  scripts/slovnik.js, scripts/styly-funkce.js:
+
+	Vylepšená kontrola chyb načítání města a dokončena implementace načítání
+	slovníku se základní kontrolou těla příkazů. Zbývá doplnit výměnu
+	starého slovníku za nový.
+
+2006-04-13  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, scripts/mesto-funkce.js,
+	  scripts/nacitaci-ukladaci-funkce.js, scripts/nastroje-funkce.js,
+	  scripts/prikazy-funkce-slovnik.js, +scripts/slovnik.js:
+
+	Načítání města.
+	
+	Hotova základní implementace načítání města, potřebuje vyzkoušet.
+
+	* scripts/prikazy-rozpoznavani.js:
+
+	Ušetšení jednoho escape() a unescape().
+
+	* scripts/nacitaci-ukladaci-funkce.js:
+
+	Nahrazení funkce replace() jednoduchým slice() pro odstranění posledního
+	znaku '\n', který je přítomen vždy.
+
+2006-04-12  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nacitaci-ukladaci-funkce.js, scripts/nastroje-funkce.js,
+	  scripts/okno-ulozeni-a-exportu.js, scripts/prikazy-funkce-editor.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/prikazy-jadro.js,
+	  scripts/prikazy-rozpoznavani.js, scripts/styly-tvar.js:
+
+	Příkazy se nyní vnitřně zpracovávají ve formě escape(), protože
+	Konqueror nezvládá replace() v Unicode a je bezpečnější hledat mezery v
+	escape sekvencích %NN.
+	
+	Oprava indentace v souborech.
+
+	* scripts/mesto-funkce.js:
+
+	Oprava podmínky JE ZEĎ.
+
+2006-04-11  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/nacitaci-ukladaci-funkce.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/prikazy-rozpoznavani.js:
+
+	Doděláno ukládání do nejstarší verze, minimální verzi lze vynutit (a
+	končí chybou, pokud nelze splnit).
+	
+	Vylepšené informování o neproveditelnosti ukládání. Výpis varování,
+	pokud se nějaká informace uložením ztratí.
+
+	* scripts/prikazy-jadro.js:
+
+	Vylepšení ukončení rychlé akce, takže po příkazu POMALU (KONEC) čeká,
+	jestliže se v rychlém bloku provedla akce.
+
+2006-04-10  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/okno-ulozeni-a-exportu.js:
+
+	Opravena chybka s HTML znaky, takže nyní lze v příkazech použít '<', '>'
+	i '&'.
+
+	* -export-mesto.html, -export-slovnik.html, index.html, karel.webprj,
+	  scripts/nacitaci-ukladaci-funkce.js,
+	  scripts/okno-ulozeni-a-exportu.js, -style/ukladani-export.css,
+	  -ulozit.html:
+
+	Ukládání a export převedeno do funkce. Nyní se všechna okna vytváří v
+	aplikaci.
+
+	* index.html, scripts/obecne-funkce.js, scripts/prikazy-tvar-editor.js,
+	  scripts/styly-funkce.js:
+
+	Lepší nahrávání obrázků do vyrovnávací paměti - až po načtení a
+	zobrazení dokumentu.
+
+2006-04-09  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/prikazy-funkce-slovnik.js, scripts/styly-funkce.js:
+
+	Přidáno trocha ladění načítání obrázků, protože to nefunguje v IE.
+
+2006-04-08  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* +export-mesto.html, +export-slovnik.html,
+	  +images/prikaz-export-1.2.gif, %images/prikaz-export-k99.gif,
+	  index.html, karel.webprj, scripts/ladici-konzola-funkce.js,
+	  scripts/mesto-funkce.js, scripts/mesto-tvar.js,
+	  +scripts/nacitaci-ukladaci-funkce.js, scripts/nastroje-funkce.js,
+	  +scripts/okno-ulozeni-a-exportu.js, scripts/prikazy-funkce-editor.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/prikazy-jadro.js,
+	  scripts/prikazy-rozpoznavani.js, style/nastroje-normalni.css,
+	  style/prikazy-slovnik.css, +style/ukladani-export.css, +ulozit.html:
+
+	Dokončeno rozpoznávání a formátování příkazů.
+	
+	Dokončeno vytváření, mazání a editace příkazů.
+	
+	Uděláno ukládání a export příkazů, nefunguje vždy a všude.
+
+2006-04-02  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mys.js, scripts/obecne-funkce.js,
+	  scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js,
+	  scripts/prikazy-jadro.js, scripts/prikazy-rozpoznavani.js,
+	  scripts/prikazy-tvar-editor.js:
+
+	Dokončena funkcionalita pro vytváření, editaci a mazání příkazů.
+	
+	Je potřeba dokončit uživatelské rozhraní (rychlost provádění), doplnit
+	rozpoznávání a formátování příkazů, ukládání a načítání slovníku a
+	města.
+
+2006-04-01  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mesto-funkce.js, scripts/mys.js,
+	  scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js,
+	  scripts/prikazy-jadro.js, scripts/prikazy-rozpoznavani.js,
+	  scripts/prikazy-tvar-slovnik.js, scripts/tvorici-funkce.js:
+
+	Opraveno spouštění, doplňování konců.
+
+2006-03-22  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, scripts/prikazy-funkce-editor.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/prikazy-jadro.js,
+	  scripts/prikazy-rozpoznavani.js:
+
+	Doplnění provádění o prázdné funkce a drobné opravy.
+
+2006-03-21  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, karel.webprj, scripts/mesto-funkce.js,
+	  scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js,
+	  scripts/prikazy-jadro.js, +scripts/prikazy-rozpoznavani.js,
+	  scripts/prikazy-tvar-editor.js, style/prikazy-editor.css:
+
+	Základní funkcionalita ukládání. Ještě chybí podpora kontroly syntaxe a
+	je potřeba dopsat rozpoznávání, formátování, spouštění a kontrola
+	syntaxe většiny příkazů. Implementace jednotlivých funkcí by měla být
+	jednoduchá.
+
+	* scripts/obecne-funkce.js:
+
+	Přidána trocha komentářů.
+	
+	Přidána chytrá funkce nastavující text nějakého elementu.
+
+2006-03-16  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/ladici-konzola-funkce.js, scripts/nastroje-funkce.js,
+	  scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js:
+
+	Využívání nového konstruktoru objektu Mys s tooltipem.
+
+	* scripts/mys.js, scripts/tooltip.js:
+
+	Přidána trocha komentářů.
+	
+	Úprava konstruktoru pro Mys, nyní přijímá i instanci tooltipu.
+
+2006-03-15  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mys.js, scripts/obecne-funkce.js, scripts/tooltip.js,
+	  scripts/tvorici-funkce.js:
+
+	Úprava obsluhy událostí pro IE 6, které nepředává první parametr. Místo
+	toho má globální proměnnou event. Je zajímavé, že to samé funguje při
+	vytváření stránky, ale ne při dynamickém doplňování příkazů.
+
+	* scripts/ladici-konzola-funkce.js, scripts/ladici-konzola-tvar.js,
+	  scripts/mesto-funkce.js, scripts/mys.js, scripts/nastroje-funkce.js,
+	  scripts/nastroje-tvar.js, scripts/obecne-funkce.js,
+	  scripts/prikazy-funkce-editor.js, scripts/prikazy-funkce-slovnik.js,
+	  scripts/prikazy-tvar-editor.js, scripts/prikazy-tvar-slovnik.js,
+	  scripts/tooltip.js, scripts/tvorici-funkce.js, style/tooltip.css:
+
+	Kompletní přechod na nové nástrojové tipy.
+
+2006-03-13  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, karel.webprj, scripts/ladici-konzola-funkce.js,
+	  scripts/mys.js, scripts/nastroje-funkce.js, scripts/nastroje-tvar.js,
+	  scripts/obecne-funkce.js, scripts/prikazy-funkce-editor.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/tooltip.js,
+	  scripts/tvorici-funkce.js, style/nastroje-obecne.css,
+	  style/obecny-styl.css, +style/tooltip.css:
+
+	Přechod na nové nástrojové tipy.
+	
+	Objekt myši by se měl zajímat pouze o parametr info, proto byl přidán
+	nový parametr detail, který se využije hlavně v nástrojových tipech.
+
+2006-03-09  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, scripts/nastroje-funkce.js, scripts/obecne-funkce.js,
+	  scripts/prikazy-funkce-slovnik.js, scripts/tooltip.js:
+
+	Základní pozicování tooltipů, zatím pouze podle levého a pravého okraje.
+
+2006-03-08  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, scripts/obecne-funkce.js, scripts/tooltip.js,
+	  style/obecny-styl.css:
+
+	Zjišťování velikosti okna a stránky.
+
+2006-03-07  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mys.js, scripts/obecne-funkce.js:
+
+	Úprava pro zdrojový element události pro IE 6.
+
+	* index.html, karel.webprj, scripts/mys.js, scripts/nastroje-funkce.js,
+	  scripts/obecne-funkce.js, +scripts/tooltip.js,
+	  style/nastroje-obecne.css:
+
+	Základní funkcionalita tooltipů.
+
+2006-03-01  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/prikaz-export.gif, images/prikaz-nacist.gif,
+	  images/prikaz-novy-prikaz.gif, -images/prikaz-uloz-jako.gif,
+	  +images/prikaz-uloz-prikaz-nove.gif, +images/prikaz-uloz-prikaz.gif,
+	  images/prikaz-uloz.gif, images/prikaz-zobrazit.gif, karel.webprj,
+	  style/prikazy-editor.css:
+
+	Úprava ikon. Zesvětleny ikony disket pro ukládání a změněny ikony pro
+	slovník (zobrazit, uložit, uložit nově).
+
+	* index.html, karel.webprj, +scripts/prikazy-funkce-editor.js,
+	  %scripts/prikazy-funkce-slovnik.js, +scripts/prikazy-tvar-editor.js,
+	  %scripts/prikazy-tvar-slovnik.js, scripts/tvorici-funkce.js,
+	  style/nastroje-normalni.css, style/nastroje-obecne.css,
+	  style/obecny-styl.css, +style/prikazy-editor.css,
+	  %style/prikazy-slovnik.css:
+
+	Přidán editor příkazů.
+
+2006-02-28  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/prikaz-mezera.gif, index.html, karel.webprj,
+	  scripts/nastroje-funkce.js, scripts/nastroje-tvar.js,
+	  +style/nastroje-mesto.css, style/nastroje-obecne.css,
+	  style/prikazy.css:
+
+	Všechny tlačítka mají základní velikost 20x20 pixelů. Nástrojová lišta
+	je také v základu bez okrajů. Pro skutečné zobrazení je dobré mít
+	velikost tlačítka 22 pixelů, posunout mezeru na left:1px a nastavit
+	okraj pro nástrojovou lištu na 2px shora, zespodu a zleva.
+
+	* index.html, scripts/nastroje-tvar.js, scripts/prikazy-tvar.js,
+	  scripts/tvorici-funkce.js, style/ladici-konzola.css,
+	  style/mesto-obecne.css, style/nastroje-obecne.css,
+	  style/obecny-styl.css, style/prikazy.css:
+
+	Změny velikostí, aby jednotlivá tlačítka měla přesně 20 pixelů a ne 24.
+	Ještě to chce drobné úpravy, protože momentálně každé tlačítko má šířku
+	22 pixelů.
+
+2006-02-26  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, scripts/ladici-konzola-funkce.js,
+	  scripts/ladici-konzola-tvar.js, scripts/nastroje-funkce.js,
+	  scripts/nastroje-tvar.js, scripts/prikazy-funkce.js,
+	  scripts/prikazy-tvar.js, scripts/tvorici-funkce.js,
+	  style/mesto-obecne.css, style/nastroje-normalni.css,
+	  style/nastroje-obecne.css, style/prikazy.css:
+
+	Umístění struktur nástrojových lišt do polí.
+	
+	Oprava velikostí ve stylech pro smenšená okna (hlavně přechod z
+	vlastnosti height na min-height).
+	
+	Drobná úpravy nápovědy k tlačítku pro ukázání ladicí konzole (pro
+	Operu).
+
+	* images/prikaz-novy-prikaz.gif, +images/prikaz-smaz-prikaz-2.gif,
+	  images/prikaz-smaz-prikaz.gif:
+
+	Malá úprava obrázků.
+
+	* index.html, karel.webprj, scripts/nastroje-tvar.js,
+	  scripts/prikazy-funkce.js, +scripts/tvorici-funkce.js:
+
+	Napsány nové funkce pro vytvoření nástrojové lišty.
+
+2006-02-25  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* %images/kulicky/prikaz-smaz.gif,
+	  %images/kulicky/prikaz-znacka-minus.gif,
+	  %images/kulicky/prikaz-znacka-plus.gif,
+	  %images/normalni/prikaz-smaz.gif,
+	  %images/normalni/prikaz-znacka-minus.gif,
+	  %images/normalni/prikaz-znacka-plus.gif, %images/prikaz-domov.gif,
+	  +images/prikaz-export.gif, %images/prikaz-karel.gif,
+	  %images/prikaz-mezera.gif, +images/prikaz-nacist.gif,
+	  +images/prikaz-novy-prikaz.gif, +images/prikaz-smaz-prikaz.gif,
+	  %images/prikaz-smaz-vse.gif, %images/prikaz-spustit.gif,
+	  +images/prikaz-uloz-jako.gif, +images/prikaz-uloz.gif,
+	  %images/prikaz-zastavit.gif, %images/prikaz-zed.gif,
+	  +images/prikaz-zobrazit.gif, karel.webprj,
+	  scripts/nastroje-funkce.js, scripts/prikazy-funkce.js,
+	  scripts/prikazy-jadro.js, style/nastroje-kulicky.css,
+	  style/nastroje-normalni.css, style/nastroje-obecne.css,
+	  style/prikazy.css:
+
+	Přejmenování ikon v nástrojové liště.
+	
+	Přidání potřebných ikon pro slovník.
+	
+	Základní příkazy slovníku fungují. Je potřeba dokončit uživatelské
+	rozhraní slovníku.
+
+	* images/konzola-rozbalit.gif, images/konzola-sbalit.gif,
+	  +images/slovnik-spustit.gif, +images/slovnik-zastavit.gif,
+	  %images/tlacitko-dole.gif, %images/tlacitko-nahore.gif,
+	  images/uroven-1.gif, images/uroven-2.gif, images/uroven-3.gif,
+	  images/uroven-4.gif, index.html, karel.webprj,
+	  scripts/mesto-funkce.js, scripts/mesto-tvar.js,
+	  scripts/nastroje-funkce.js, scripts/nastroje-tvar.js,
+	  +scripts/prikazy-formatovani.js, +scripts/prikazy-funkce.js,
+	  +scripts/prikazy-jadro.js, +scripts/prikazy-tvar.js,
+	  style/nastroje-normalni.css, style/nastroje-obecne.css,
+	  style/obecny-styl.css, +style/prikazy.css, style/styly.css:
+
+	Globální funkce přesunuty do odpovídajících objektů.
+	
+	Základní implementace slovníku (KROK, VLEVO-VBOK, POLOŽ, ZVEDNI).
+
+	* scripts/mys.js:
+
+	Přidána možnost zrušení výběru myši.
+
+2006-02-19  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, karel.webprj, style/mesto-obecne.css,
+	  style/obecny-styl.css, +style/styly.css:
+
+	Příprava na sloupec se slovníkem.
+
+	* karel.webprj, scripts/styly-funkce.js, scripts/styly-tvar.js:
+
+	Styly jdou vybrat klávesou. Událost onclick nefunguje jenom v Opeře, kde
+	lze použít onkeyup a zkontrolovat, který ze stylů je v tu dobu vybrán.
+
+	* +images/kulicky/nastroje-smaz.gif,
+	  +images/kulicky/nastroje-znacka-minus.gif,
+	  +images/kulicky/nastroje-znacka-plus.gif,
+	  images/kulicky/znacka-1.gif, images/kulicky/znacka-2.gif,
+	  images/kulicky/znacka-3.gif, images/kulicky/znacka-4.gif,
+	  images/kulicky/znacka-5.gif, images/kulicky/znacka-6.gif,
+	  images/kulicky/znacka-7.gif, images/kulicky/znacka-8.gif,
+	  +images/styl-klasika.gif, +images/styl-kulicky.gif, index.html,
+	  karel.webprj, scripts/styly-funkce.js, scripts/styly-tvar.js,
+	  +style/nastroje-kulicky.css, style/obecny-styl.css:
+
+	Změněny a doplněny ikonky pro styl Kuličky.
+	
+	Změna stylu reaguje na klik a ne na onchange/onselect - toto nepracuje
+	všude. Ještě to chce zkusit, co se děje při změně stylu klávesnicí.
+
+	* scripts/mys.js:
+
+	Opraveno zvýraznění prvku, pokud přišel pouze klik.
+
+2006-02-16  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* karel.webprj, scripts/styly-funkce.js:
+
+	Načítání obrázků funguje i pod IE. Nefunguje to v prohlížeči Opera
+	8.51/Linux.
+
+	* +images/kulicky/znacka-1.gif, +images/kulicky/znacka-2.gif,
+	  +images/kulicky/znacka-3.gif, +images/kulicky/znacka-4.gif,
+	  +images/kulicky/znacka-5.gif, +images/kulicky/znacka-6.gif,
+	  +images/kulicky/znacka-7.gif, +images/kulicky/znacka-8.gif,
+	  images/uroven-1.gif, images/uroven-2.gif, images/uroven-3.gif,
+	  images/uroven-4.gif, +images/uroven-5.gif, index.html, karel.webprj,
+	  -scripts/formatovani.js, scripts/ladici-konzola-funkce.js,
+	  scripts/mesto-funkce.js, scripts/mys.js, +scripts/obecne-funkce.js,
+	  +scripts/styly-funkce.js, +scripts/styly-tvar.js,
+	  style/ladici-konzola.css, style/mesto-kulicky.css,
+	  style/mesto-normalni.css, style/nastroje-normalni.css,
+	  +style/obecny-styl.css:
+
+	Přidány funkce pro práci s cookie.
+	
+	Přidána kontrola stylu a nový styl Kuličky.
+	
+	Rozšířeno ladění o DETAIL (detailní informace o činnosti).
+
+2006-02-14  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* style/ladici-konzola.css:
+
+	Nahrazení vlastnosti border vlastními prostředky (vnější box s černým
+	pozadím s vnitřním posunutým boxem). V IE se nešlo správně dopočítat
+	rozměru s width:auto, ani s width:319px a při width:100% ostatní
+	prohlížeče (správně) přesahují obsahující box.
+
+	* scripts/ladici-konzola-funkce.js, scripts/ladici-konzola-tvar.js,
+	  scripts/mys.js, style/ladici-konzola.css:
+
+	Změny pro IE. Ještě je potřeba ošetřit width:auto v konzoli.
+
+2006-02-13  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, karel.webprj, +scripts/formatovani.js,
+	  scripts/ladici-konzola-funkce.js, scripts/ladici-konzola-tvar.js,
+	  scripts/mesto-funkce.js, scripts/mys.js, scripts/nastroje-funkce.js,
+	  style/ladici-konzola.css:
+
+	Plná podpora pro různé úrovně ladění.
+
+2006-02-12  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/ladici-konzola-tvar.js, style/ladici-konzola.css:
+
+	Odstraněny tabulky z ladicí konzoly.
+
+	* index.html, karel.webprj, scripts/mesto-funkce.js,
+	  scripts/mesto-tvar.js, scripts/mys.js, scripts/nastroje-funkce.js,
+	  scripts/nastroje-tvar.js, style/mesto-normalni.css,
+	  style/mesto-obecne.css, style/nastroje-normalni.css,
+	  style/nastroje-obecne.css:
+
+	První fáze přeměny tabulek na <div>.
+	
+	Další úpravy ovladače myši.
+
+2006-02-11  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* index.html, karel.webprj, scripts/ladici-konzola-funkce.js,
+	  scripts/mesto-funkce.js, scripts/mesto-tvar.js, +scripts/mys.js,
+	  scripts/nastroje-funkce.js:
+
+	Experimentální podpora objektu myši.
+
+2006-02-04  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/konzola-rozbalit.gif, images/konzola-sbalit.gif,
+	  +images/uroven-1.gif, +images/uroven-2.gif, +images/uroven-3.gif,
+	  +images/uroven-4.gif, index.html, karel.webprj,
+	  +scripts/ladici-konzola-funkce.js, +scripts/ladici-konzola-tvar.js,
+	  scripts/nastroje-funkce.js, style/ladici-konzola.css:
+
+	Nedokončená podpora různé úrovně ladění.
+
+2006-02-03  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* +images/konzola-rozbalit.gif, +images/konzola-sbalit.gif, index.html,
+	  karel.webprj, scripts/ladici-konzola.js, style/ladici-konzola.css,
+	  style/mesto-obecne.css:
+
+	Schovávání výpisu.
+
+	* favicon.ico:
+
+	Nová ikona webu.
+
+2006-02-02  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* +favicon.ico, index.html, karel.webprj, scripts/ladici-konzola.js,
+	  scripts/mesto-funkce.js, scripts/mesto-tvar.js:
+
+	Vylepšená ladicí konzola o limit počtu řádek. Ještě přidat úroveň zápisu
+	a bude to perfektní.
+	
+	Malé promazání nepoužívaných funkcí.
+
+2006-02-01  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* scripts/mesto-funkce.js, style/ladici-konzola.css:
+
+	Změněn mechanismus kliků ve městě - reaguje se na puštění tlačítka,
+	pokud k němu došlo ve stejném políčku, jako se stisklo, a pokud se
+	nehnulo myší vně políčka.
+
+	* images/normalni/nastroje-smaz-vse.gif,
+	  images/normalni/nastroje-smaz.gif, images/normalni/nastroje-zed.gif,
+	  index.html, karel.webprj, +scripts/ladici-konzola.js,
+	  scripts/mesto-funkce.js, scripts/mesto-tvar.js,
+	  scripts/nastroje-funkce.js, scripts/nastroje-tvar.js,
+	  +style/ladici-konzola.css, style/mesto-kulicky.css,
+	  style/nastroje-normalni.css, style/nastroje-obecne.css:
+
+	Přidána ladicí konzola.
+	
+	Pro město bude lepší kontrolovat pouštění tlačítka myši v políčku, kde
+	bylo tlačítko stisknuto - spíše než reagovat na klik.
+
+2006-01-31  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* images/normalni/nastroje-mezera.gif,
+	  +images/normalni/nastroje-tlacitko-dole.gif,
+	  +images/normalni/nastroje-tlacitko-nahore.gif, index.html,
+	  scripts/mesto-funkce.js, scripts/nastroje-funkce.js,
+	  scripts/nastroje-tvar.js, style/nastroje-obecne.css:
+
+	Doplněno zvedání tlačítek. Je potřeba přidat masku přes ikonky, protože
+	takhle onmouseover a onmouseout reaguje prapodivně.
+
+	* +images/normalni/nastroje-domov.gif,
+	  +images/normalni/nastroje-karel.gif,
+	  +images/normalni/nastroje-mezera.gif,
+	  +images/normalni/nastroje-smaz-vse.gif,
+	  +images/normalni/nastroje-smaz.gif,
+	  +images/normalni/nastroje-zed.gif,
+	  +images/normalni/nastroje-znacka-minus.gif,
+	  +images/normalni/nastroje-znacka-plus.gif, index.html, karel.webprj,
+	  scripts/mesto-funkce.js, scripts/mesto-tvar.js,
+	  +scripts/nastroje-funkce.js, +scripts/nastroje-tvar.js,
+	  style/mesto-normalni.css, %style/mesto-obecne.css,
+	  +style/nastroje-normalni.css, +style/nastroje-obecne.css:
+
+	Přidány nástroje k městu. Funguje pohyb kurzoru se zobrazením pozice.
+
+2006-01-29  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* +index.html, -karel.html:
+
+	Změněn karel.html na index.html.
+
+2006-01-24  Oldřich Jedlička <oldium.pro@seznam.cz>
+
+	* style/normalni.css:
+
+	Oprava pro Operu 8.51. Teď už to funguje.
+
+	* .htaccess, +images/normalni/domov.gif,
+	  +images/normalni/karel-jih.gif, +images/normalni/karel-sever.gif,
+	  +images/normalni/karel-vychod.gif, +images/normalni/karel-zapad.gif,
+	  +images/normalni/vyber.gif, %images/normalni/zed.gif,
+	  %images/normalni/znacka-1.gif, %images/normalni/znacka-2.gif,
+	  %images/normalni/znacka-3.gif, %images/normalni/znacka-4.gif,
+	  %images/normalni/znacka-5.gif, %images/normalni/znacka-6.gif,
+	  %images/normalni/znacka-7.gif, %images/normalni/znacka-8.gif,
+	  karel.html, +scripts/mesto-funkce.js, +scripts/mesto-tvar.js,
+	  -scripts/mesto.js, +style/mesto-kulicky.css,
+	  +style/mesto-normalni.css, +style/normalni.css:
+
+	Implementace pracující pod IE 6, Firefox 1.0.4 a 1.5, Konqueror 3.5.
+	Opera 8.51 se vzpírá.
+
+	* +.cvsignore, +.htaccess, +.project, +images/zed.gif,
+	  +images/znacka_1.gif, +images/znacka_2.gif, +images/znacka_3.gif,
+	  +images/znacka_4.gif, +images/znacka_5.gif, +images/znacka_6.gif,
+	  +images/znacka_7.gif, +images/znacka_8.gif, +karel.html,
+	  +karel.session, +karel.webprj, +scripts/mesto.js:
+
+	První pokus.

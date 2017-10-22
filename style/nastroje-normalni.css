@@ -1,0 +1,59 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Barvy a obrázky pro nástroje */
+
+#nastroje-krizek {
+	background-image: url("../images/16x16/prikaz-krizek.png");
+}
+
+#nastroje-kolecko {
+	background-image: url("../images/16x16/prikaz-kolecko.png");
+}
+
+#nastroje-karel {
+	background-image: url("../images/16x16/prikaz-karel.png");
+}
+
+#nastroje-domov {
+	background-image: url("../images/16x16/prikaz-domov.png");
+}
+
+#nastroje-smaz-vse {
+	background-image: url("../images/16x16/prikaz-smaz-vse.png");
+}
+
+#nastroje-smaz {
+	background-image: url("../images/16x16/normalni/prikaz-smaz.png");
+}
+
+#nastroje-zed {
+	background-image: url("../images/16x16/prikaz-zed.png");
+}
+
+#nastroje-znacka-minus {
+	background-image: url("../images/16x16/normalni/prikaz-znacka-minus.png");
+}
+
+#nastroje-znacka-plus {
+	background-image: url("../images/16x16/normalni/prikaz-znacka-plus.png");
+}
+
+#nastroje-nacist {
+	background-image: url("../images/16x16/prikaz-nacist.png");
+}
+
+#nastroje-ulozit {
+	background-image: url("../images/16x16/prikaz-uloz.png");
+}
+
+#nastroje-exportovat-k99 {
+	background-image: url("../images/16x16/prikaz-export-k99.png");
+}

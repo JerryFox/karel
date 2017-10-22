@@ -1,0 +1,104 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení nástrojových tipů */
+
+.tooltip-hranice {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+}
+
+.tooltip {
+	float: left;
+	font-size: 91%;
+}
+
+.tooltip .horni div {
+	background-color: black;
+}
+
+.tooltip .stred {
+	display: block;
+	background-color: rgb(95%, 100%, 80%);
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.tooltip .ikona {
+	float: left;
+}
+
+.tooltip .nadpis {
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 1em;
+	margin-left: 40px;
+}
+
+.tooltip .popis {
+	position: relative;
+	margin-left: 40px;
+}
+
+.tooltip .spodni div {
+	background-color: black;
+}
+
+.tooltip .vypln {
+	clear: left;
+	height: 1px;
+	line-height: 1px;
+	width: 0;
+}
+
+.tooltip .horni div div,
+.tooltip .spodni div div {
+	background-color: rgb(95%, 100%, 80%);
+}
+
+.tooltip .margin-1 {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.tooltip .margin-2 {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.tooltip .margin-3 {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.tooltip .margin-4 {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.tooltip .margin-5 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.tooltip .pixel {
+	overflow: hidden;
+	height: 1px;
+	width: 0;
+}

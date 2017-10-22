@@ -1,0 +1,28 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Obrázky nástrojových tipů, kuličky */
+
+@import url("tipy-normalni-ie.css");
+
+.tip-smaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/kulicky/prikaz-smaz.png",sizingMethod="image",enabled=true);
+}
+
+.tip-znacka-minus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/kulicky/prikaz-znacka-minus.png",sizingMethod="image",enabled=true);
+}
+
+.tip-znacka-plus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/kulicky/prikaz-znacka-plus.png",sizingMethod="image",enabled=true);
+}

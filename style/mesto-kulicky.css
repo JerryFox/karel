@@ -1,0 +1,45 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Barvy a obrázky pro město */
+
+@import url("mesto-normalni.css");
+
+.znacka-1 {
+	background-image: url("../images/32x32/kulicky/znacka-1.png");
+}
+
+.znacka-2 {
+	background-image: url("../images/32x32/kulicky/znacka-2.png");
+}
+
+.znacka-3 {
+	background-image: url("../images/32x32/kulicky/znacka-3.png");
+}
+
+.znacka-4 {
+	background-image: url("../images/32x32/kulicky/znacka-4.png");
+}
+
+.znacka-5 {
+	background-image: url("../images/32x32/kulicky/znacka-5.png");
+}
+
+.znacka-6 {
+	background-image: url("../images/32x32/kulicky/znacka-6.png");
+}
+
+.znacka-7 {
+	background-image: url("../images/32x32/kulicky/znacka-7.png");
+}
+
+.znacka-8 {
+	background-image: url("../images/32x32/kulicky/znacka-8.png");
+}

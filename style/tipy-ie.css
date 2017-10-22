@@ -1,0 +1,41 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Obrázky nástrojových tipů */
+
+.tip-zobraz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-zobrazit.png",sizingMethod="image",enabled=true);
+}
+
+.tip-smaz-prikaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-smaz-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+.tip-exportovat-12 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-export-1.2.png",sizingMethod="image",enabled=true);
+}
+
+.tip-novy {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-novy-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+.tip-ulozit-prikaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-uloz-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+.tip-ulozit-jako {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-uloz-prikaz-nove.png",sizingMethod="image",enabled=true);
+}

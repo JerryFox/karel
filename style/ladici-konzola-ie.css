@@ -1,0 +1,46 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Nastavení ladicí konzoly pro IE 5.5 a 6 */
+
+.uroven-1 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/uroven-1.png",sizingMethod="image",enabled=true);
+}
+
+.uroven-2 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/uroven-2.png",sizingMethod="image",enabled=true);
+}
+
+.uroven-3 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/uroven-3.png",sizingMethod="image",enabled=true);
+}
+
+.uroven-4 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/uroven-4.png",sizingMethod="image",enabled=true);
+}
+
+.uroven-5 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/uroven-5.png",sizingMethod="image",enabled=true);
+}
+
+.ikona-rozbalit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/konzola-rozbalit.png",sizingMethod="image",enabled=true);
+}
+
+.ikona-sbalit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/konzola-sbalit.png",sizingMethod="image",enabled=true);
+}

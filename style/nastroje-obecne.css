@@ -1,0 +1,96 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení nástrojů */
+
+.nastroje {
+	position: relative;
+	width: auto;
+	min-height: 20px;
+	line-height: 20px;
+}
+
+.tlacitko {
+	float: left;
+	display: block;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.tlacitko-nastroj,
+.tlacitko-nahore,
+.tlacitko-dole {
+	display: block;
+	position: absolute;
+	background-repeat: no-repeat;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+}
+
+.tlacitko .ikona {
+	position: absolute;
+	left: 1px;
+	top: 2px;
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+
+.tlacitko-dole .ikona {
+	left: 2px;
+	top: 3px;
+}
+
+.tlacitko-maska {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+}
+
+.tlacitko-mezera {
+	float: left;
+	display: block;
+	position: relative;
+	width: 6px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.nastroje-mezera {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 2px;
+	height: 17px;
+	background-repeat: no-repeat;
+}
+
+.nastroje {
+	background-color: rgb(75%, 75%, 75%);
+}
+
+.tlacitko-dole {
+	background-image: url("../images/tlacitko-dole.png");
+}
+
+.tlacitko-nahore {
+	background-image: url("../images/tlacitko-nahore.png");
+}
+
+.nastroje-mezera {
+	background-image: url("../images/prikaz-mezera.png");
+}

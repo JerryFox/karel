@@ -1,0 +1,21 @@
+Copak se plánuje:
+
+---------------
+Priorita VYSOKÁ
+
+* Ukládání dat na serveru
+* Více velikostí města
+* Oddělení města od vývojového prostředí
+
+-----------------
+Priorita Normální
+
+* Zobrazovat dotazy přímo v okně Karla (zašednout okolí, nechat pouze dotaz)
+* Dialog na spojování slovníků při importu/načítání
+* Čtení více příkazů najednou (import)
+
+--------------
+Priorita nízká
+
+* Zkontrolovat a doplnit nápovědu o nové vlastnosti (např. automatické vyplnění
+  nástrojového tipu podle prvního komentáře)

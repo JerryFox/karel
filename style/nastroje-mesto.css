@@ -1,0 +1,57 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Nastavení nástrojů pro město */
+
+.mesto-nastroje {
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	height: 24px;
+}
+
+.mesto-nastroje div#pozice-x,
+.mesto-nastroje div#pozice-y,
+.mesto-nastroje div.times {
+	float: left;
+	padding-top: 2px;
+	height: 24px;
+	font: bold 16px Arial, Helvetica, sans-serif;
+}
+
+.mesto-nastroje div#pozice-x {
+	text-align: right;
+	width: 31px;
+}
+
+.mesto-nastroje div.times {
+	text-align: center;
+	width: 24px;
+}
+
+.mesto-nastroje div#pozice-y {
+	text-align: left;
+	width: 32px;
+}
+
+.mesto-nastroje .nastroje {
+	float: right;
+	position: relative;
+	top: 2px;
+	width: 232px;
+}
+
+.mesto-nastroje .tlacitko {
+	width: 22px;
+}
+
+.mesto-nastroje .nastroje-mezera {
+	left: 1px;
+}

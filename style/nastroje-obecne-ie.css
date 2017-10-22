@@ -1,0 +1,26 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení nástrojů pro IE 5.5 a 6 */
+
+.tlacitko-dole {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/tlacitko-dole.png",sizingMethod="image",enabled=true);
+}
+
+.tlacitko-nahore {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/tlacitko-nahore.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-mezera {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/prikaz-mezera.png",sizingMethod="image",enabled=true);
+}

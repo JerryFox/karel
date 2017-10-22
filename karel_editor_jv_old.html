@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Robot Karel: vývojové prostředí</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="cs" />
+	<meta name="Description" content="Robot Karel: vývojové prostředí" />
+	<meta name="Keywords" content="robot,karel,gui,prostredi,vyvojove prostredi,prostředí,vývojové prostředí" />
+	<meta name="Author" content="Oldřich Jedlička" />
+	<meta name="Copyright"
+		content="Copyright © 2006-2013 Oldřich Jedlička, Všechna práva vyhrazena" />
+
+	<link href="favicon.ico" rel="icon" />
+	<link href="favicon.ico" rel="shortcut icon" />
+	<link href="style/mesto-obecne.css" rel="stylesheet" type="text/css" />
+	<link href="style/nastroje-mesto.css" rel="stylesheet" type="text/css" />
+	<link href="style/obecny-styl.css" rel="stylesheet" type="text/css" />
+	<link href="style/tooltip.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" charset="utf-8">
+		ie_hack = 0;
+		verze_karla = "2.0.5";
+	</script>
+	<link href="style/nastroje-obecne.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-slovnik.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-editor.css" rel="stylesheet" type="text/css" />
+	<link href="style/ladici-konzola.css" rel="stylesheet" type="text/css" />
+	<link href="style/nastaveni.css" rel="stylesheet" type="text/css" />
+	<link href="style/styly.css" rel="stylesheet" type="text/css" />
+	<link href="style/tipy.css" rel="stylesheet" type="text/css" />
+
+	<link href="style/mesto-normalni.css" rel="stylesheet" type="text/css"
+		title="Klasika" id="styl-klasika" />
+	<link href="style/mesto-kulicky.css" rel="stylesheet" type="text/css"
+		title="Kuličky" id="styl-kulicky" />
+
+	<link href="style/nastroje-normalni.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/tipy-normalni.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/nastroje-kulicky.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	<link href="style/tipy-kulicky.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	
+	<!--[if gte IE 5.5 & lt IE 7]>
+	<script type="text/javascript" charset="utf-8">
+		ie_hack = 1;
+	</script>
+
+	<link href="style/nastroje-obecne-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-slovnik-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-editor-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/ladici-konzola-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/nastaveni-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/styly-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/tipy-ie.css" rel="stylesheet" type="text/css" />
+
+	<link href="style/mesto-normalni-ie.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/mesto-kulicky-ie.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+
+	<link href="style/nastroje-normalni-ie.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/tipy-normalni-ie.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/nastroje-kulicky-ie.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	<link href="style/tipy-kulicky-ie.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	<![endif]-->
+
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/obecne-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/tvorici-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/tooltip.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/mys.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/nastaveni-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/ladici-konzola-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/ajax.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/mesto-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/nastroje-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/styly-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/velikosti-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-jadro.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-rozpoznavani.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/nacitaci-ukladaci-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/okno-ulozeni-a-exportu.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/slovnik.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-funkce-slovnik.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-funkce-editor.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/kodovani-odkazu.js"></script>
+
+    <style>
+    .codearea {
+        background-color:#000;
+        color:#fff;
+        font-family:'Oxygen Mono', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+        font-size:14px;
+        overflow:auto
+    }
+    textarea {
+        height:100%;
+        width:98%;	
+    }
+    </style>
+
+    <script src="src/brython.js"></script>
+
+<!--Brython - editor - HEAD -->
+<!-- <link rel="stylesheet" href="doc/doc_brython.css"> -->
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="console.css">
+<link rel="stylesheet" href="doc/doc_brython.css">
+
+<script type="text/javascript" src="src/brython_builtins.js"></script>
+<script type="text/javascript" src="src/version_info.js"></script>
+<script type="text/javascript" src="src/py2js.js"></script>
+<script type="text/javascript" src="src/py_object.js"></script>
+<script type="text/javascript" src="src/py_type.js"></script>
+<script type="text/javascript" src="src/py_utils.js"></script>
+<script type="text/javascript" src="src/py_sort.js"></script>
+<script type="text/javascript" src="src/py_builtin_functions.js"></script>
+<script type="text/javascript" src="src/py_exceptions.js"></script>
+<script type="text/javascript" src="src/py_range_slice.js"></script>
+<script type="text/javascript" src="src/py_bytes.js"></script>
+<script type="text/javascript" src="src/py_set.js"></script>
+<script type="text/javascript" src="src/js_objects.js"></script>
+<script type="text/javascript" src="src/stdlib_paths.js"></script>
+<script type="text/javascript" src="src/py_import.js"></script>
+
+<script type="text/javascript" src="src/unicode.min.js"></script>
+<script type="text/javascript" src="src/py_string.js"></script>
+<script type="text/javascript" src="src/py_int.js"></script>
+<script type="text/javascript" src="src/py_long_int.js"></script>
+<script type="text/javascript" src="src/py_float.js"></script>
+<script type="text/javascript" src="src/py_complex.js"></script>
+<script type="text/javascript" src="src/py_dict.js"></script>
+<script type="text/javascript" src="src/py_list.js"></script>
+<script type="text/javascript" src="src/py_generator.js"></script>
+<script type="text/javascript" src="src/py_dom.js"></script>
+
+<script type="text/javascript" src="src/builtin_modules.js"></script>
+<script type="text/javascript" src="src/py_import_hooks.js"></script>
+
+<script type="text/javascript" src="src/brython_stdlib.js"></script>
+
+<script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="ace/mode-python3.js" type="text/javascript" charset="utf-8"></script>
+<script src="ace/snippets/python.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/python3" id="tests_editor">
+from browser import document as doc, window
+from browser import html
+#import header
+import editor
+
+"""
+qs_lang,language = header.show('../')
+
+# other translations
+
+trans = {
+    'report_bugs':{'en':'Please report bugs in the ',
+                   'es':'Poner los bugs en el ',
+                   'fr':"Signalez les bugs dans l'"},
+    'test_page':{'en':'Tests page','es':'P&aacute;gina de pruebas','fr':'Page de tests'},
+    'run':{'en':'run','es':'ejecutar','fr':'Exécuter'},
+    'clear':{'en':'clear','es':'borrar','fr':'Effacer'}
+}
+
+for key in trans:
+    if key in doc:
+        doc[key].html = trans[key].get(language,trans[key]['en'])
+
+# link to test page
+tplink = doc['test_page']
+if qs_lang:
+    tplink.href += '?lang=%s' %qs_lang
+"""
+
+def set_debug(ev):
+    if ev.target.checked:
+        __BRYTHON__.debug = 1
+    else:
+        __BRYTHON__.debug = 0
+
+__BRYTHON__.debug = int(doc['set_debug'].checked)
+
+# bindings
+doc['run_js'].bind('click', window.run_js)
+doc['set_debug'].bind('change',set_debug)
+
+# next functions are defined in editor.py
+doc['show_js'].bind('click',editor.show_js)
+doc['run'].bind('click',editor.run)
+doc['show_console'].bind('click',editor.show_console)
+
+# erase "main" div
+def clear_main(ev):
+    doc['main'].text = ''
+
+main_content = 'Zone with id="main" ; use it to test interaction with DOM elements'
+
+# add "main" div
+def add_main(ev):
+    global main_content
+    try:
+        # if "main" div already exists, save content and erase container
+        main_content = doc["main"].html
+        doc["main_container"].html = ""
+        doc["add_main"].text = 'Show "main" div'
+    except KeyError:
+        t = html.TABLE()
+        row = html.TR()
+        b = html.BUTTON('Clear')
+        b.bind('click', clear_main)
+        row <= html.TD(b)+html.TD(html.DIV(Id="main"))
+        t <= row
+        doc["main_container"] <= t
+        doc["main"].html = main_content
+        doc["add_main"].text = 'Hide "main" div'
+
+doc["add_main"].bind('click', add_main)
+
+</script>
+
+<script>
+function run_js(){
+    var cons = document.getElementById("console")
+    var jscode = cons.value
+    var t0 = (new Date()).getTime()
+    eval(jscode)
+    var t1 = (new Date()).getTime()
+    console.log("Javascript code run in "+(t1-t0)+" ms")
+}
+</script>
+<!--/Brython - editor - HEAD -->
+
+</head>
+<body onload="brython(1); ajax.kontrola_metody(); spust_po_spusteni(); obnov_odkazy()">
+
+<div id="okno1">
+</div>
+<div id="okno2">
+</div>
+
+<!-- Stránka -->
+<div id="stranka">
+<div id="okraj"></div>
+
+<!-- Pravý sloupec -->
+<div class="pravy-sloupec">
+<div class="centrovany">
+
+<!-- Město a nástroje -->
+
+<!-- Město -->
+<script type="text/javascript" charset="utf-8"
+	src="scripts/mesto-tvar.js"></script>
+
+<!-- Nástroje -->
+<script type="text/javascript" charset="utf-8"
+	src="scripts/nastroje-tvar.js"></script>
+
+<!-- Konec města a nástrojů -->
+
+<script type="text/javascript" charset="utf-8"
+	src="scripts/ladici-konzola-tvar.js"></script>
+
+<script type="text/javascript" charset="utf-8"
+	src="scripts/styly-tvar.js"></script>
+
+<script type="text/javascript" charset="utf-8"
+	src="scripts/nastaveni-tvar.js"></script>
+
+</div>
+</div>
+<!-- Konec pravého sloupce -->
+
+<!-- Levý (hlavní) sloupec -->
+<div class="informace">
+	<a class="levy" href="javascript:napoveda();">Nápověda</a>
+	<a class="levy" href="javascript:priklady();">Příklady</a>
+	<div class="pravy">
+		Copyright © 2006-2013 <a href="mailto:">Oldřich Jedlička</a>,
+		Všechna&nbsp;práva&nbsp;vyhrazena.<a class="pravy"
+			href="KOPIROVANI">Pravidla&nbsp;kopírování</a><a class="pravy"
+			href="http://download.oldium.net/karel/karel-2.0.5.tar.gz">Zdrojový kód</a>
+	</div>
+</div>
+
+<div class="hlavni-sloupec">
+    <!-- Brython console -->
+    <textarea id=code class=codearea rows=20></textarea>
+    <div id=content></div>
+    <script type="text/python3" src="tests/console.py" id="__main__"></script>
+    <!-- /Brython console -->
+</div>
+
+<div class="hlavni-sloupec-posledni">
+</div>
+<!-- Konec levého sloupce -->
+
+</div>
+<!-- Konec stránky -->
+
+<div id="main_container"></div>
+<div style="padding: 3px 3px 3px 3px;">
+  <button id="add_main">Add <b>&lt;div id=main&gt;</b></button>
+</div>
+
+<div style="padding: 3px 3px 3px 3px;">
+  <div>
+    <button id="run"> ▶ Run</button>
+    <button id="run_js"> ▶ Run Javascript</button>
+    Debug<input type="checkbox" id="set_debug" checked>
+    <button id="show_console">Python</button>
+    <button id="show_js">Javascript</button>
+  </div>
+
+  <div style="float:right; ">
+  </div>
+</div>
+
+<div style="width:100%; height:50px; visibility: hidden;">
+  <textarea id="console" autocomplete="off"></textarea>
+</div>
+
+<div id="container" style="width:100%; margin-left:10px">
+  <div id="editor" style="width:100%; font-size:12pt"></div>
+  <div id="left-div">
+  </div> 
+  
+  <div id="right-div">
+  </div>
+
+  <div style="float:left;margin-top:50px; visibility: hidden">
+      <div style="text-align:left; visibility: hidden">Brython version: <span id="version"></span>
+      </div>
+      <a href="//github.com/brython-dev/brython/issues" title="Please report Bugs on the GitHub Issue Tracker !">
+          Report a bug
+      </a><br>
+      <a href='index.html' id="test_page">
+          Built-in test suite
+      </a><br>
+      <a href='unittests/index.html'>
+          CPython tests
+      </a><br>
+  </div>
+</div>  <!-- container - konec -->
+
+
+
+
+</body>
+</html>

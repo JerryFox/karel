@@ -1,0 +1,404 @@
+/*
+* [Česky]
+* Projekt: Robot Karel
+* Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+*
+* [English]
+* Project: Karel, the Robot
+* Copyright: See COPYING in the top level directory
+*/
+
+/* Formátování nápovědy */
+
+/* Obecné formátování prvků */
+
+body, code {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+code {
+	white-space: nowrap;
+}
+
+.hlavni {
+	margin-left: 2em; margin-right: 2em;
+}
+
+.karel {
+	float: left; margin-right: 5px;
+}
+
+.navigace {
+	float: left;
+	padding: 5px;
+	border: 2px solid rgb(70%, 70%, 70%);
+	background-color: rgb(90%, 95%, 90%);
+	color: inherit;
+	margin-right: 10px;
+}
+
+.navigace a {
+	display: block;
+}
+
+.vpravo {
+	text-align: right;
+}
+
+.centruj {
+	text-align: center;
+}
+
+.stred-vlevo {
+	vertical-align: middle;
+}
+
+.stred {
+	vertical-align: middle;
+	text-align: center;
+}
+
+h1 {
+	font-size: 144%;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+.mezery {
+	white-space: nowrap;
+}
+
+/* Tabulky */
+
+table {
+	margin-left: 3em;
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	empty-cells: hide;
+}
+
+td {
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	empty-cells: show;
+}
+
+td p {
+	margin-bottom: 0;
+}
+
+td p:first-child {
+	margin-top: 0;
+}
+
+tr {
+	vertical-align: top;
+}
+
+td {
+	border: 1px solid rgb(80%, 85%, 80%);
+}
+
+.licha td, tr td.licha {
+	background-color: rgb(90%, 100%, 90%);
+	color:inherit;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.suda td, tr td.suda {
+	background-color: rgb(93%, 93%, 93%);
+	color:inherit;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+
+/* Toolbar a ikony */
+
+.podminky .obrazek div, .ikony .obrazek div, .pozadi {
+	background-color: rgb(69%, 100%, 69%);
+	color: inherit;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.pozadi {
+	width: 32px;
+	height: 32px;
+}
+
+.toolbar {
+	background-color: rgb(75%, 75%, 75%);
+	color: inherit;
+}
+
+.toolbar-mesto {
+	width: 144px;
+	height: 20px;
+}
+
+.toolbar-slovnik {
+	width: 64px;
+	height: 20px;
+}
+
+.toolbar-slovnik-nacist {
+	width: 84px;
+	height: 20px;
+}
+
+.toolbar-mesto-nacist {
+	width: 60px;
+	height: 20px;
+}
+
+.tlacitko, .tlacitko-mezera, .ikona {
+	height: 20px;
+}
+
+.tlacitko {
+	width: 20px;
+	float: left;
+}
+
+.tlacitko-mezera {
+	width: 4px;
+	float: left;
+}
+
+.obrazek, .ikona {
+	width: auto;
+	text-align: center;
+}
+
+.obrazek div {
+	width: 32px;
+	height: 32px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ikona div {
+	position: relative;
+	top: 2px;
+	width: 16px;
+	height: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tlacitko div {
+	position: relative;
+	top: 2px;
+	left: 2px;
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+}
+
+.tlacitko-mezera div {
+	position: relative;
+	background-repeat: no-repeat;
+	top: 1px;
+	left: 2px;
+	width: 2px;
+	height: 18px;
+}
+
+.tooltip {
+	width: auto;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 83%;
+	font-weight: bold;
+}
+
+/* Stupnice */
+
+.stupnice {
+	width: auto;
+	height: auto;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+}
+
+.stupnice .ryska-oblast {
+	width: 299px;
+	height: 24px;
+	position: relative;
+}
+
+.stupnice .ryska {
+	position: absolute;
+	width: 299px;
+	height: 12px;
+	top: 6px;
+	background-image: url("../images/stupnice-rychlost.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.stupnice .vybrany {
+	width: 23px;
+	height: 22px;
+	position: absolute;
+	left: 138px;
+	top: 1px;
+	background-image: url("../../images/stupnice-ukazatel.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.stupnice .pomalu,
+.stupnice .stredne,
+.stupnice .rychle {
+	font-size: 67%;
+	font-weight: normal;
+	height: 15px;
+	width: auto;
+	text-align: center;
+}
+
+.stupnice .pomalu {
+	float: left;
+}
+
+.stupnice .stredne {
+	text-align: center;
+}
+
+.stupnice .rychle {
+	float: right;
+}
+
+/* Obrázky */
+
+.nastroje-mezera {
+	background-image: url("../../images/prikaz-mezera.png");
+}
+
+.nastroje-karel {
+	background-image: url("../images/16x16/prikaz-karel.png");
+}
+
+.nastroje-domov {
+	background-image: url("../images/16x16/prikaz-domov.png");
+}
+
+.nastroje-smaz-vse {
+	background-image: url("../images/16x16/prikaz-smaz-vse.png");
+}
+
+.nastroje-smaz {
+	background-image: url("../images/16x16/normalni/prikaz-smaz.png");
+}
+
+.nastroje-zed {
+	background-image: url("../images/16x16/prikaz-zed.png");
+}
+
+.nastroje-znacka-minus {
+	background-image: url("../images/16x16/normalni/prikaz-znacka-minus.png");
+}
+
+.nastroje-znacka-plus {
+	background-image: url("../images/16x16/normalni/prikaz-znacka-plus.png");
+}
+
+.nastroje-nacist {
+	background-image: url("../images/16x16/prikaz-nacist.png");
+}
+
+.nastroje-ulozit {
+	background-image: url("../images/16x16/prikaz-uloz.png");
+}
+
+.nastroje-exportovat-k99 {
+	background-image: url("../images/16x16/prikaz-export-k99.png");
+}
+
+.spustit {
+	background-image: url("../images/16x16/prikaz-spustit.png");
+}
+
+.zastavit {
+	background-image: url("../images/16x16/prikaz-zastavit.png");
+}
+
+.slovnik-zobraz {
+	background-image: url("../images/16x16/prikaz-zobrazit.png");
+}
+
+.slovnik-smaz {
+	background-image: url("../images/16x16/prikaz-smaz-prikaz.png");
+}
+
+.slovnik-smaz-vse {
+	background-image: url("../images/16x16/prikaz-smaz-vse.png");
+}
+
+.slovnik-nacist {
+	background-image: url("../images/16x16/prikaz-nacist.png");
+}
+
+.slovnik-ulozit {
+	background-image: url("../images/16x16/prikaz-uloz.png");
+}
+
+.slovnik-exportovat-k99 {
+	background-image: url("../images/16x16/prikaz-export-k99.png");
+}
+
+.slovnik-exportovat-12 {
+	background-image: url("../images/16x16/prikaz-export-1.2.png");
+}
+
+.editor-novy {
+	background-image: url("../images/16x16/prikaz-novy-prikaz.png");
+}
+
+.editor-ulozit {
+	background-image: url("../images/16x16/prikaz-uloz-prikaz.png");
+}
+
+.editor-ulozit-jako {
+	background-image: url("../images/16x16/prikaz-uloz-prikaz-nove.png");
+}
+
+.karel-vychod {
+	background-image: url("../images/32x32/normalni/karel-vychod.png");
+}
+
+.karel-sever {
+	background-image: url("../images/32x32/normalni/karel-sever.png");
+}
+
+.karel-zapad {
+	background-image: url("../images/32x32/normalni/karel-zapad.png");
+}
+
+.karel-jih {
+	background-image: url("../images/32x32/normalni/karel-jih.png");
+}
+
+.domov {
+	background-image: url("../images/32x32/normalni/domov.png");
+}
+
+.zed {
+	background-image: url("../images/32x32/normalni/zed.png");
+}
+
+.znacka-1 {
+	background-image: url("../images/32x32/normalni/znacka-1.png");
+}

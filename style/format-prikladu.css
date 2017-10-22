@@ -1,0 +1,66 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+body, code {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+/* Formát příkazů */
+
+.prikaz, .podminka, .novy, .cyklus {
+	font-weight: bold;
+}
+
+.parametr {
+	color: black;
+	background-color: inherit;
+	font-style: italic;
+}
+
+.prikaz {
+	color: rgb(100%, 12%, 12%);
+	background-color: inherit;
+}
+
+.podminka {
+	color: rgb(12%, 12%, 100%);
+	background-color: inherit;
+}
+
+.novy {
+	color: rgb(72%, 72%, 0%);
+	background-color: inherit;
+}
+
+.cyklus {
+	color: rgb(0%, 61%, 0%);
+	background-color: inherit;
+}
+
+.uroven-1 {
+	margin-left: 2em;
+}
+
+.uroven-2 {
+	margin-left: 4em;
+}
+
+.uroven-3 {
+margin-left: 6em;
+}
+
+.uroven-4 {
+margin-left: 8em;
+}
+
+.uroven-5 {
+margin-left: 10em;
+}

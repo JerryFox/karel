@@ -1,0 +1,28 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Barvy a obrázky pro nástroje pro IE 5.5 a 6 */
+
+@import url("nastroje-normalni-ie.css");
+
+#nastroje-smaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/kulicky/prikaz-smaz.png",sizingMethod="image",enabled=true);
+}
+
+#nastroje-znacka-minus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/kulicky/prikaz-znacka-minus.png",sizingMethod="image",enabled=true);
+}
+
+#nastroje-znacka-plus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/kulicky/prikaz-znacka-plus.png",sizingMethod="image",enabled=true);
+}

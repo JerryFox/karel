@@ -1,0 +1,26 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení editoru příkazů pro IE 5.5 a 6 */
+
+#editor-novy {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-novy-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+#editor-ulozit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-uloz-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+#editor-ulozit-jako {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-uloz-prikaz-nove.png",sizingMethod="image",enabled=true);
+}

@@ -1,0 +1,26 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Nastavení zobrazení nastavení pro IE 5.5 a 6 */
+
+.nastaveni-prodleva .stupnice .duha {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/stupnice-rychlost.png",sizingMethod="image",enabled=true);
+}
+
+.nastaveni-prodleva .ukazatel .vybrany {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/stupnice-ukazatel.png",sizingMethod="image",enabled=true);
+}
+
+.nastaveni-prodleva .ukazatel .zvyrazneny {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/stupnice-ukazatel-zvyrazneny.png",sizingMethod="image",enabled=true);
+}

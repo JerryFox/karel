@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Robot Karel: vývojové prostředí</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="cs" />
+	<meta name="Description" content="Robot Karel: vývojové prostředí" />
+	<meta name="Keywords" content="robot,karel,gui,prostredi,vyvojove prostredi,prostředí,vývojové prostředí" />
+	<meta name="Author" content="Oldřich Jedlička" />
+	<meta name="Copyright"
+		content="Copyright © 2006-2013 Oldřich Jedlička, Všechna práva vyhrazena" />
+
+	<link href="favicon.ico" rel="icon" />
+	<link href="favicon.ico" rel="shortcut icon" />
+	<link href="style/mesto-obecne.css" rel="stylesheet" type="text/css" />
+	<link href="style/nastroje-mesto.css" rel="stylesheet" type="text/css" />
+	<link href="style/obecny-styl.css" rel="stylesheet" type="text/css" />
+	<link href="style/tooltip.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" charset="utf-8">
+		ie_hack = 0;
+		verze_karla = "2.0.5";
+	</script>
+	<link href="style/nastroje-obecne.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-slovnik.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-editor.css" rel="stylesheet" type="text/css" />
+	<link href="style/ladici-konzola.css" rel="stylesheet" type="text/css" />
+	<link href="style/nastaveni.css" rel="stylesheet" type="text/css" />
+	<link href="style/styly.css" rel="stylesheet" type="text/css" />
+	<link href="style/tipy.css" rel="stylesheet" type="text/css" />
+
+	<link href="style/mesto-normalni.css" rel="stylesheet" type="text/css"
+		title="Klasika" id="styl-klasika" />
+	<link href="style/mesto-kulicky.css" rel="stylesheet" type="text/css"
+		title="Kuličky" id="styl-kulicky" />
+
+	<link href="style/nastroje-normalni.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/tipy-normalni.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/nastroje-kulicky.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	<link href="style/tipy-kulicky.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	
+	<!--[if gte IE 5.5 & lt IE 7]>
+	<script type="text/javascript" charset="utf-8">
+		ie_hack = 1;
+	</script>
+
+	<link href="style/nastroje-obecne-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-slovnik-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/prikazy-editor-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/ladici-konzola-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/nastaveni-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/styly-ie.css" rel="stylesheet" type="text/css" />
+	<link href="style/tipy-ie.css" rel="stylesheet" type="text/css" />
+
+	<link href="style/mesto-normalni-ie.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/mesto-kulicky-ie.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+
+	<link href="style/nastroje-normalni-ie.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/tipy-normalni-ie.css" rel="stylesheet" type="text/css"
+		title="Klasika" />
+	<link href="style/nastroje-kulicky-ie.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	<link href="style/tipy-kulicky-ie.css" rel="stylesheet" type="text/css"
+		title="Kuličky" />
+	<![endif]-->
+
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/obecne-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/tvorici-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/tooltip.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/mys.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/nastaveni-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/ladici-konzola-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/ajax.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/mesto-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/nastroje-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/styly-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/velikosti-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-jadro.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-rozpoznavani.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/nacitaci-ukladaci-funkce.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/okno-ulozeni-a-exportu.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/slovnik.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-funkce-slovnik.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/prikazy-funkce-editor.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/kodovani-odkazu.js"></script>
+
+    <style>
+    .codearea {
+        background-color:#000;
+        color:#fff;
+        font-family:'Oxygen Mono', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+        font-size:14px;
+        overflow:auto
+    }
+    </style>
+
+    <script src="src/brython.js"></script>
+
+</head>
+<body onload="ajax.kontrola_metody(); spust_po_spusteni(); obnov_odkazy();">
+
+<div id="okno1">
+</div>
+<div id="okno2">
+</div>
+
+<!-- Stránka -->
+<div id="stranka">
+<div id="okraj"></div>
+
+<!-- Pravý sloupec -->
+<div class="pravy-sloupec">
+<div class="centrovany">
+
+<!-- Město a nástroje -->
+
+<!-- Město -->
+<script type="text/javascript" charset="utf-8"
+	src="scripts/mesto-tvar.js"></script>
+
+<!-- Nástroje -->
+<script type="text/javascript" charset="utf-8"
+	src="scripts/nastroje-tvar.js"></script>
+
+<!-- Konec města a nástrojů -->
+
+<script type="text/javascript" charset="utf-8"
+	src="scripts/ladici-konzola-tvar.js"></script>
+
+<script type="text/javascript" charset="utf-8"
+	src="scripts/styly-tvar.js"></script>
+
+<script type="text/javascript" charset="utf-8"
+	src="scripts/nastaveni-tvar.js"></script>
+
+</div>
+</div>
+<!-- Konec pravého sloupce -->
+
+<!-- Levý (hlavní) sloupec -->
+<div class="informace">
+	<a class="levy" href="javascript:napoveda();">Nápověda</a>
+	<a class="levy" href="javascript:priklady();">Příklady</a>
+	<div class="pravy">
+		Copyright © 2006-2013 <a href="mailto:">Oldřich Jedlička</a>,
+		Všechna&nbsp;práva&nbsp;vyhrazena.<a class="pravy"
+			href="KOPIROVANI">Pravidla&nbsp;kopírování</a><a class="pravy"
+			href="http://download.oldium.net/karel/karel-2.0.5.tar.gz">Zdrojový kód</a>
+	</div>
+</div>
+
+<div class="hlavni-sloupec">
+  <div style="width:100%; height:50px; background-color:blue">
+  </div>
+</div>
+
+<div class="hlavni-sloupec-posledni">
+  <div style="width:100%; height:50px; background-color:yellow">
+  </div>
+</div>
+<!-- Konec levého sloupce -->
+
+</div>
+<!-- Konec stránky -->
+
+<div style="width:100%; height:50px; background-color:red">
+</div>
+
+</body>
+</html>

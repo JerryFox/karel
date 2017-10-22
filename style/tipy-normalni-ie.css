@@ -1,0 +1,61 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Obrázky nástrojových tipů, klasika */
+
+.tip-karel {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-karel.png",sizingMethod="image",enabled=true);
+}
+
+.tip-domov {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-domov.png",sizingMethod="image",enabled=true);
+}
+
+.tip-smaz-vse {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-smaz-vse.png",sizingMethod="image",enabled=true);
+}
+
+.tip-smaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/normalni/prikaz-smaz.png",sizingMethod="image",enabled=true);
+}
+
+.tip-zed {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-zed.png",sizingMethod="image",enabled=true);
+}
+
+.tip-znacka-minus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/normalni/prikaz-znacka-minus.png",sizingMethod="image",enabled=true);
+}
+
+.tip-znacka-plus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/normalni/prikaz-znacka-plus.png",sizingMethod="image",enabled=true);
+}
+
+.tip-nacist {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-nacist.png",sizingMethod="image",enabled=true);
+}
+
+.tip-ulozit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-uloz.png",sizingMethod="image",enabled=true);
+}
+
+.tip-exportovat-k99 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/48x48/prikaz-export-k99.png",sizingMethod="image",enabled=true);
+}

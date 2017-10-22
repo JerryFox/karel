@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Robot Karel: Nápověda</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="cs" />
+	<meta name="Description" content="Robot Karel: nápověda" />
+	<meta name="Keywords" content="robot,karel,napoveda,nápověda" />
+	<meta name="Author" content="Oldřich Jedlička" />
+	<meta name="Copyright"
+		content="Copyright © 2006-2013 Oldřich Jedlička, Všechna práva vyhrazena" />
+
+	<link href="favicon.ico" rel="icon" />
+	<link href="favicon.ico" rel="shortcut icon" />
+
+	<script type="text/javascript" charset="utf-8"
+		src="scripts/kodovani-odkazu.js"></script>
+
+	<link href="style/format-prikladu.css" rel="stylesheet" type="text/css" />
+
+	<link href="style/napoveda.css" rel="stylesheet" type="text/css" />
+
+	<!--[if gte IE 5.5 & lt IE 7]>
+	<link href="style/napoveda-ie.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+</head>
+<body onload="obnov_odkazy();">
+
+<div class="navigace">
+	<a href="#kdoje">Kdo je Karel</a>
+	<a href="#coumi">Co Karel umí</a>
+	<a href="#zapis">Zápis nových příkazů</a>
+	<a href="#komentare">Psaní komentářů</a>
+	<a href="#obrazovka">Vývojové prostředí</a>
+	<a href="#mesto">Město</a>
+	<a href="#slovnik">Slovník a příkazové pole</a>
+	<a href="#nahravani">Nahrávání a ukládání</a>
+	<a href="#rychlost">Rychlost pohybu</a>
+</div>
+
+<div class="hlavni">
+<a id="nahore"></a>
+<h1><a id="kdoje"></a>Kdo je Karel</h1>
+
+<p>
+<div class="obrazek karel"><div class="karel-jih"></div></div>
+Milý čtenáři. Tento robot se jmenuje Karel. Jméno Karel mu dal učitel
+programování&nbsp;&ndash; autor prvního programu a knížky &bdquo;Karel The
+Robot&ldquo;&nbsp;&ndash; Richard E.&nbsp;Pattis ze Stanfordské univerzity. Své
+jméno získal na počest spisovatele Karla Čapka, autora divadelní hry
+RUR&nbsp;&ndash;	Rossums Universal Robots.
+</p><p>
+U nás se objevil poprvé zásluhou docenta Hvoreckého,&nbsp;CSc. Robota Karla se
+ujala spousta lidí, mezi nimi i ing.&nbsp;Tomáš Bartovský,&nbsp;CSc., a
+ing.&nbsp;Rudolf Pecinovský,&nbsp;CSc., kteří zjednodušením
+&bdquo;pravidel&ldquo; jazyka robota Karla více přiblížili dětem. Oproti
+americkému Karlovi přidali také rekurzi.
+</p><p>
+Pro Tebe a všechny české a moravskoslezské přátele ho v roce 1999 znovu oživil
+a v&nbsp;roce 2001 pro Internet připravil vysokoškolský student <a
+href="mailto:">Oldřich Jedlička</a>. Na webové stránky se dostal poprvé až
+v&nbsp;roce 2002 a nového zpracování se dočkal v&nbsp;roce 2006.
+</p>
+
+<h1><a id="coumi"></a>Co Karel umí</h1>
+
+<p>
+Karel je především robot. Jako každý správný robot i&nbsp;Karel plní něčí
+příkazy. Tou váženou osobou, která mu může dávat příkazy, jsi Ty.
+</p><p>
+Karel zná několik příkazů, kterými ho můžeš vést jeho <i>městem</i>.
+</p>
+
+<table>
+	<tr class="licha">
+		<td><code class="prikaz">KROK</code></td>
+		<td>Udělá jeden krok vpřed. Jít mimo město, stejně
+			jako lézt na zdi, se nedá. Karel Tě sám upozorní, že nemůže
+			příkaz provést.</td>
+	</tr>
+	<tr class="suda">
+		<td><code class="prikaz">VLEVO-VBOK</code></td>
+		<td>Otočí se o&nbsp;90&deg; proti směru hodinových
+			ručiček. Otáčet se může stále, netočí se mu totiž hlava.</td>
+	</tr>
+	<tr class="licha">
+		<td><code class="prikaz">POLOŽ</code></td>
+		<td>Karel vezme ze svého kouzelného batohu, který
+			má na zádech, značku a položí ji. Do jednoho políčka se
+			vejde osm značek.</td>
+	</tr>
+	<tr class="suda">
+		<td><code class="prikaz">ZVEDNI</code></td>
+		<td>Zvedne značku a dá si ji zpátky do batohu.</td>
+	</tr>
+</table>
+
+<p>
+Teď už víš, jakými příkazy můžeš vést Karla po městě. Při pohybu může ujít jeden
+krok, který je vždy stejně dlouhý, nebo se otočit přesně o&nbsp;90&deg; proti
+směru hodinových ručiček&nbsp;&ndash; vyjádřeno jako v zeměpise, může být otočen
+pouze na sever, západ, jih a východ. Tato dvě omezení, totiž že může učinit
+pouze celý krok, ne třeba půlku nebo jeden a půl kroku, a že se může otočit
+pouze do čtyř směrů, dovolují představit si Karlovo město jako šachovnici, jehož
+políčka jsou přesně tak dlouhá, jako je Karlův krok. Tuto představu mohou využít
+všichni, kteří nemají zrovna přístup k&nbsp;počítači&nbsp;&ndash; stačí si vzít
+šachovnici, jež bude představovat Karlovo město, a figurku koně, která bude
+představovat Karla.
+</p><p>
+Mimo tyto příkazy zná Karel ještě další. Některé mu umožňují se lépe rozhodnout,
+jestli má udělat krok, nebo vzít značku, a další mu řekne, že má příkaz opakovat
+několikrát.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+<code class="podminka">KDYŽ</code>&nbsp;<code
+class="parametr">podmínka</code><br />
+<code class="parametr"><span class="uroven-1">příkazy 1</span></code><br />
+<code class="podminka">KONEC, JINAK</code><br />
+<code class="parametr"><span class="uroven-1">příkazy 2</span></code><br />
+<code class="podminka">KONEC</code>
+		</td>
+		<td>
+<p>
+Karel prozkoumá, jestli je <code class="parametr">podmínka</code> splněna. Pokud
+zjistí, že ano, provede <code class="parametr">příkazy 1</code>, a pokud ne,
+provede <code class="parametr">příkazy 2</code>.
+</p><p>
+Uvedení slov <code class="podminka">KONEC, JINAK</code> následovaných <code
+class="parametr">příkazy 2</code> není povinné a může být vynecháno.	Ale pozor!
+Mezera mezi <code class="podminka">KONEC,&nbsp;JINAK</code> musí být uvedena.
+</p>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="mezery">
+<code class="podminka">DOKUD</code>&nbsp;<code
+class="parametr">podmínka</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="podminka">KONEC</code>
+		</td>
+		<td>
+<p>
+Karel zjistí, jestli je <code class="parametr">podmínka</code> splněna a dokud
+bude platit, bude provádět <code class="parametr">příkazy</code>.
+</p>
+		</td>
+	</tr>
+	<tr class="licha">
+		<td class="mezery">
+<code class="cyklus">OPAKUJ</code>&nbsp;<code class="parametr">počet</code><code
+class="cyklus">&ndash;KRÁT</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="cyklus">KONEC</code>
+		</td>
+		<td>
+<p>
+Karel bude opakovat <code class="parametr">příkazy</code> tolikrát, kolikrát má
+uvedeno v parametru <code class="parametr">počet</code>.
+</p><p>
+Uvedení slova <code class="cyklus">&ndash;KRÁT</code> není povinné.
+</p>
+		</td>
+	</tr>
+</table>
+
+<p>
+Novinka v zápisu cyklů <code class="podminka">DOKUD</code> a <code
+class="cyklus">OPAKUJ</code> je možnost zápisu podmínky <code
+class="podminka">AŽ</code>&nbsp;<code class="parametr">podmínka</code> na konci
+cyklu, která dokáže cyklus předčasně ukončit. Další novinkou je zápis cyklu
+<code class="cyklus">OPAKUJ</code> bez uvedení počtu opakování. Tyto novinky
+fungují jen v javascriptové verzi, windowsová verze Visual Karel je mít nebude.
+</p>
+<p>
+Níže je uveden přehled možných zápisů. Přehled není úplný, autor zcela záměrně
+zatajil jednu variantu, protože Tě nechce mást blbostmi.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+<code class="podminka">DOKUD</code>&nbsp;<code class="parametr">podmínka
+1</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="podminka">AŽ</code>&nbsp;<code class="parametr">podmínka
+2</code><br />
+		</td>
+		<td>
+<p>
+Karel zjistí, jestli je <code class="parametr">podmínka&nbsp;1</code> splněna.
+Pokud není, přeskočí se celý cyklus. Pokud je splněna, Karel provede <code
+class="parametr">příkazy</code> a na konci vyhodnotí <code
+class="parametr">podmínku&nbsp;2</code>. Pokud je podmínka splněna, cyklus
+končí.
+Pokud není splněna, Karel se vrací na první řádku cyklu a celý postup opakuje.
+</p>
+<p>
+Shrneme-li to, cyklus se opouští na začátku tehdy, když NENÍ splněna <code
+class="parametr">podmínka&nbsp;1</code>. Na konci se opouští tehdy, když JE
+splněna <code class="parametr">podmínka&nbsp;2</code>.
+</p>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="mezery">
+<code class="cyklus">OPAKUJ</code>&nbsp;<code class="parametr">počet</code><code
+class="cyklus">-KRÁT</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="podminka">AŽ</code>&nbsp;<code class="parametr">podmínka</code><br
+/>
+		</td>
+		<td>
+<p>
+Karel opakuje <code class="parametr">příkazy</code> stejně, jako je uvedeno výše
+u&nbsp;cyklu <code class="cyklus">OPAKUJ</code>. Navíc Karel po každém provedení
+<code class="parametr">příkazů</code> vyhodnotí <code
+class="parametr">podmínku</code> a, je-li splněna, ukončí opakování.
+</p>
+<p>
+Opakování <code class="parametr">příkazů</code> Karel provede nejvíce <code
+class="parametr">počet</code>&ndash;krát, a pokud je <code
+class="parametr">počet</code> větší než 0, <code class="parametr">příkazy</code>
+se
+provedou alespoň jednou.
+</p>
+		</td>
+	</tr>
+	<tr class="licha">
+		<td class="mezery">
+<code class="cyklus">OPAKUJ</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="podminka">AŽ</code>&nbsp;<code class="parametr">podmínka</code><br
+/>
+		</td>
+		<td>
+<p>
+Tento zápis je podobný cyklu <code class="podminka">DOKUD</code>. Karel nejprve
+jednou vykoná <code class="parametr">příkazy</code> a opakuje je po dobu, kdy
+není
+splněna <code class="parametr">podmínka</code>.
+</p>
+<p>
+Cyklus končí, když JE <code class="parametr">podmínka</code> splněna. <code
+class="parametr">Příkazy</code> se provedou vždy alespoň jednou.
+</p>
+		</td>
+	</tr>
+</table>
+
+<p>
+Slovo <code class="parametr">příkazy</code> označuje libovolný sled příkazů,
+které
+Karel zná. Při učení Karla novému příkazu můžeš mezi <code
+class="parametr">příkazy</code> zapsat i&nbsp;tento nový příkaz. Takovému zápisu
+se říká <i>rekurze</i>. Příklad použití uvidíš v&nbsp;odstavci <a
+href="#zapis">Zápis nových příkazů</a>.
+</p><p>
+<code class="parametr">Podmínka</code> je jedno slovo, případně spojení dvou
+slov.
+Může to být spojení slova <code class="podminka">JE</code>, které je nepovinné,
+nebo <code class="podminka">NENÍ</code>, a jednoho dalšího slova:
+</p>
+
+<table class="podminky">
+	<tr class="licha">
+		<td class="centruj">
+<div class="obrazek"><div class="zed"></div></div>
+<code class="podminka">ZEĎ</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> před Karlem postavena zeď, pak je podmínka splněna.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="centruj">
+<div class="obrazek"><div class="znacka-1"></div></div>
+<code class="podminka">ZNAČKA</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> na políčku ve městě, kde Karel právě stojí,
+umístěna
+značka, pak je podmínka splněna.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td class="centruj">
+<div class="obrazek"><div class="domov"></div></div>
+<code class="podminka">DOMOV</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> políčko,	na kterém Karel stojí, označeno písmenem
+D&nbsp;(DOMOV), Karel se nachází či nenachází doma a podmínka je
+splněna.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="centruj">
+<div class="obrazek"><div class="karel-vychod"></div></div>
+<code class="podminka">VÝCHOD</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> Karel natočen na východ, je podmínka splněna.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td class="centruj">
+<div class="obrazek"><div class="karel-sever"></div></div>
+<code class="podminka">SEVER</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> Karel natočen na sever, je podmínka splněna.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="centruj">
+<div class="obrazek"><div class="karel-zapad"></div></div>
+<code class="podminka">ZÁPAD</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> Karel natočen na západ, je podmínka splněna.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td class="centruj">
+<div class="obrazek"><div class="karel-jih"></div></div>
+<code class="podminka">JIH</code>
+		</td>
+		<td>
+Jestli <code class="podminka">JE</code>&nbsp;/&nbsp;<code
+class="podminka">NENÍ</code> Karel natočen na jih, je podmínka splněna.
+		</td>
+	</tr>
+</table>
+
+<p>
+Protože Karel někdy udělá pauzu při vykonání příkazů (podrobnosti najdeš
+v&nbsp;odstavci <a href="#rychlost">Rychlost pohybu</a>), můžeš mu říci, aby
+žádnou prodlevu nedělal a příkazy provedl co nejrychleji. K tomu slouží
+následující zápis:
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+<code class="cyklus">RYCHLE</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="cyklus">POMALU</code>
+		</td>
+		<td>
+<p>
+Karel provede bez prodlení všechny <code class="parametr">příkazy</code> tak
+rychle, jak jen dovede. Pokusí se neudělat žádnou viditelnou pauzu a profrčí jak
+rychlík.
+</p>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="mezery">
+<code class="cyklus">RYCHLE</code><br />
+<code class="parametr"><span class="uroven-1">příkazy</span></code><br />
+<code class="cyklus">KONEC</code>
+		</td>
+		<td>
+<p>
+Jiný zápis stejného úkolu. Liší se pouze ve slově <code
+class="cyklus">KONEC</code> na konci.
+</p>
+		</td>
+	</tr>
+</table>
+
+<p>
+Posledním příkazem, který Karel umí, je:
+</p>
+<table>
+	<tr class="licha">
+		<td><code class="prikaz">STOP</code></td>
+		<td>
+Karel zastaví svou činnost a uvede se do stavu, ve kterém
+znovu přijímá nové příkazy.
+	  </td>
+	</tr>
+</table>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="zapis"></a>Zápis nových příkazů</h1>
+
+<p>
+Na několika jednoduchých příkladech Tě seznámím s&nbsp;použitím základních
+příkazů a jejich skládáním. Protože cest k&nbsp;cíli vede vždy více, ani možnost
+zápisu jednoho příkazu není jediná. Následující ukázky si ale nekladou za cíl
+být úplným výčtem všech možností zápisu.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+<code class="novy">ČELEM-VZAD</code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+<code class="novy">ČELEM-VZAD</code><br />
+<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br />
+<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+<code class="novy">VPRAVO-VBOK</code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="novy">KONEC</code>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td class="mezery">
+<code class="novy">VPRAVO-VBOK</code><br />
+<code class="cyklus"><span class="uroven-1">OPAKUJ 3-KRÁT</span></code><br />
+<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+<code class="novy">VPRAVO-VBOK</code><br />
+<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+<code class="novy">VPRAVO-VBOK</code><br />
+<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<p>
+Karel při vykonávání uživatelských příkazů bere příkaz za příkazem. Pokud při
+činnosti narazí na uživatelský příkaz, zapamatuje si, který příkaz následoval, a
+začne ten uživatelský příkaz vykonávat.
+</p>
+<p>
+A nyní několik příkladů s&nbsp;podmínkami. Vyskytuje se v&nbsp;nich slovo
+<i>rekurze</i>. Je to mocný nástroj, který Ti mnohokrát pomůže a usnadní řešení
+nejednoho problému. Na následujícím příkladu jistě vidíš, že příkaz <code
+class="novy">KE ZDI</code> je použit sám v&nbsp;sobě. A právě použití příkazu,
+který se Karel zrovna učí, v&nbsp;těle tohoto příkazu, se označuje honosným
+slovem <i>rekurze</i>. Při psaní vlastních programů s&nbsp;rekurzí si dej pozor,
+abys vždy měl podmínku, která cyklus volání sebe sama ukončí. V&nbsp;tomto
+případě to je podmínka <code class="podminka">KDYŽ NENÍ ZEĎ</code>, která se
+jednou musí stát nepravdivou (Karel, pokud pokaždé udělá krok, musí ke zdi
+dojít). V posledním příkladě příkazu <code class="novy">KE ZDI</code> je situace
+stejná&nbsp;&ndash; zamysli se nad ním.
+</p>
+
+<table class="blok-prikazu">
+	<tr class="licha">
+		<td><p class="parametr">bez rekurze</p></td>
+		<td class="suda" colspan="3"><p class="parametr">s rekurzí</p></td>
+	</tr>
+	<tr class="suda">
+		<td class="prikaz">
+<code class="novy">KE ZDI</code><br />
+<code class="podminka uroven-1">DOKUD NENÍ ZEĎ</code><br />
+<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code><br />
+		</td>
+		<td class="licha">
+<code class="novy">KE ZDI</code><br />
+<code class="podminka"><span class="uroven-1">KDYŽ NENÍ ZEĎ</span></code><br />
+<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+<code class="novy"><span class="uroven-2">KE ZDI</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code><br />
+		</td>
+		<td>
+<code class="novy">KE ZDI</code><br />
+<code class="podminka"><span class="uroven-1">KDYŽ NENÍ ZEĎ</span></code><br />
+<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+<code class="novy"><span class="uroven-2">KE ZDI</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC, JINAK</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code><br />
+		</td>
+		<td class="licha">
+<code class="novy">KE ZDI</code><br />
+<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC, JINAK</span></code><br />
+<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+<code class="novy"><span class="uroven-2">KE ZDI</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code><br />
+		</td>
+	</tr>
+</table>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="komentare"></a>Psaní komentářů</h1>
+
+<p>
+Psaní komentářů v příkazech je dovoleno a od verze 2.0 webového robota Karla
+jsou ukládány společně s příkazy. Stejně tak jsou zachovávány prázdné řádky,
+avšak pokud vynecháš více prázdných řádek, bude uložen pouze jeden.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+<code class="parametr">příkaz</code>&nbsp;<code class="novy">;</code>
+<code class="parametr">komentář</code><br />
+<code class="novy">;</code>&nbsp;<code class="parametr">komentář</code>
+		</td>
+		<td>
+Veškerý text za středníkem (<code class="novy">;</code>) je považován za
+komentář. Pokud se nachází komentář za příkazem, je při ukládání umístěn na
+samostatnou řádku.
+		</td>
+	</tr>
+</table>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="obrazovka"></a>Vývojové prostředí</h1>
+
+<p>
+Vývojové prostředí robota Karla se skládá z těchto čtyř částí:
+</p>
+<ul>
+	<li>
+		v pravé horní části je <a href="#mesto">město</a>;
+	</li>
+	<li>
+		nalevo je umístěn <a href="#slovnik">slovník a příkazové pole</a>
+		s&nbsp;řadou tlačítek pro vytváření, úpravu a mazání příkazů;
+	</li>
+	<li>
+		jak pod slovníkem, tak pod městem je několik tlačítek určených pro
+		<a href="#nahravani">nahrávání a ukládání</a> příkazů a města;
+	</li>
+	<li>
+		pod městem je volba pro upravení <a href="#rychlost">rychlosti
+		pohybu</a> Karla.
+	</li>
+</ul>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="mesto"></a>Město</h1>
+
+<p>
+Město robota Karla je vlastně šachovnice 10&nbsp;&times;&nbsp;10 polí. Mimo
+město Karel nemůže jít, je sám ve svém světě a Ty mu děláš společnost. Jedno
+políčko ve městě je nadepsáno písmenem D&nbsp;a označuje Karlův domov. Do města
+můžeš přistavovat zdi. Protože je Karel jenom jednoduchý robot, neumí lézt na
+zdi, a proto je pro něj zeď nepřekonatelnou překážkou.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="stred toolbar">
+<div class="toolbar-mesto">
+	<div class="tlacitko"><div class="nastroje-karel"></div></div>
+	<div class="tlacitko"><div class="nastroje-domov"></div></div>
+	<div class="tlacitko"><div class="nastroje-zed"></div></div>
+	<div class="tlacitko"><div class="nastroje-znacka-minus"></div></div>
+	<div class="tlacitko"><div class="nastroje-znacka-plus"></div></div>
+	<div class="tlacitko-mezera"><div class="nastroje-mezera"></div></div>
+	<div class="tlacitko"><div class="nastroje-smaz-vse"></div></div>
+	<div class="tlacitko"><div class="nastroje-smaz"></div></div>
+</div>
+		</td>
+		<td class="stred-vlevo">
+Pod městem je řádka nástrojů, s jejichž pomocí můžeš Karlovi město přikrášlit.
+Následující přehled Ti řekne, co všechno lze ve městě udělat po tom, co si
+klepnutím myši zvolíš určitý nástroj.
+		</td>
+	</tr>
+</table>
+
+<table class="ikony">
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="nastroje-karel"></div></div>
+<div class="tooltip">Karel</div>
+		</td>
+		<td>
+<div class="obrazek"><div class="karel-jih"></div></div>
+		</td>
+		<td>
+Jedním klepnutím myši ve městě Karla přemístíš na jiné políčko. Samozřejmě, že
+ho nelze donutit lézt na zdi, to Karel neumí. Dvojitým klepnutím myši můžeš
+Karla otočit doleva. Je to stejný případ, jako by měl učinit
+<code class="prikaz">VLEVO-VBOK</code>.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="nastroje-domov"></div></div>
+<div class="tooltip">Domov</div>
+		</td>
+		<td>
+<div class="obrazek"><div class="domov"></div></div>
+		</td>
+		<td>
+Jedním klepnutím myši můžeš přemístit políčko, které bude Karlovým domovem.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="nastroje-zed"></div></div>
+<div class="tooltip">Zeď</div>
+		</td>
+		<td>
+<div class="obrazek"><div class="zed"></div></div>
+		</td>
+		<td>
+<p>
+S pomocí tohoto nástroje můžeš me městě stavět zdi. Pokud je na políčku nějaká
+značka, Karel si ji nejprve uschová do svého batohu.
+</p><p>
+Políčko, které je Karlovým domovem, nelze zastavět zdí. Kde by potom Karel
+bydlel! Stejně tak nelze postavit zeď na stejné políčko, kde stojí Karel. Tím
+bys ho postavil na zeď, ze které by neuměl slézt.
+</p>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="nastroje-znacka-plus"></div></div>
+<div class="tooltip">Polož</div>
+		</td>
+		<td>
+<div class="obrazek"><div class="znacka-1"></div></div>
+		</td>
+		<td>
+Položí na políčko značku.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="nastroje-znacka-minus"></div></div>
+<div class="tooltip">Zvedni</div>
+		</td>
+		<td>
+<div class="pozadi"></div>
+		</td>
+		<td>
+Zvedne značku z políčka.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="nastroje-smaz-vse"></div></div>
+<div class="tooltip">Vyčisti město</div>
+		</td>
+		<td class="pole">
+		</td>
+		<td>
+Vyčistí celé město od všech zdí a značek. Karel se postaví do levého dolního
+rohu, jak je vždy na začátku práce zvyklý.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="nastroje-smaz"></div></div>
+<div class="tooltip">Posbírej vše</div>
+		</td>
+		<td>
+		</td>
+		<td>
+Vyčistí celé město od všech značek.
+		</td>
+	</tr>
+</table>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="slovnik"></a>Slovník a příkazové pole</h1>
+
+<p>
+Všechny příkazy, které Karel umí vykonat, jsou uloženy v&nbsp;jeho slovníku.
+Jistě jsi si všiml, že v&nbsp;něm nejsou zobrazeny všechny. Ukázány jsou pouze
+ty, které může Karel provést okamžitě, takže můžeš ve městě pozorovat nějakou
+změnu. Jak budeš Karla učit novým příkazům, tak se bude i&nbsp;jeho slovník
+rozšiřovat. Klepnutím na tlačítko vedle příkazu řekneš Karlovi, že bys byl rád,
+aby příkaz vykonal. Tlačítko může změnit svůj vzhled; jak a co to znamená, Ti
+hned povím.
+</p>
+
+<table>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="spustit"></div></div>
+<div class="tooltip">Spustit</div>
+		</td>
+		<td>
+Karel začne vykonávat příkaz uvedený vedle tlačítka. Až ho naučíš nové příkazy,
+může se během delšího provádění změnit na následující tlačítko.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="zastavit"></div></div>
+<div class="tooltip">Zastavit</div>
+		</td>
+		<td>
+Při vykonávání delšího příkazu můžeš vykonávání zastavit. Karel se přeci může
+dostat do bezvýchodné smyčky a bude se například točit stále dokola. Karel je
+ale robot, tak mu to nevadí. Bude se stále točit a jediné východisko z&nbsp;této
+situace je stisknout tlačítko pro zastavení. A to můžeš udělat jedině Ty.
+		</td>
+	</tr>
+</table>
+
+<p>
+Pod slovníkem je řada tlačítek a pod tlačítky je místo, kde lze měnit příkazy a
+zadávat nové. Je tam název měněného příkazu a velký obdélník, do kterého můžeš
+psát příkazy&nbsp;&ndash; proto mu dále budeme říkat <i>příkazové pole</i>. Do
+příkazového pole můžeš zapisovat nové příkazy ve stejné formě, jak byly ukázány
+v odstavci <a href="#zapis">Zápis nových příkazů</a>. Tvé příkazy sice nebudou
+plné barev, ale nezoufej, Karel jim i&nbsp;tak porozumí.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="stred toolbar">
+<div class="toolbar-slovnik">
+	<div class="tlacitko"><div class="slovnik-zobraz"></div></div>
+	<div class="tlacitko"><div class="slovnik-smaz"></div></div>
+	<div class="tlacitko-mezera"><div class="nastroje-mezera"></div></div>
+	<div class="tlacitko"><div class="slovnik-smaz-vse"></div></div>
+</div>
+		</td>
+		<td class="stred-vlevo">
+Řada tlačítek umístěná těsně pod slovníkem.
+		</td>
+	</tr>
+</table>
+
+<table class="toolbar">
+	<tr class="suda">
+		<td class="stred toolbar">
+<div class="toolbar-slovnik">
+	<div class="tlacitko"><div class="editor-novy"></div></div>
+	<div class="tlacitko-mezera"><div class="nastroje-mezera"></div></div>
+	<div class="tlacitko"><div class="editor-ulozit"></div></div>
+	<div class="tlacitko"><div class="editor-ulozit-jako"></div></div>
+</div>
+		</td>
+		<td class="stred-vlevo">
+Řada tlačítek umístěná nad polem příkazů.
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="editor-novy"></div></div>
+<div class="tooltip">Nový</div>
+		</td>
+		<td>
+Připraví příkazové pole na příjem nového příkazu. Jméno příkazu je <code
+class="novy">NOVÝ PŘÍKAZ</code>. Pokud již Karel takový příkaz zná, je za název
+příkazu přidána pořadová číslice 2, 3, 4 atd.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="slovnik-zobraz"></div></div>
+<div class="tooltip">Ukaž</div>
+		</td>
+		<td>
+Nejprve vyber ve slovníku příkaz, který chceš zobrazit. Potom klepni na toto
+tlačítko a příkaz se Ti v&nbsp;příkazovém poli celý zobrazí. Nyní můžeš změnit
+jeho jméno, opravit chybný sled příkazů, přidat další příkazy, prostě měnit, co
+se Ti zlíbí.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="editor-ulozit"></div></div>
+<div class="tooltip">Ulož</div>
+		</td>
+		<td>
+Uloží příkaz z&nbsp;příkazového pole do Karlovy paměti. Tím se Karel příkaz
+naučí. Jestliže jsi nejprve zobrazil nějaký jiný příkaz a pak ho upravoval, je
+v&nbsp;Karlově paměti přepsán a je mu dán nový název.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="editor-ulozit-jako"></div></div>
+<div class="tooltip">Ulož nově</div>
+		</td>
+		<td>
+Uloží příkaz z&nbsp;příkazového pole do Karlovy paměti. Poznáš, že je to dobrý
+nástroj v&nbsp;případě, že jsi předtím zobrazil nějaký jiný příkaz, upravil jsi
+ho, a nyní ho chceš uložit pod jiným jménem, ale starý příkaz, původně
+zobrazený, chceš zachovat.
+		</td>
+	</tr>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="slovnik-smaz"></div></div>
+<div class="tooltip">Smaž</div>
+		</td>
+		<td>
+Smaže vybraný příkaz z&nbsp;Karlovy paměti. Karel příkaz zapomene.
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="slovnik-smaz-vse"></div></div>
+<div class="tooltip">Reset</div>
+		</td>
+		<td>
+Reset paměti. Vymaže všechny příkazy z&nbsp;Karlovy paměti.
+		</td>
+	</tr>
+</table>
+
+<h2>Důležité poznámky ke slovníku a k příkazům</h2>
+
+<ul>
+	<li>
+		První řádka příkazu v&nbsp;příkazovém poli, která není <a
+		href="#komentare">komentářem</a>, je vždy <i>jménénem příkazu</i>.
+		V&nbsp;ukázkách uvedených v&nbsp;odstavci <a href="#zapis">Zápis nových
+		příkazů</a> je jménem příkazu první řádka, poznáš ji také podle <code
+		class="novy">žluté barvy</code>.
+	</li>
+	<li>
+		Příkaz musí vždy končit příkazem <code class="novy">KONEC</code>. Pokud na
+		konec svého příkazu zapomeneš zapsat nějaký <code
+		class="novy">KONEC</code>, Karel je může při ukládání s&nbsp;Tvým svolením
+		sám doplnit.
+	</li>
+	<li>
+		Pokud se pokusíš naučit Karla nějaký nový příkaz pod jménem, který už zná,
+		budeš na to upozorněn. Po Tvém uvážení pak může být příkaz v&nbsp;Karlově
+		paměti nahrazen novým příkazem, tím dostane nový význam.
+	</li>
+	<li>
+		V&nbsp;Tvých příkazech se mohou vyskytnout prázdné řádky. Pokud za sebou
+		vynecháš víc než jednu prázdnou řádku, bude uložena pouze jedna, protože
+		příliš mnoho prázdného místa nevypadá pěkně.
+	</li>
+	<li>
+		Pokud budeš chtít zobrazit příkaz, který Karel umí už od začátku, pak
+		poznáš, že to nejde. Karel tyto příkazy neumí vysvětlit. Kdybys nevěděl,
+		které příkazy to jsou, zde je jejich přehled:
+			<code class="prikaz">KROK</code>,
+			<code class="prikaz">VLEVO-VBOK</code>,
+			<code class="prikaz">POLOŽ</code> a
+			<code class="prikaz">ZVEDNI</code>.
+	</li>
+	<li>
+		Pokud uděláš jakoukoli změnu v&nbsp;příkazu, poznáš to malým křížkem ve
+		jméně zobrazeného příkazu, které je nad příkazovým polem. Nebude vadit, že
+		pracuješ na novém příkazu, to je pak křížek vedle slova
+		&bdquo;(nový)&ldquo;.
+	</li>
+</ul>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="nahravani"></a>Nahrávání a ukládání</h1>
+
+<p>
+Po těžké práci a učení robota Karla si jistě budeš chtít uchovat výsledek své
+práce. I&nbsp;tato možnost je ve vývojovém prostředí zahrnuta. Ukládání je pro
+město a slovník oddělené, nahrávání (načítání) je společné.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="stred toolbar">
+<div class="toolbar-mesto-nacist">
+	<div class="tlacitko"><div class="nastroje-nacist"></div></div>
+	<div class="tlacitko"><div class="nastroje-ulozit"></div></div>
+	<div class="tlacitko"><div class="nastroje-exportovat-k99"></div></div>
+</div>
+		</td>
+		<td class="stred-vlevo">
+Řada tlačítek pro ukládání pod městem.
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="stred toolbar">
+<div class="toolbar-slovnik-nacist">
+	<div class="tlacitko"><div class="slovnik-nacist"></div></div>
+	<div class="tlacitko"><div class="slovnik-ulozit"></div></div>
+	<div class="tlacitko-mezera"><div class="nastroje-mezera"></div></div>
+	<div class="tlacitko"><div class="slovnik-exportovat-k99"></div></div>
+	<div class="tlacitko"><div class="slovnik-exportovat-12"></div></div>
+</div>
+		</td>
+		<td class="stred-vlevo">
+Řada tlačítek umístěná nad slovníkem.
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="nastroje-ulozit"></div></div>
+<div class="tooltip">Uložit</div>
+		</td>
+		<td>
+<p>
+Nabídne nové okno, ve kterém se zobrazí text, který si někam uschovej. Jedná se
+o&nbsp;jednu dlouhou řádku textu (můžeš ji vidět rozdělenou na několik řádek)
+začínající slovem Karel a končící slovem KONEC. Nedoporučuji Ti text ručně
+opisovat, je to zdlouhavé. Nejsnadnější způsob, jak zachovat svou práci, je
+v&nbsp;systému Windows tento (používá se tzv. schránka):
+</p>
+
+<ul>
+	<li>
+		zobrazený text označ myší, potom klepni pravým tlačítkem myši a ze zobrazené
+		nabídky vyber volbu &bdquo;Kopírovat&ldquo; (tím se označený text zkopíruje
+		do schránky);
+	</li>
+	<li>
+		spusť nějaký program, který neprovádí další formátování textu (proto ne
+		Word). Je to bezpečnější. Vhodný je například Poznámkový blok (Notepad);
+	</li>
+	<li>
+		v&nbsp;oblasti psaní textu klepni pravým tlačítkem myši a ze zobrazené
+		nabídky zvol &bdquo;Vložit&ldquo; (tím se vloží obsah schránky);
+	</li>
+	<li>
+		nyní můžeš uložit soubor pod nějakým vhodným jménem, abys nezapoměl, co je
+		v&nbsp;něm uloženo důležitého.
+	</li>
+</ul>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="slovnik-exportovat-12"></div></div>
+<div class="tooltip">Exportovat do<br />verze 1.2</div>
+		</td>
+		<td>
+<p>
+V&nbsp;novém okně se, stejně jako v případě stisku tlačítka
+&bdquo;Uložit&ldquo;, zobrazí jedna dlouhá řádka začínající slovem Karel a
+končící slovem KONEC. Postup uchování se vůbec nemění.
+</p><p>
+Rozdíl oproti běžnému uložení je v&nbsp;tom, že se nyní ukládá do formátu
+vhodného pro starší webovou verzi Karla - verzi 1.2. Protože ale tehdy
+Karel zapomínal úplně všechny komentáře, nebudou raději žádné komentáře
+uloženy.
+</p>
+		</td>
+	</tr>
+	<tr class="licha">
+		<td>
+<div class="ikona"><div class="nastroje-exportovat-k99"></div></div>
+<div class="tooltip">Exportovat do<br />formátu K99</div>
+		</td>
+		<td>
+<p>
+V&nbsp;novém okně se zobrazí text, který si můžeš uschovat. Postup je naprosto
+stejný, jako u&nbsp;tlačítka &bdquo;Uložit&ldquo;. Text je určen pro program
+Visual Karel&nbsp;99, který ho umí přečíst. Jako příponu ukládaného souboru je
+vhodné použít K99, protože tu program sám používá.
+</p>
+		</td>
+	</tr>
+	<tr class="suda">
+		<td>
+<div class="ikona"><div class="nastroje-nacist"></div></div>
+<div class="tooltip">Načíst</div>
+		</td>
+		<td>
+<p>
+Stejně jako u&nbsp;ukládání je postup obnovy znalostí Karla nebo stavby města
+nepříliš složitou záležitostí. Po stisknutí tlačítka vidíš, že po Tobě Karel
+žádá vložení &bdquo;jediné dlouhé řádky&ldquo;, kterou jsi předtím obdržel při
+ukládání. Pokud jsi použil výše uvedený postup, pak je způsob obnovy informací
+následující (opět používáme tzv. schránku):
+</p>
+
+<ul>
+	<li>
+		spusť program, ve kterém jsi předtím text uložil. Jednalo se o&nbsp;program
+		Poznámkový blok (Notepad) nebo jemu podobný. Otevři soubor, ve kterém máš
+		text uložen;
+	</li>
+	<li>
+		označ myší všechen text od počátečních znaků Karel až po poslední slovo
+		KONEC, stiskni pravé tlačítko myši a z&nbsp;nabídky vyber 
+		&bdquo;Kopírovat&ldquo; (tím se označený text zkopíruje do schránky);
+	</li>
+	<li>
+		vrať se zpátky do okna, ve kterém Tě Karel žádá o&nbsp;vložení textové
+		řádky. Pravým tlačítkem myši klepni na řádku, do které lze psát text, a
+		z&nbsp;nabídky zvol &bdquo;Vložit&ldquo; (tím se vloží obsah schránky).
+	</li>
+	<li>
+		potvrď vložení textu tlačítkem Ok. Budeš vyzván o&nbsp;potvrzení svého
+		záměru. Uvidíš, že Karel ví, jestli chceš nahrát obsah slovníku nebo města.
+	</li>
+</ul>
+		</td>
+	</tr>
+</table>
+
+<h2>Důležité poznámky ukládání a&nbsp;načítání</h2>
+
+<ul>
+	<li>
+		Tlačítka pro ukládání a export příkazů umístěné pod slovníkem ukládají
+		příkazy, tlačítka pod městem ukládají stav města.
+	</li>
+	<li>
+		Při načítání Karel z&nbsp;&bdquo;jediné dlouhé řádky&ldquo; ví, jestli se
+		jedná o&nbsp;slovník nebo město. Proto je jedno, které
+		z&nbsp;tlačítek&nbsp;&ndash; jestli pod slovníkem, nebo pod
+		městem&nbsp;&ndash; stiskneš.
+	</li>
+</ul>
+
+<div class="vpravo"><a href="#nahore">Na začátek</a></div>
+<h1><a id="rychlost"></a>Rychlost pohybu</h1>
+
+<p>
+Pod městem robota Karla je umístěn prvek pro změnu rychlosti pohybu Karla.
+</p>
+
+<table>
+	<tr class="licha">
+		<td class="rychlost">
+			<div class="stupnice">
+				<div class="ryska-oblast">
+					<div class="ryska"></div>
+					<div class="vybrany"></div>
+				</div>
+				<div class="pomalu">Pomalu</div>
+				<div class="rychle">Rychle</div>
+				<div class="stredne">Středně rychle</div>
+			</div>
+		</td>
+		<td class="stred-vlevo">
+			Nastavení rychlosti provádění příkazů.
+		</td>
+	</tr>
+</table>
+
+
+<p>
+Nyní potřebuješ vědět, jak robot Karel vykonává příkazy, které jsi ho naučil.
+Karel vezme jeden příkaz a vyhodnotí ho. Pokud narazil na příkaz, který po něm
+nechce žádnou práci, pak vezme další příkaz a úplně stejně ho prozkoumá. Takto
+pokračuje, dokud nenarazí na nějaký pracovní příkaz&nbsp;&ndash;
+	<code class="prikaz">KROK</code>,
+	<code class="prikaz">VLEVO-VBOK</code>,
+	<code class="prikaz">POLOŽ</code> nebo
+	<code class="prikaz">ZVEDNI</code>.
+</p>
+<p>
+Protože by Karel chtěl okamžitě po provedení akce zkoumat další příkaz, máš
+možnost mu dát chvilku oddech. Ten řídíš nastavením velikosti <i>prodlevy mezi
+vykonáváním příkazů</i> na stupnici&nbsp;&ndash; malá prodleva napravo, velká
+prodleva vlevo. Tím se také určí Karlova rychlost&nbsp;&ndash; malá prodleva
+znamená velkou rychlost a velká prodleva zase malou.
+</p>
+<p>
+Při některých příkazech se Karel mnohokrát rozhoduje a nenaráží na žadný
+pracovní příkaz. To může způsobit pomalejší odezvy Tvého internetového
+prohlížeče. Pro zamezení zablokování je rozhodování časově omezeno na
+25&nbsp;ms&nbsp;&ndash; po vypršení časového limitu je kontrola předána
+prohlížeči.
+</p>
+
+</div>
+</body>
+</html>

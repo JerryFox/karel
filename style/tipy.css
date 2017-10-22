@@ -1,0 +1,42 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Obrázky nástrojových tipů */
+
+.tip-zobraz, .tip-smaz-prikaz, .tip-exportovat-12, .tip-novy, .tip-ulozit-prikaz, .tip-ulozit-jako,
+.tip-karel, .tip-domov, .tip-smaz-vse, .tip-smaz, .tip-zed, .tip-znacka-minus, .tip-znacka-plus,
+.tip-nacist, .tip-ulozit, .tip-exportovat-k99 {
+	width: 48px;
+	height: 48px;
+}
+
+.tip-zobraz {
+	background-image: url("../images/48x48/prikaz-zobrazit.png");
+}
+
+.tip-smaz-prikaz {
+	background-image: url("../images/48x48/prikaz-smaz-prikaz.png");
+}
+
+.tip-exportovat-12 {
+	background-image: url("../images/48x48/prikaz-export-1.2.png");
+}
+
+.tip-novy {
+	background-image: url("../images/48x48/prikaz-novy-prikaz.png");
+}
+
+.tip-ulozit-prikaz {
+	background-image: url("../images/48x48/prikaz-uloz-prikaz.png");
+}
+
+.tip-ulozit-jako {
+	background-image: url("../images/48x48/prikaz-uloz-prikaz-nove.png");
+}

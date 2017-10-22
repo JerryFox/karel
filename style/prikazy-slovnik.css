@@ -1,0 +1,181 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení slovníku */
+
+.slovnik {
+	display: block;
+	border: 1px solid;
+	border-top-color: rgb(90%, 90%, 90%);
+	border-left-color: rgb(90%, 90%, 90%);
+	border-right-color: rgb(40%, 40%, 40%);
+	border-bottom-color: rgb(40%, 40%, 40%);
+}
+
+.slovnik .nadpis {
+	background-color: rgb(50%, 0%, 0%);
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 69%;
+}
+
+.slovnik .ramecek {
+	border: 1px solid;
+	border-top-color: rgb(40%, 40%, 40%);
+	border-left-color: rgb(40%, 40%, 40%);
+	border-bottom-color: rgb(90%, 90%, 90%);
+	border-right-color: rgb(90%, 90%, 90%);
+}
+
+/* Okno slovníku */
+
+.slovnik #zobrazene {
+	height: 240px;
+	overflow: scroll;
+	background-color: rgb(75%, 75%, 75%);
+}
+
+.slovnik .prikaz {
+	margin-left: 2px;
+	min-height: 22px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+
+.slovnik .tlacitko {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+#zobrazene .tlacitko {
+	top: 1px;
+	height: 22px;
+}
+
+.slovnik .nazev-text {
+	width: 100%;
+}
+
+.slovnik .nazev,
+.slovnik .nazev-vybrany,
+.slovnik .nazev-zvyrazneny,
+.slovnik .nazev-vybrany-zvyrazneny,
+.slovnik .nazev-stisknuty,
+.slovnik .nazev-vybrany-stisknuty {
+	margin-left: 24px;
+	padding-left: 4px;
+}
+
+.slovnik .nazev-vybrany {
+	background-color: rgb(50%, 70%, 50%);
+}
+
+.slovnik .nazev-zvyrazneny {
+	background-color: rgb(70%, 70%, 40%);
+}
+
+.slovnik .nazev-vybrany-zvyrazneny {
+	background-color: rgb(60%, 75%, 60%);
+}
+
+.slovnik .nazev-stisknuty {
+	background-color: rgb(70%, 85%, 70%);
+}
+
+.slovnik .nazev-vybrany-stisknuty {
+	background-color: rgb(85%, 85%, 60%);
+}
+
+.spustit .ikona {
+	background-image: url("../images/16x16/prikaz-spustit.png");
+}
+
+.zastavit .ikona {
+	background-image: url("../images/16x16/prikaz-zastavit.png");
+}
+
+/* Nástroje slovníku */
+
+.slovnik .nastroje {
+	float: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	min-height: 20px;
+}
+
+.slovnik .nastroje .tlacitko {
+	width: 22px;
+}
+
+.slovnik .nastroje-mezera {
+	left: 1px;
+}
+
+#slovnik-zobraz {
+	background-image: url("../images/16x16/prikaz-zobrazit.png");
+}
+
+#slovnik-smaz {
+	background-image: url("../images/16x16/prikaz-smaz-prikaz.png");
+}
+
+#slovnik-smaz-vse {
+	background-image: url("../images/16x16/prikaz-smaz-vse.png");
+}
+
+#slovnik-nacist {
+	background-image: url("../images/16x16/prikaz-nacist.png");
+}
+
+#slovnik-ulozit {
+	background-image: url("../images/16x16/prikaz-uloz.png");
+}
+
+#slovnik-exportovat-k99 {
+	background-image: url("../images/16x16/prikaz-export-k99.png");
+}
+
+#slovnik-exportovat-12 {
+	background-image: url("../images/16x16/prikaz-export-1.2.png");
+}
+
+/* Vybraný příkaz */
+
+.slovnik .vybrany {
+	min-height: 24px;
+	line-height: 24px;
+	margin-left: 0.25em;
+	font-style: italic;
+}
+
+#vybrany-prikaz {
+	white-space: nowrap;
+	margin-left: 0.25em;
+	min-height: 24px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.slovnik .vypln {
+	clear: left;
+	width: 100%;
+	height: 0;
+	line-height: 0;
+}
+
+/* Kvůli IE */
+.slovnik .vypln div {
+	float: right;
+	height: 0;
+	width: 0;
+}

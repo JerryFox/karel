@@ -1,0 +1,53 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Barvy a obrázky pro město pro IE 5.5 a 6 */
+
+@import url("mesto-normalni-ie.css");
+
+.znacka-1 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-1.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-2 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-2.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-3 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-3.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-4 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-4.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-5 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-5.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-6 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-6.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-7 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-7.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-8 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/kulicky/znacka-8.png",sizingMethod="image",enabled=true);
+}

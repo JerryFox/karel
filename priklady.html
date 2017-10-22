@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Robot Karel: Příklady příkazů</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="cs" />
+	<meta name="Description" content="Robot Karel: příklady" />
+	<meta name="Keywords" content="robot,karel,priklady,příklady" />
+	<meta name="Author" content="Oldřich Jedlička" />
+	<meta name="Copyright"
+		content="Copyright © 2006-2013 Oldřich Jedlička, Všechna práva vyhrazena" />
+
+	<link href="favicon.ico" rel="icon" />
+	<link href="favicon.ico" rel="shortcut icon" />
+
+	<link href="style/format-prikladu.css" rel="stylesheet" type="text/css" />
+	<link href="style/napoveda.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>Příklady pro robota Karla</h1>
+
+<h2>Kapitola 2&nbsp;&ndash; Skládání příkazů</h2>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">ČELEM-VZAD</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">ZPÁTKY</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">VPRAVO-VBOK</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">DVOJKROK</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">TROJKROK</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">TROJKROK-2</code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">TROJKROK-3</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">VPRAVO-VBOK-2</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">JAKO-KŮŇ</code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">JAKO-KŮŇ-2</code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">L-ÚKROK</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">P-ÚKROK</code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">L-ŠIKMO</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">L-ŠIKMO-2</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">P-ŠIKMO</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 3&nbsp;&ndash; Rekurze</h2>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">PIRUETA</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy"><span class="uroven-1">PIRUETA</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">PIRUETA-2</code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy"><span class="uroven-1">PIRUETA-2</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">STRANA</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">ČTVEREC</code><br />
+			<code class="prikaz"><span class="uroven-1">STRANA</span></code><br />
+			<code class="prikaz"><span class="uroven-1">STRANA</span></code><br />
+			<code class="prikaz"><span class="uroven-1">STRANA</span></code><br />
+			<code class="prikaz"><span class="uroven-1">STRANA</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">MARATÓN</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="novy"><span class="uroven-1">MARATÓN</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">ČTYŘLÍSTEK</code><br />
+			<code class="prikaz"><span class="uroven-1">ČTVEREC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy"><span class="uroven-1">ČTYŘLÍSTEK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">SCHODY</code><br />
+			<code class="prikaz"><span class="uroven-1">L-ŠIKMO</span></code><br />
+			<code class="novy"><span class="uroven-1">SCHODY</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">HLÍDEJ BRÁNU</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy"><span class="uroven-1">HLÍDEJ BRÁNU</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 4&nbsp;&ndash; Podmínka KDYŽ</h2>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">?KROK</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">?ZVEDNI</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">?ZPĚT</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">?KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">?ZPĚT-2</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">NE SEVER</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+SEVER</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 5&nbsp;&ndash; Vnořené podmínky</h2>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">SV-ÚHLOPŘÍČKA</code><br />
+			<code class="prikaz"><span class="uroven-1">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-3">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy"><span class="uroven-3">SV-ÚHLOPŘÍČKA</span></code><br
+/>
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">ROZCESTÍ</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VPRAVO-VBOK</span></code><br
+/>
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">ROZHLÉDNI SE</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">VPRAVO-VBOK</span></code><br
+/>
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-3">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">?KROK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">SEMAFOR</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-3">ROZHLÉDNI SE</span></code><br
+/>
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">?KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">NA DALŠÍ ZNAČKU</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ NENÍ
+ZNAČKA</span></code><br
+										/>
+			<code class="novy"><span class="uroven-3">NA DALŠÍ ZNAČKU</span></code><br
+/>
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">SEBER NĚKDE ZNAČKU</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-3">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="novy"><span class="uroven-2">SEBER NĚKDE
+ZNAČKU</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">SEBER NĚKDE ZNAČKY</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-3">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy"><span class="uroven-1">SEBER NĚKDE
+ZNAČKY</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 6&nbsp;&ndash; Opuštění rekurze</h2>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">VYBER</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="novy"><span class="uroven-2">VYBER</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">NA JIH</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+JIH</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="novy"><span class="uroven-2">NA JIH</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">NA ZÁPAD</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZÁPAD</span></code><br
+										/>
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="novy"><span class="uroven-2">NA ZÁPAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">KE ZDI</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">KE ZDI</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">DOMŮ</code><br />
+			<code class="prikaz"><span class="uroven-1">NA JIH</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA ZÁPAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">ZNAČKA U ZDI</code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="prikaz"><span class="uroven-1">POLOŽ</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">ZNAČKUJ CESTU KE ZDI</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">ZNAČKUJ CESTU KE
+ZDI</span></code><br
+									/>
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">ZÁDY KE ZDI</code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 7&nbsp;&ndash; Složitější příklady rekurze</h2>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">BALÓNEK</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">BALÓNEK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">DOKOLA</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">TOČENÍ</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="prikaz"><span class="uroven-2">DOKOLA</span></code><br />
+			<code class="novy"><span class="uroven-2">TOČENÍ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">KRASOBRUSLENÍ</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">TOČENÍ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">KRASOBRUSLENÍ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">TOČENÍ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">KULIČKY</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="novy"><span class="uroven-2">KULIČKY</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">VYSBÍREJ</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VYBER</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">VYSBÍREJ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">NAVLÉKNI KORÁLKY</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="novy"><span class="uroven-2">NAVLÉKNI
+KORÁLKY</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">STĚHUJ</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZNAČKA</span></code><br
+										/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="novy"><span class="uroven-2">STĚHUJ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">POSBÍREJ KORÁLKY</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">POSBÍREJ
+KORÁLKY</span></code><br />
+			<code class="prikaz"><span class="uroven-2">STĚHUJ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 8&nbsp;&ndash; Hrátky s polovinou</h2>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">?DVOJKROK</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-3">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">PŮL</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">?DVOJKROK</span></code><br />
+			<code class="novy"><span class="uroven-2">PŮL</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">PŮL-2</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">?KROK</span></code><br />
+			<code class="novy"><span class="uroven-2">PŮL-2</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZPÁTKY</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">?TROJKROK</code><br />
+			<code class="prikaz"><span class="uroven-1">?DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">?KROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">TŘETINA</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE ZEĎ</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">?TROJKROK</span></code><br />
+			<code class="novy"><span class="uroven-2">TŘETINA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">DO POLOVINY</code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PŮL</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">DO STŘEDU</code><br />
+			<code class="prikaz"><span class="uroven-1">DO POLOVINY</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DO POLOVINY</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 9&nbsp;&ndash; Karel konstruktérem</h2>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">ČTYŘKROK</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 4-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">VYPLŇ</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 8-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">VĚŽ</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 9-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">VYPLŇ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">ZÁVAŽÍ</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 5-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">KOUSEK RAMENE</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 3-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">RAMENO</code><br />
+			<code class="prikaz"><span class="uroven-1">ZÁVAŽÍ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KOUSEK RAMENE</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 6-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KOUSEK RAMENE</span></code><br
+/>
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">NA VĚŽ</code><br />
+			<code class="prikaz"><span class="uroven-1">TROJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">NA RAMENO</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">JEŘÁB</code><br />
+			<code class="prikaz"><span class="uroven-1">NA VĚŽ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VĚŽ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA RAMENO</span></code><br />
+			<code class="prikaz"><span class="uroven-1">RAMENO</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DOMŮ</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">PANEL</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">VYPLŇ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA NOVÝ PANEL</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">NA NOVÝ PANEL</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">OKNO</code><br />
+			<code class="prikaz"><span class="uroven-1">VYPLŇ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA NOVÝ PANEL</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">DVEŘE</code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA NOVÝ PANEL</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">PŘÍZEMÍ</code><br />
+			<code class="prikaz"><span class="uroven-1">PANEL</span></code><br />
+			<code class="prikaz"><span class="uroven-1">OKNO</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PANEL</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DVEŘE</span></code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">PANEL</span></code><br />
+			<code class="prikaz"><span class="uroven-2">OKNO</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PANEL</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">NA PŘEKLAD</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 9-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">PŘEKLAD</code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 9-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">VYPLŇ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">NA PATRO</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 9-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">PATRO</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 4-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">PANEL</span></code><br />
+			<code class="prikaz"><span class="uroven-2">OKNO</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PANEL</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">PANELÁK</code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PŘÍZEMÍ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA PŘEKLAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PŘEKLAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA PATRO</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PATRO</span></code><br />
+			<code class="prikaz"><span class="uroven-1">NA PŘEKLAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PŘEKLAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DOMŮ</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">CIHLA</code><br />
+			<code class="prikaz"><span class="uroven-1">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VYPLŇ</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">SLOUPEK</code><br />
+			<code class="prikaz"><span class="uroven-1">CIHLA</span></code><br />
+			<code class="prikaz"><span class="uroven-1">CIHLA</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">NA STAVBU</code><br />
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">POSTAV PŘÍZEMÍ</code><br />
+			<code class="prikaz"><span class="uroven-1">VYPLŇ</span></code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">SLOUPEK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 3-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">SLOUPEK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">SLOUPEK</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">KE DVEŘÍM</code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">DVOJKROK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">POSTAV DVEŘE</code><br />
+			<code class="prikaz"><span class="uroven-1">VYPLŇ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">SLOUPEK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">SLOUPEK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">VLEVO-VBOK</span></code><br />
+			<code class="prikaz"><span class="uroven-1">SLOUPEK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">NA STŘECHU</code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">L-ŠIKMO</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČTYŘKROK</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">PŮLKA STŘECHY</code><br />
+			<code class="cyklus"><span class="uroven-1">OPAKUJ 2-KRÁT</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-2">P-ŠIKMO</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VYPLŇ</span></code><br />
+			<code class="cyklus"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">POSTAV STŘECHU</code><br />
+			<code class="prikaz"><span class="uroven-1">VYPLŇ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">PŮLKA STŘECHY</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">VPRAVO-VBOK</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">PŮLKA STŘECHY</span></code><br
+/>
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">POSTAV DŮM</code><br />
+			<code class="prikaz"><span class="uroven-1">NA STAVBU</span></code><br />
+			<code class="prikaz"><span class="uroven-1">POSTAV
+PŘÍZEMÍ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KE DVEŘÍM</span></code><br />
+			<code class="prikaz"><span class="uroven-1">POSTAV DVEŘE</span></code><br
+/>
+			<code class="prikaz"><span class="uroven-1">NA STŘECHU</span></code><br />
+			<code class="prikaz"><span class="uroven-1">POSTAV
+STŘECHU</span></code><br />
+			<code class="prikaz"><span class="uroven-1">DOMŮ</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 10&nbsp;&ndash; Podmínka DOKUD</h2>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">VYBER-2</code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD JE
+ZNAČKA</span></code><br
+										/>
+			<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">KE ZDI-2</code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">NA JIH-2</code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD NENÍ
+JIH</span></code><br />
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">K JIŽNÍ ZDI</code><br />
+			<code class="prikaz"><span class="uroven-1">NA JIH</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">NA ZÁPAD-2</code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD NENÍ
+ZÁPAD</span></code><br
+										/>
+			<code class="prikaz"><span class="uroven-2">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">K ZÁPADNÍ ZDI</code><br />
+			<code class="prikaz"><span class="uroven-1">NA ZÁPAD</span></code><br />
+			<code class="prikaz"><span class="uroven-1">KE ZDI</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">ZÁDY NA ZNAČKU</code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD NENÍ
+ZNAČKA</span></code><br
+										/>
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery licha">
+			<code class="novy">ZÁDY KE ZDI-2</code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-1">ČELEM-VZAD</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery">
+			<code class="novy">ZNAČKUJ CESTU KE ZDI-2</code><br />
+			<code class="prikaz"><span class="uroven-1">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">DOKUD NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-2">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<h2>Kapitola 11&nbsp;&ndash; Ven z bludiště</h2>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">PODÉL PRAVÉ ZDI</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ NENÍ
+DOMOV</span></code><br
+										/>
+			<code class="prikaz"><span class="uroven-2">VPRAVO-VBOK</span></code><br
+/>
+			<code class="podminka"><span class="uroven-2">DOKUD JE
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-3">VLEVO-VBOK</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-3">KROK</span></code><br />
+			<code class="novy"><span class="uroven-3">PODÉL PRAVÉ ZDI</span></code><br
+/>
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="suda">
+		<td class="mezery">
+			<code class="novy">POLOŽ 2</code><br />
+			<code class="prikaz"><span class="uroven-1">POLOŽ</span></code><br />
+			<code class="prikaz"><span class="uroven-1">POLOŽ</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr class="licha">
+		<td class="mezery">
+			<code class="novy">ZJISTI MOŽNOSTI</code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+ZNAČKA</span></code><br />
+			<code class="prikaz"><span class="uroven-2">ZPÁTKY</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-2">POLOŽ 2</span></code><br />
+			<code class="podminka"><span class="uroven-2">KDYŽ JE
+DOMOV</span></code><br />
+			<code class="prikaz"><span class="uroven-3">STOP</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC,
+JINAK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">VPRAVO-VBOK</span></code><br
+/>
+			<code class="cyklus"><span class="uroven-3">OPAKUJ 3-KRÁT</span></code><br
+/>
+			<code class="podminka"><span class="uroven-4">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-5">KROK</span></code><br />
+			<code class="novy"><span class="uroven-5">ZJISTI MOŽNOSTI</span></code><br
+/>
+			<code class="podminka"><span class="uroven-4">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-4">VLEVO-VBOK</span></code><br />
+			<code class="cyklus"><span class="uroven-3">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-3">ZVEDNI</span></code><br />
+			<code class="prikaz"><span class="uroven-3">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-3">ČELEM-VZAD</span></code><br />
+			<code class="podminka"><span class="uroven-2">KONEC</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+			<code class="novy">KONEC</code>
+		</td>
+		<td class="mezery suda">
+			<code class="novy">Z BLUDIŠTĚ</code><br />
+			<code class="prikaz"><span class="uroven-1">POLOŽ 2</span></code><br />
+			<code class="podminka"><span class="uroven-1">KDYŽ JE
+DOMOV</span></code><br />
+			<code class="prikaz"><span class="uroven-2">STOP</span></code><br />
+			<code class="podminka"><span class="uroven-1">KONEC,
+JINAK</span></code><br />
+			<code class="cyklus"><span class="uroven-2">OPAKUJ 4-KRÁT</span></code><br
+/>
+			<code class="podminka"><span class="uroven-3">KDYŽ NENÍ
+ZEĎ</span></code><br />
+			<code class="prikaz"><span class="uroven-4">KROK</span></code><br />
+			<code class="prikaz"><span class="uroven-4">ZJISTI
+MOŽNOSTI</span></code><br />
+			<code class="podminka"><span class="uroven-3">KONEC</span></code><br />
+			<code class="prikaz"><span class="uroven-3">VLEVO-VBOK</span></code><br />
+<code class="cyklus"><span class="uroven-2">KONEC</span></code><br />
+<code class="prikaz"><span class="uroven-2">ZVEDNI</span></code><br />
+<code class="podminka"><span class="uroven-1">KONEC</span></code><br />
+<code class="novy">KONEC</code>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

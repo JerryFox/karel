@@ -1,0 +1,89 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení města */
+
+.mesto {
+}
+
+.mesto .nadpis {
+	background-color: rgb(50%, 0%, 0%);
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 69%;
+	border: 1px solid gray;
+	border-bottom: none;
+}
+
+.mesto .obsah {
+	display: block;
+	position: relative;
+	width: 321px;
+	height: 321px;
+	overflow: hidden;
+}
+
+.mesto .linka {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 321px;
+	height: 321px;
+}
+
+.mesto .pozadi, .mesto .struktura, .mesto .policko-domov,
+.mesto .policko-karel, .mesto .policko-vyber, .mesto .maska {
+	display: block;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	width: 320px;
+	height: 320px;
+}
+
+.mesto .nastroje {
+	display: block;
+	position: absolute;
+	width: 319px;
+	top: 321px;
+	left: 1px;
+}
+
+.mesto .pozadi div, .mesto .struktura div, .mesto .maska div {
+	float: left;
+	width: 32px;
+	height: 32px;
+}
+
+.mesto .pozadi .policko {
+	display: block;
+	float: none;
+	width: 31px;
+	height: 31px;
+}
+
+.znacka-1, .znacka-2, .znacka-3, .znacka-4, .znacka-5, .znacka-6,
+.znacka-7, .znacka-8, .zed {
+	position: relative;
+	width: 32px;
+	height: 32px;
+}
+
+.vyber {
+	visibility: hidden;
+}
+
+#pozice_domov, #pozice_karel, #pozice_vyber {
+	position: relative;
+	width: 32px;
+	height: 32px;
+}

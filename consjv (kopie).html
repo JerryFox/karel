@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+   <script src="src/brython.js"></script>
+
+    <style>
+    .codearea {
+        background-color:#000;
+        color:#fff;
+        font-family:'Oxygen Mono', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+        font-size:14px;
+        overflow:auto
+    }
+    div, textarea {
+        height:100%;
+        width:98%
+    }
+    </style>
+</head>
+
+
+<body onload="brython(1)">
+    <textarea id=code class=codearea rows=20></textarea>
+
+    <div id=content></div>
+
+    <script type="text/python3" src="tests/console.py"></script>
+
+
+</body>
+
+</html>

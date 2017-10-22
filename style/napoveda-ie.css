@@ -1,0 +1,171 @@
+/*
+* [Česky]
+* Projekt: Robot Karel
+* Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+*
+* [English]
+* Project: Karel, the Robot
+* Copyright: See COPYING in the top level directory
+*/
+
+/* Formátování nápovědy pro IE 5.5 a 6 */
+
+.stupnice .ryska {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/stupnice-rychlost.png",sizingMethod="image",enabled=true);
+}
+
+.stupnice .vybrany {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/stupnice-ukazatel.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-mezera {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/prikaz-mezera.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-karel {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-karel.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-domov {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-domov.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-smaz-vse {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-smaz-vse.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-smaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/normalni/prikaz-smaz.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-zed {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-zed.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-znacka-minus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/normalni/prikaz-znacka-minus.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-znacka-plus {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/normalni/prikaz-znacka-plus.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-nacist {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-nacist.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-ulozit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-uloz.png",sizingMethod="image",enabled=true);
+}
+
+.nastroje-exportovat-k99 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-export-k99.png",sizingMethod="image",enabled=true);
+}
+
+.spustit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-spustit.png",sizingMethod="image",enabled=true);
+}
+
+.zastavit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-zastavit.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-zobraz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-zobrazit.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-smaz {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-smaz-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-smaz-vse {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-smaz-vse.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-nacist {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-nacist.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-ulozit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-uloz.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-exportovat-k99 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-export-k99.png",sizingMethod="image",enabled=true);
+}
+
+.slovnik-exportovat-12 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-export-1.2.png",sizingMethod="image",enabled=true);
+}
+
+.editor-novy {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-novy-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+.editor-ulozit {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-uloz-prikaz.png",sizingMethod="image",enabled=true);
+}
+
+.editor-ulozit-jako {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/16x16/prikaz-uloz-prikaz-nove.png",sizingMethod="image",enabled=true);
+}
+
+.karel-vychod {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/karel-vychod.png",sizingMethod="image",enabled=true);
+}
+
+.karel-sever {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/karel-sever.png",sizingMethod="image",enabled=true);
+}
+
+.karel-zapad {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/karel-zapad.png",sizingMethod="image",enabled=true);
+}
+
+.karel-jih {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/karel-jih.png",sizingMethod="image",enabled=true);
+}
+
+.domov {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/domov.png",sizingMethod="image",enabled=true);
+}
+
+.zed {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/zed.png",sizingMethod="image",enabled=true);
+}
+
+.znacka-1 {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/32x32/normalni/znacka-1.png",sizingMethod="image",enabled=true);
+}

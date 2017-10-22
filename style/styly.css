@@ -1,0 +1,59 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení stylů */
+
+.pravy-sloupec form {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.styly, .velikosti {
+	padding: 5px;
+	margin-top: 5px;
+	border: 1px solid;
+	border-top-color: rgb(90%, 90%, 90%);
+	border-left-color: rgb(90%, 90%, 90%);
+	border-right-color: rgb(40%, 40%, 40%);
+	border-bottom-color: rgb(40%, 40%, 40%);
+	background-color: rgb(75%, 75%, 75%);
+	font-weight: bold;
+}
+
+.styly div, .velikosti div {
+	font-weight: normal;
+	margin-top: 0;
+}
+
+.styly label, .velikosti label {
+	padding-left: 16px;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.styly .styl-klasika {
+	background-image: url("../images/styl-klasika.png");
+}
+
+.styly .styl-kulicky {
+	background-image: url("../images/styl-kulicky.png");
+}
+
+.velikosti {
+	float: right;
+}
+
+.velikosti .velikost-normalni {
+	background-image: url("../images/velikost-normalni.png");
+}
+
+.velikosti .velikost-maly {
+	background-image: url("../images/velikost-maly.png");
+}

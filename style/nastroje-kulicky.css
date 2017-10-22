@@ -1,0 +1,25 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Barvy a obrázky pro nástroje */
+
+@import url("nastroje-normalni.css");
+
+#nastroje-smaz {
+	background-image: url("../images/16x16/kulicky/prikaz-smaz.png");
+}
+
+#nastroje-znacka-minus {
+	background-image: url("../images/16x16/kulicky/prikaz-znacka-minus.png");
+}
+
+#nastroje-znacka-plus {
+	background-image: url("../images/16x16/kulicky/prikaz-znacka-plus.png");
+}

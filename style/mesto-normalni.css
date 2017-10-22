@@ -1,0 +1,87 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Barvy a obrázky pro město */
+
+.linka {
+	background-color: gray;
+}
+
+.pozadi .policko {
+	background-color: rgb(69%, 100%, 69%);
+}
+
+.zed {
+	background-image: url("../images/32x32/normalni/zed.png");
+}
+
+.znacka-1 {
+	background-image: url("../images/32x32/normalni/znacka-1.png");
+}
+
+.znacka-2 {
+	background-image: url("../images/32x32/normalni/znacka-2.png");
+}
+
+.znacka-3 {
+	background-image: url("../images/32x32/normalni/znacka-3.png");
+}
+
+.znacka-4 {
+	background-image: url("../images/32x32/normalni/znacka-4.png");
+}
+
+.znacka-5 {
+	background-image: url("../images/32x32/normalni/znacka-5.png");
+}
+
+.znacka-6 {
+	background-image: url("../images/32x32/normalni/znacka-6.png");
+}
+
+.znacka-7 {
+	background-image: url("../images/32x32/normalni/znacka-8.png");
+}
+
+.znacka-8 {
+	background-image: url("../images/32x32/normalni/znacka-8.png");
+}
+
+.krizek {
+	background-image: url("../images/32x32/normalni/krizek.png");
+}
+
+.kolecko {
+	background-image: url("../images/32x32/normalni/kolecko.png");
+}
+
+.karel-vychod {
+	background-image: url("../images/32x32/normalni/karel-vychod.png");
+}
+
+.karel-sever {
+	background-image: url("../images/32x32/normalni/karel-sever.png");
+}
+
+.karel-zapad {
+	background-image: url("../images/32x32/normalni/karel-zapad.png");
+}
+
+.karel-jih {
+	background-image: url("../images/32x32/normalni/karel-jih.png");
+}
+
+.domov {
+	background-image: url("../images/32x32/normalni/domov.png");
+}
+
+.vyber {
+	background-image: url("../images/32x32/normalni/vyber.png");
+}

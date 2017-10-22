@@ -1,0 +1,50 @@
+2013-01-10	Verze 2.0.5
+
+	* Oprava problému s ukládáním v iPadu, nyní to už není textové pole
+	  (<textarea>), ale předformátovaný text (<pre>).
+
+2012-12-09	Verze 2.0.4.1
+
+	* Opraven text nápovědy.
+
+2010-10-19	Verze 2.0.4
+
+	* Komprese skriptů - rychlejší načítání.
+	* Lepší barvy nového příkazu a cyklů v příkladech a nápovědě.
+
+2007-05-20	Verze 2.0.3
+
+	* Oprava pro Internet Explorer 7.
+
+2007-03-13	Verze 2.0.2
+
+	* Oprava pár drobností.
+
+2007-03-12	Verze 2.0.1
+
+	* Podpora prohlížečů Internet Explorer 7, Internet Explorer 6,
+	  Opera 9.10, Konqueror 3.5.6, Firefox 2.0.0.1. Starší prohlížeče nejsou
+	  testovány.
+
+2006-07-31	Verze 2.0
+
+	* Úplně nové a lepší uživatelské rozhraní.
+	* Podpora prohlížečů Firefox 1.0.3, Firefox 1.5, Internet Exporer 6,
+	  Opera 9.00, Konqueror 3.5.2. Verze Opery 8.52 funguje také, ale kvůli
+	  chybě Opery může ve slovníku vzniknout při použití posuvníku nepořádek.
+	* Automatické doplňování konce uživetelského příkazu, pokud chybí příkaz
+	  KONEC nebo KONEC, JINAK.
+	* Ukládání (všech) komentářů a prázdných řádek s kontrolou, jestli je pouze
+	  jedna volná řádka mezi příkazy (kvůli programátorskému stylu).
+	* Větší inteligence při načítání příkazů.
+	* První komentář uvedený před názvem samotného příkazu se zobrazuje v
+	  nástrojovém tipu, stejně jako popis u systémových příkazů.
+	* Vylepšený export, který rozlišuje komentáře a prázdné řádky.
+	* Automatické načtení obrázků do vyrovnávací paměti.
+	* Pokud prohlížeč pracuje správně s vyrovnávací pamětí, je možné po spuštění
+	  programu odpojit připojení na internet.
+	* Automatické ukládání v nejstarším formátu, který podporuje všechny
+	  příkazy, takže pokud nepoužijete nějakou novinku, např. komentáře a
+	  prázdné řádky, poběži programy ve staších verzích.
+	* Podpora exportu do starší verze 1.2, komentáře a prázdné řádky nebudou
+	  do této verze uloženy.

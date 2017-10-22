@@ -1,0 +1,55 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Základní nastavení stylů pro IE 5.5 a 6 */
+
+.styly label, .velikosti label {
+	padding-left: 0px;
+}
+
+.styly .ikona, .velikosti .ikona {
+	position: relative;
+	width: 16px;
+	height: 14px;
+	vertical-align: middle;
+}
+
+.styly .ikona span, .velikosti .ikona span {
+	width: 16px;
+	height: 0;
+}
+
+.styly .styl-klasika, .styly .styl-kulicky,
+.velikosti .velikost-normalni, .velikosti .velikost-maly {
+	position: absolute;
+	left: 0;
+	width: 14px;
+	height: 14px;
+}
+
+.styly .styl-klasika {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/styl-klasika.png",sizingMethod="image",enabled=true);
+}
+
+.styly .styl-kulicky {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/styl-kulicky.png",sizingMethod="image",enabled=true);
+}
+
+.velikosti .velikost-normalni {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/velikost-normalni.png",sizingMethod="image",enabled=true);
+}
+
+.velikosti .velikost-maly {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/velikost-maly.png",sizingMethod="image",enabled=true);
+}

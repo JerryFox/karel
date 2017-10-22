@@ -1,0 +1,155 @@
+/*
+ * [Česky]
+ * Projekt: Robot Karel
+ * Copyright: Viz KOPIROVANI v kořenovém adresáři projektu
+ *
+ * [English]
+ * Project: Karel, the Robot
+ * Copyright: See COPYING in the top level directory
+ */
+
+/* Nastavení ladicí konzoly */
+
+.ovladani-ladeni 
+{
+	height: 12px;
+	width: auto;
+}
+
+.ovladani-ladeni .prvky 
+{
+	float: right;
+	width: 54px;
+	height: 12px;
+	line-height: 12px;
+}
+
+.ovladani-ladeni .prvky .obsah 
+{
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+
+#uroven
+{
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 41px;
+	height: 10px;
+	line-height: 10px;
+	background-repeat: no-repeat;
+}
+
+.uroven-1 {
+	background-image: url("../images/uroven-1.png");
+}
+
+.uroven-2 {
+	background-image: url("../images/uroven-2.png");
+}
+
+.uroven-3 {
+	background-image: url("../images/uroven-3.png");
+}
+
+.uroven-4 {
+	background-image: url("../images/uroven-4.png");
+}
+
+.uroven-5 {
+	background-image: url("../images/uroven-5.png");
+}
+
+.ovladani-ladeni .popis 
+{
+	margin: 0px 59px 0px 0px;
+	height: 10px;
+	line-height: 10px;
+	font: 10px bold Arial, Helvetica, sans-serif;
+	text-align: right;
+	vertical-align: top;
+	text-align: right;
+}
+
+.ovladani-ladeni .maska {
+	position: absolute;
+	top: 0;
+	width: 41px;
+	height: 12px;
+}
+
+.ovladani-ladeni .maska div {
+	float: left;
+	width: 8px;
+	height: 12px;
+}
+
+.ovladani-ladeni .maska #uroven-5 {
+	float: left;
+	width: 9px;
+	height: 12px;
+}
+
+#vypis-ikona, .vypis-ikona {
+	position: absolute;
+	top: 1px;
+	left: 42px;
+	width: 11px;
+	height: 10px;
+	line-height: 10px;
+	background-repeat: no-repeat;
+}
+
+.vypis-ikona {
+	top: 0;
+	height: 12px;
+	line-height: 12px;
+}
+
+.ikona-rozbalit {
+	background-image: url("../images/konzola-rozbalit.png");
+}
+
+.ikona-sbalit {
+	background-image: url("../images/konzola-sbalit.png");
+}
+
+.konzola {
+	display: none;
+	height: 150px;
+	width: 321px;
+	background-color: black;
+}
+
+#konzola {
+	display: block;
+	margin: 0;
+	position: relative;
+	left: 1px;
+	top: 1px;
+	background-color: rgb(0%, 100%, 25%);
+	width: 319px;
+	height: 148px;
+	overflow: scroll;
+}
+
+#konzola .radka {
+	white-space: nowrap;
+}
+
+#konzola .cas {
+	font-style: italic;
+}
+
+#konzola .funkce {
+	font-weight: bold;
+}
+
+#konzola .info {
+	font-style: italic;
+}
+
+#konzola .text {
+}
