@@ -44,7 +44,7 @@
 		title="Kuličky" />
 	<link href="style/tipy-kulicky.css" rel="stylesheet" type="text/css"
 		title="Kuličky" />
-	
+
 	<!--[if gte IE 5.5 & lt IE 7]>
 	<script type="text/javascript" charset="utf-8">
 		ie_hack = 1;
@@ -112,21 +112,7 @@
 	<script type="text/javascript" charset="utf-8"
 		src="scripts/kodovani-odkazu.js"></script>
 
-    <style>
-    .codearea {
-        background-color:#000;
-        color:#fff;
-        font-family:'Oxygen Mono', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
-        font-size:14px;
-        overflow:auto
-    }
-    textarea {
-        height:100%;
-        width:98%;	
-    }
-    </style>
-
-    <script src="src/brython.js"></script>
+	<script src="src/brython.js"></script>
 
 <!--Brython - editor - HEAD -->
 <!-- <link rel="stylesheet" href="doc/doc_brython.css"> -->
@@ -226,104 +212,109 @@ doc["add_main"].bind('click', add_main)
 <div id="okraj"></div>
 
 <!-- Pravý sloupec -->
-<div class="pravy-sloupec">
-<div class="centrovany">
+	<div class="pravy-sloupec">
+		<div class="pravy-sloupec-mesto">
+			<div class="centrovany">
 
-<!-- Město a nástroje -->
+				<!-- Město a nástroje -->
 
-<!-- Město -->
-<script type="text/javascript" charset="utf-8"
-	src="scripts/mesto-tvar.js"></script>
+				<!-- Město -->
+				<script type="text/javascript" charset="utf-8"
+						src="scripts/mesto-tvar.js"></script>
 
-<!-- Nástroje -->
-<script type="text/javascript" charset="utf-8"
-	src="scripts/nastroje-tvar.js"></script>
+				<!-- Nástroje -->
+				<script type="text/javascript" charset="utf-8"
+						src="scripts/nastroje-tvar.js"></script>
 
-<!-- Konec města a nástrojů -->
+				<!-- Konec města a nástrojů -->
 
-<script type="text/javascript" charset="utf-8"
-	src="scripts/ladici-konzola-tvar.js"></script>
+				<script type="text/javascript" charset="utf-8"
+						src="scripts/ladici-konzola-tvar.js"></script>
 
-<script type="text/javascript" charset="utf-8"
-	src="scripts/styly-tvar.js"></script>
+				<script type="text/javascript" charset="utf-8"
+						src="scripts/styly-tvar.js"></script>
 
-<script type="text/javascript" charset="utf-8"
-	src="scripts/nastaveni-tvar.js"></script>
+				<script type="text/javascript" charset="utf-8"
+						src="scripts/nastaveni-tvar.js"></script>
+			</div>
 
-</div>
-</div>
+		</div>
+	</div>
 <!-- Konec pravého sloupce -->
 
 <!-- Levý (hlavní) sloupec -->
-<div class="informace">
-	<a class="levy" href="javascript:napoveda();">Nápověda</a>
-	<a class="levy" href="javascript:priklady();">Příklady</a>
-	<div class="pravy">
-		Copyright © 2006-2013 <a href="mailto:">Oldřich Jedlička</a>,
-		Všechna&nbsp;práva&nbsp;vyhrazena.<a class="pravy"
-			href="KOPIROVANI">Pravidla&nbsp;kopírování</a><a class="pravy"
-			href="http://download.oldium.net/karel/karel-2.0.5.tar.gz">Zdrojový kód</a>
+
+<div class="hlavni-sloupec clearfix">
+
+	<div class="informace">
+		<a class="levy" href="javascript:napoveda();">Nápověda</a>
+		<a class="levy" href="javascript:priklady();">Příklady</a>
+		<div class="pravy">
+			Copyright © 2006-2013 <a href="mailto:">Oldřich Jedlička</a>,
+			Všechna&nbsp;práva&nbsp;vyhrazena.<a class="pravy"
+				href="KOPIROVANI">Pravidla&nbsp;kopírování</a><a class="pravy"
+				href="http://download.oldium.net/karel/karel-2.0.5.tar.gz">Zdrojový kód</a>
+		</div>
+	</div>
+
+
+	<div class="main">
+
+		<!-- Brython console -->
+		<textarea id="code" class="codearea" rows="20"></textarea>
+
+		<div class="buttonarea">
+			<div id="content"></div>
+
+			<script type="text/python3" src="tests/console.py" id="__main__"></script>
+			<!-- /Brython console -->
+
+			<button id="add_main">Add <b>&lt;div id=main&gt;</b></button>
+			<button id="run"> ▶ Run</button>
+
+			<div style="width:100%; height:50px; display: none;">
+				<textarea id="console" autocomplete="off"></textarea>
+			</div>
+
+		</div>
+
+		<div id="container" class="editorarea">
+			<div id="editor" style="width:100%; font-size:12pt"></div>
+
+			<!-- Co to odebrat úplně? -->
+
+			<div id="left-div"></div>
+
+			<div id="right-div"></div>
+
+
+			<div style="float:left;margin-top:50px; display: none;">
+				<div style="text-align:left; display: none;">Brython version: <span id="version"></span>
+				</div>
+				<a href="//github.com/brython-dev/brython/issues" title="Please report Bugs on the GitHub Issue Tracker !">
+					Report a bug
+				</a><br>
+				<a href='index.html' id="test_page">
+					Built-in test suite
+				</a><br>
+				<a href='unittests/index.html'>
+					CPython tests
+				</a><br>
+			</div>
+
+			<div id="main_container"></div>
+			<div class="hlavni-sloupec-posledni"></div>
+
+		</div>  <!-- container - konec -->
+
 	</div>
 </div>
 
-<div class="hlavni-sloupec">
-    <!-- Brython console -->
-    <textarea id=code class=codearea rows=20></textarea>
-    <div id=content></div>
-    <script type="text/python3" src="tests/console.py" id="__main__"></script>
-    <!-- /Brython console -->
-</div>
 
-<div class="hlavni-sloupec-posledni">
-</div>
 <!-- Konec levého sloupce -->
 
 </div>
 <!-- Konec stránky -->
-
-<div id="main_container"></div>
-<div style="padding: 3px 3px 3px 3px;">
-  <button id="add_main">Add <b>&lt;div id=main&gt;</b></button>
-</div>
-
-<div style="padding: 3px 3px 3px 3px;">
-  <div>
-    <button id="run"> ▶ Run</button>
-  </div>
-
-  <div style="float:right; ">
-  </div>
-</div>
-
-<div style="width:100%; height:50px; visibility: hidden;">
-  <textarea id="console" autocomplete="off"></textarea>
-</div>
-
-<div id="container" style="width:100%; margin-left:10px">
-  <div id="editor" style="width:100%; font-size:12pt"></div>
-  <div id="left-div">
-  </div> 
-  
-  <div id="right-div">
-  </div>
-
-  <div style="float:left;margin-top:50px; visibility: hidden">
-      <div style="text-align:left; visibility: hidden">Brython version: <span id="version"></span>
-      </div>
-      <a href="//github.com/brython-dev/brython/issues" title="Please report Bugs on the GitHub Issue Tracker !">
-          Report a bug
-      </a><br>
-      <a href='index.html' id="test_page">
-          Built-in test suite
-      </a><br>
-      <a href='unittests/index.html'>
-          CPython tests
-      </a><br>
-  </div>
-</div>  <!-- container - konec -->
-
-
-
 
 </body>
 </html>

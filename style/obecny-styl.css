@@ -8,7 +8,18 @@
  * Copyright: See COPYING in the top level directory
  */
 
+/* prinuti chovat se kontejner s floatem jak se ceka */
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* Základní nastavení vývojového prostředí */
+
+html {
+	height: 100%;
+}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -19,12 +30,13 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 680px;
+	height: 100%;
 }
 
 #stranka {
 	z-index: -1;
 	margin: 0;
-	padding: 8px;
+	height: 100%;
 }
 
 #stranka #okraj {
@@ -60,41 +72,48 @@ textarea {
 	line-height: 120%;
 }
 
+.main {
+	height: 80%; /* fallback pro stare prohlizece */
+	height: calc(100% - 0.9em - 2 * 5px - 2 * 1px); /* pro moderni */
+	background-color: #b8b8b8;
+}
+
+.hlavni-sloupec,
+.pravy-sloupec {
+	height: 92%; /* fallback pro stare prohlizece */
+	height: calc(100% - 2 * 10px - 2 * 1px); /* pro moderni */
+}
+
+.hlavni-sloupec {
+	/*outline: 5px solid red;*/
+}
+
 .pravy-sloupec {
 	float: right;
-	width: 321px;
-	height: auto;
-	padding: 10px;
-	border: 1px solid;
-	border-top-color: rgb(90%, 90%, 90%);
-	border-left-color: rgb(90%, 90%, 90%);
-	border-right-color: rgb(40%, 40%, 40%);
-	border-bottom-color: rgb(40%, 40%, 40%);
-	background-color: rgb(75%, 75%, 75%);
+	width: 343px;
 }
 
 .pravy-sloupec .centrovany {
 	width: 321px;
 }
 
-
-.informace,
 .hlavni-sloupec,
 .hlavni-sloupec-posledni {
 	width: auto;
-	padding: 10px;
 	margin-right: 350px;
+}
+
+.pravy-sloupec-mesto,
+.informace,
+.hlavni-sloupec,
+.hlavni-sloupec-posledni {
+	padding: 10px;
 	border: 1px solid;
 	border-top-color: rgb(90%, 90%, 90%);
 	border-left-color: rgb(90%, 90%, 90%);
 	border-right-color: rgb(40%, 40%, 40%);
 	border-bottom-color: rgb(40%, 40%, 40%);
 	background-color: rgb(75%, 75%, 75%);
-}
-
-.informace,
-.hlavni-sloupec {
-	margin-bottom: 7px;
 }
 
 .informace {
