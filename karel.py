@@ -22,8 +22,22 @@ def krok():
     timer.set_timeout(kr, prodleva())
 """
 vlevo_vbok = lambda :window.prikazy.jadro.VLEVO_VBOK()
-poloz = lambda :window.prikazy.jadro.POLOZ()
 zvedni = lambda :window.prikazy.jadro.ZVEDNI()
+
+def poloz(): 
+    # polozit znacku je-li misto
+    if pocet_znacek() < 8: 
+        r = window.prikazy.jadro.POLOZ()
+    else: 
+        raise Exception("Neni mozne polozit vic nez 8 znacek")
+
+def zvedni(): 
+    # zvednout znacku je-li nejaka
+    if pocet_znacek() > 0: 
+        r = window.prikazy.jadro.ZVEDNI()
+    else: 
+        raise Exception("Kde nic neni, ani smrt nebere (zadna znacka).")
+
 
 def postav(): 
     pozice = {}
@@ -50,6 +64,20 @@ def bourej():
     if pozice["x"] in range(10) and pozice["y"] in range(10): 
         window.mesto.pole[pozice["x"]][pozice["y"]] = 0
         window.mesto.prekresli_pole({"x":pozice["x"], "y":pozice["y"]})
+        
+def pocet_znacek(x=None, y=None): 
+    if x is None: 
+        x = window.karel.pozice.x
+    if y is None: 
+        y = window.karel.pozice.y
+    field_class = document["pozice_{x}_{y}".format(x=x, y=y)].getAttribute("class")
+    if field_class is None: 
+        pocet = 0
+    elif "znacka-" in field_class: 
+        pocet = int(field_class[field_class.index("znacka-") + len("znacka-")])
+    else: 
+        pocet = 0
+    return pocet
         
 
 def karel_skryj(): 
