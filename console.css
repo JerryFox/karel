@@ -4,6 +4,14 @@ textarea {
      box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+.hidden {
+    display: none;
+}
+
+.main {
+    height: 100%
+}
+
 .codearea {
 background-color: #000;
 color: #fff;
@@ -11,17 +19,17 @@ font-family: 'Oxygen Mono', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', mon
 font-size: 14px;
 overflow: auto;
 width: 100%;
-height: 10%;
+height: 50%;
 resize: vertical;
 }
 
 .buttonarea {
-height: 5%;
+height: 1.8em;
 }
 
 .editorarea {
 width: 100%;
-height: 80% !important;
+height: 95% !important;
 position: relative;
 margin: 0;
 }

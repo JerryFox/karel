@@ -54,31 +54,15 @@ def reset_src_area():
     else:
         editor.value = 'for i in range(10):\n\tprint(i)'
 
-class cOutput:
-
-    def write(self, data):
-        doc["console"].value += str(data)
-
-    def flush(self):
-        pass
-
-"""
-if "console" in doc:
-    sys.stdout = cOutput()
-    sys.stderr = cOutput()
-"""
-
 def to_str(xx):
     return str(xx)
 
+"""
 info = sys.implementation.version
 doc['version'].text = '%s.%s.%s' % (info.major, info.minor, info.micro)
+"""
 
-output = ''
-
-def show_console(ev):
-    doc["console"].value = output
-    doc["console"].cols = 60
+#output = ''
 
 # load a Python script
 def load_script(evt):
@@ -88,7 +72,7 @@ def load_script(evt):
 # run a script, in global namespace if in_globals is True
 def run(*args):
     global output
-    doc["console"].value = ''
+    #doc["console"].value = ''
     src = editor.getValue()
     if storage is not None:
        storage["py_src"] = src
@@ -101,14 +85,13 @@ def run(*args):
     except Exception as exc:
         traceback.print_exc(file=sys.stderr)
         state = 0
-    output = doc["console"].value
+    #output = doc["console"].value
 
     print('<completed in %6.2f ms>' % ((time.perf_counter() - t0) * 1000.0))
+    print(">>> ", end="")
+    # scroll down
+    doc["code"].scrollTop = doc["code"].scrollHeight
     return state
-
-def show_js(ev):
-    src = editor.getValue()
-    doc["console"].value = javascript.py2js(src, '__main__')
 
 if has_ace:
     reset_src()
