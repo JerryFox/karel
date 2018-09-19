@@ -50,21 +50,23 @@ def doleva_dolu():
     celem_vzad()
 
 def sachovnice():
+    domu()
     for i in range(5):
         while not zed():
             vybarvi()
-            krok()
-            krok()
+            chytry_krok()
+            chytry_krok()
         vlevo_vbok()
         krok()
         vlevo_vbok()
         while not zed():
             vybarvi()
-            krok()
-            krok()
+            chytry_krok()
+            chytry_krok()
         vpravo_vbok()
         chytry_krok()
         vpravo_vbok()
+    domu()
 
 def posbirej():
     domu()
