@@ -4,6 +4,8 @@ import traceback
 from browser import document as doc
 from browser import window, alert, console
 
+from browser.local_storage import storage
+
 _credits = """    Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
     for supporting Python development.  See www.python.org for more information."""
 
@@ -25,28 +27,28 @@ All Rights Reserved."""
 _license = """Copyright (c) 2012, Pierre Quentel pierre.quentel@gmail.com
 All rights reserved.
 
-Redistribution and use in source and binary forms, with or without 
+Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code must retain the above copyright notice, this
-list of conditions and the following disclaimer. Redistributions in binary 
-form must reproduce the above copyright notice, this list of conditions and 
-the following disclaimer in the documentation and/or other materials provided 
+list of conditions and the following disclaimer. Redistributions in binary
+form must reproduce the above copyright notice, this list of conditions and
+the following disclaimer in the documentation and/or other materials provided
 with the distribution.
-Neither the name of the <ORGANIZATION> nor the names of its contributors may 
-be used to endorse or promote products derived from this software without 
+Neither the name of the <ORGANIZATION> nor the names of its contributors may
+be used to endorse or promote products derived from this software without
 specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 """
 
@@ -68,14 +70,24 @@ def write(data):
 
 sys.stdout.write = sys.stderr.write = write
 history = []
-current = 0
+
+if "_hist" in storage:
+    h = eval(storage["_hist"])
+    for (i, item) in enumerate(h):
+        h[i] = item.replace("\\\\n", "\n")
+    history = h
+current = len(history)
+
 _status = "main"  # or "block" if typing inside a block
 
 # execution namespace
 editor_ns = {'credits':credits,
     'copyright':copyright,
     'license':license,
-    '__name__':'__main__'}  
+    "hist":history,
+    '__name__':'__main__'}
+
+doc.ch_editor_ns = editor_ns
 
 def cursorToEnd(*args):
     pos = len(doc['code'].value)
@@ -113,6 +125,9 @@ def myKeyPress(event):
         doc['code'].value += '\n'
         history.append(currentLine)
         current = len(history)
+
+        storage["_hist"] = str(history[-100:])
+
         if _status == "main" or _status == "3string":
             try:
                 _ = editor_ns['_'] = eval(currentLine, editor_ns)
@@ -161,7 +176,7 @@ def myKeyPress(event):
             doc['code'].value += '>>> '
         else:
             doc['code'].value += '... '
-        
+
         cursorToEnd()
         event.preventDefault()
 
@@ -169,7 +184,7 @@ def myKeyDown(event):
     global _status, current
     if event.keyCode == 37:  # left arrow
         sel = get_col(doc['code'])
-        if sel < 5:
+        if False: #sel < 5:
             event.preventDefault()
             event.stopPropagation()
     elif event.keyCode == 36:  # line start
@@ -181,19 +196,26 @@ def myKeyDown(event):
         if current > 0:
             pos = doc['code'].selectionStart
             col = get_col(doc['code'])
-            # remove current line
-            doc['code'].value = doc['code'].value[:pos - col + 4]
+            # remove current line (lines)
+            ctext = doc["code"].value
+            prompt_pos = max(ctext.rfind(">>>"), ctext.rfind("...")) + 4
+            doc['code'].value = doc['code'].value[:prompt_pos]
             current -= 1
             doc['code'].value += history[current]
+            cursorToEnd()
         event.preventDefault()
     elif event.keyCode == 40:  # down
-        if current < len(history) - 1:
+        if current < len(history):
             pos = doc['code'].selectionStart
             col = get_col(doc['code'])
-            # remove current line
-            doc['code'].value = doc['code'].value[:pos - col + 4]
+            # remove current line (lines)
+            ctext = doc["code"].value
+            prompt_pos = max(ctext.rfind(">>>"), ctext.rfind("...")) + 4
+            doc['code'].value = doc['code'].value[:prompt_pos]
             current += 1
-            doc['code'].value += history[current]
+            if current < len(history):
+                doc['code'].value += history[current]
+                cursorToEnd()
         event.preventDefault()
     elif event.keyCode == 8:  # backspace
         src = doc['code'].value

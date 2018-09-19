@@ -1,9 +1,9 @@
 import sys
 import time
 import traceback
-import javascript
+#import javascript
 
-from browser import document as doc, window, alert
+from browser import document as doc, window
 
 # set height of container to 66% of screen
 _height = doc.documentElement.clientHeight
@@ -40,17 +40,19 @@ else:
 if 'set_debug' in doc:
     __BRYTHON__.debug = int(doc['set_debug'].checked)
 
-def reset_src():
-    if storage is not None and "py_src" in storage:
-        editor.setValue(storage["py_src"])
+def reset_src(src="py_src"):
+    editor.storage_name = src
+    if storage is not None and src in storage:
+        editor.setValue(storage[src])
     else:
         editor.setValue('for i in range(10):\n\tprint(i)')
     editor.scrollToRow(0)
     editor.gotoLine(0)
 
-def reset_src_area():
-    if storage and "py_src" in storage:
-        editor.value = storage["py_src"]
+def reset_src_area(src="py_src"):
+    editor.storage_name = src
+    if storage and src in storage:
+        editor.value = storage[src]
     else:
         editor.value = 'for i in range(10):\n\tprint(i)'
 
@@ -75,11 +77,13 @@ def run(*args):
     #doc["console"].value = ''
     src = editor.getValue()
     if storage is not None:
-       storage["py_src"] = src
+       storage[editor.storage_name] = src
 
     t0 = time.perf_counter()
     try:
         ns = {'__name__':'__main__'}
+        if doc.ch_editor_ns:
+            ns = doc.ch_editor_ns
         exec(src, ns)
         state = 1
     except Exception as exc:
@@ -95,6 +99,7 @@ def run(*args):
 
 if has_ace:
     reset_src()
+    doc["editor"].reset_src = reset_src
 else:
     reset_src_area()
-
+    doc["editor"].reset_src = reset_src_area

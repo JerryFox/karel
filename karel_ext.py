@@ -23,7 +23,7 @@ def usecka(delka):
         krok()
 
 def ctverec(delka):
-    if delka == 1: 
+    if delka == 1:
         vybarvi()
     for i in range(4):
         usecka(delka - 1)
@@ -50,8 +50,8 @@ def doleva_dolu():
     celem_vzad()
 
 def sachovnice():
-    for i in range(5): 
-        while not zed(): 
+    for i in range(5):
+        while not zed():
             vybarvi()
             krok()
             krok()
@@ -67,8 +67,9 @@ def sachovnice():
         vpravo_vbok()
 
 def posbirej():
-    for i in range(5): 
-        while not zed(): 
+    domu()
+    for i in range(5):
+        while not zed():
             odbarvi()
             krok()
         odbarvi()
@@ -82,11 +83,12 @@ def posbirej():
         vpravo_vbok()
         chytry_krok()
         vpravo_vbok()
+    domu()
 
 def na_sousedni_znacku():
     x = 0
     vpravo_vbok()
-    for i in range(3): 
+    for i in range(3):
         if not zed():
             krok()
             x = 1
